@@ -102,7 +102,7 @@
             "c": "Non si ha nessun effetto",
             "d": "L'elettrodo di piombo aumenta la sua massa"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 8,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -115,7 +115,7 @@
             "c": "HCl",
             "d": "N3"
         },
-        "correct_answer": "c",
+        "correct_answer": "a",
         "original_number": 9,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -129,7 +129,7 @@
             "d": "-1",
             "e": "+1/2"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 10,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -142,7 +142,7 @@
             "c": "Gay Lussac",
             "d": "Boyle"
         },
-        "correct_answer": "c",
+        "correct_answer": "a",
         "original_number": 11,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -156,7 +156,7 @@
             "d": "etere",
             "e": "calchino"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 12,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -168,7 +168,7 @@
             "b": "Toluene",
             "c": "Esene"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 13,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -208,7 +208,7 @@
             "d": "Aumenta l'energia di attivazione",
             "e": "L'equilibrio si sposta verso sinistra"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 16,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -236,7 +236,7 @@
             "d": "5",
             "e": "6"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 18,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -248,7 +248,7 @@
             "b": "Cu+",
             "c": "Zn2+"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 19,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -260,7 +260,7 @@
             "b": "Calore assorbito",
             "c": "Calore specifico"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 20,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -312,7 +312,7 @@
             "b": "Kc1=(Kc2)^3",
             "c": "Kc1=Kc2"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 24,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -339,7 +339,7 @@
             "d": "idrossidi",
             "e": "nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 26,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -351,7 +351,7 @@
             "b": "Massa atomica",
             "c": "Numero di moli ogni litro"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 27,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -392,7 +392,7 @@
             "d": "64 g",
             "e": "Nessuna delle precedenti"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 30,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -405,7 +405,7 @@
             "c": "1 mole",
             "d": "2 moli"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 31,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -418,7 +418,7 @@
             "c": "Ossido di ferro (I)",
             "d": "Ossido di ferro (II)"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 32,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -432,7 +432,7 @@
             "d": "NaClO",
             "e": "NaClO2"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 33,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -446,7 +446,7 @@
             "d": "L’equilibrio si sposta a sinistra",
             "e": "Aumenta la velocità di reazione"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 34,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -459,7 +459,7 @@
             "c": "4",
             "d": "6"
         },
-        "correct_answer": "c",
+        "correct_answer": "b",
         "original_number": 35,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -473,7 +473,7 @@
             "d": "Sottrazione di azoto",
             "e": "Abbassamento della T"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 36,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -486,7 +486,7 @@
             "c": "Propene",
             "d": "Etino"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 37,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -498,7 +498,7 @@
             "b": "Cu2+",
             "c": "Pb (s)"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 38,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -512,7 +512,7 @@
             "d": "Diamante",
             "e": "Carbonio amorfo"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 39,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -525,7 +525,7 @@
             "c": "8",
             "d": "10"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 40,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -539,7 +539,7 @@
             "d": "Rame e zinco reagiscono a formare una lega di bronzo",
             "e": "Rame e zinco reagiscono a formare una lega di argento"
         },
-        "correct_answer": "d",
+        "correct_answer": "b",
         "original_number": 41,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -553,7 +553,7 @@
             "d": "Due moli di qualsiasi gas ideale a 273 K e 760 mmHg",
             "e": "Due moli di qualsiasi gas ideale a 100C ed 1,00 atm"
         },
-        "correct_answer": "c",
+        "correct_answer": "d",
         "original_number": 42,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -567,7 +567,7 @@
             "d": "distanza di legame",
             "e": "elettronegatività"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 43,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -581,7 +581,7 @@
             "d": "2",
             "e": "3"
         },
-        "correct_answer": "c",
+        "correct_answer": "e",
         "original_number": 44,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -595,7 +595,7 @@
             "d": "4",
             "e": "C4H10 non esiste"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 45,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -620,7 +620,7 @@
             "c": "HF, HBr, HI, HCl",
             "d": "HCl, HF, HBr, HI\n[b)"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 47,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -633,7 +633,7 @@
             "c": "Sublimazione",
             "d": "Non ha un nome"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 48,
         "source_file": "Quiz Chimica.pdf"
     },
@@ -721,17 +721,6 @@
     },
     {
         "number": 55,
-        "question": "Qual è la formula bruta del 2-propanolo (o propan-2-olo)?",
-        "options": {
-            "a": "b)",
-            "c": "d)\ne)"
-        },
-        "correct_answer": "d",
-        "original_number": 55,
-        "source_file": "Quiz Chimica.pdf"
-    },
-    {
-        "number": 56,
         "question": "Quale di questi è un acido più forte?",
         "options": {
             "a": "HNO3",
@@ -745,7 +734,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 57,
+        "number": 56,
         "question": "La frazione volumetrica di ossigeno in una miscela gassosa è 0,2. Qual è il volume di miscela che\ncontiene 40L di ossigeno?",
         "options": {
             "a": "Dipende dalla pressione e temperatura dell'aria",
@@ -754,12 +743,12 @@
             "d": "200 L",
             "e": "8 L"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 57,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 58,
+        "number": 57,
         "question": "Cosa accade quando si fonde un solido",
         "options": {
             "a": "l’energia di Gibbs resta costante",
@@ -767,12 +756,12 @@
             "c": "la densità diminuisce",
             "d": "la temperatura aumenta"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 58,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 59,
+        "number": 58,
         "question": "Una sostanza è riducente rispetto ad un'altra se:",
         "options": {
             "a": "Ha minor tendenza a passare in forma ionica",
@@ -781,12 +770,12 @@
             "d": "Ha maggiore tendenza ad acquistare elettroni",
             "e": "Si riduce più facilmente"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 59,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 60,
+        "number": 59,
         "question": "Qual è il numero di molecole presente in una mole di NaCl?",
         "options": {
             "a": "0",
@@ -795,12 +784,12 @@
             "d": "58g",
             "e": "1"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 60,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 61,
+        "number": 60,
         "question": "Indicare da sinistra a destra i numeri di ossidazione del cloro nei seguenti ioni: ClO4- , anione clorato,\nClO2- , ClO-",
         "options": {
             "a": "+5, +7, +3, +1",
@@ -814,7 +803,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 62,
+        "number": 61,
         "question": "Quale tra queste è una miscela omogenea",
         "options": {
             "a": "nebbia",
@@ -828,7 +817,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 63,
+        "number": 62,
         "question": "In una cella voltaica si immettono Li (con E0 = -3V) e Be (E0 = -2V). A quanto è pari la differenza di\ntensione ai capi?",
         "options": {
             "a": "1 V",
@@ -840,7 +829,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 64,
+        "number": 63,
         "question": "Per far si che una reazione sia spontanea a basse temperature",
         "options": {
             "a": "DeltaG>0",
@@ -849,12 +838,12 @@
             "d": "DeltaH > 0 delta S>0",
             "e": "DeltaH > 0 delta S<0"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 64,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 65,
+        "number": 64,
         "question": "Sia un atomo Z=9, A=19 , scrivere nell' ordine il numero di elettroni, neutroni, elettroni spaiati",
         "options": {
             "a": "9, 10, 1",
@@ -863,12 +852,12 @@
             "d": "9, 19, 1",
             "e": "9, 10, 0"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 65,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 66,
+        "number": 65,
         "question": "Se si miscelano una soluzione contenente 1g di HNO3 (MM = 63) ed una contenente 1g di NaOH (mm =\n40), la soluzione risulta:",
         "options": {
             "a": "poco acida",
@@ -877,12 +866,12 @@
             "d": "neutra",
             "e": "molto neutra"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 66,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 67,
+        "number": 66,
         "question": "Quale tra queste unità di misura non si riferisce alla pressione?",
         "options": {
             "a": "Torr",
@@ -891,24 +880,24 @@
             "d": "mmHg",
             "e": "Bar"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 67,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 68,
+        "number": 67,
         "question": "Quale tra queste è una semireazione di riduzione?",
         "options": {
             "a": "F2 + 2e- --> 2F-",
             "b": "H2 + e- --> 2H+",
             "c": "H2 --> 2H+ + è-"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 68,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 69,
+        "number": 68,
         "question": "Qual è la pressione osmotica di una soluzione di NaCl di volume 2l, 1 M a una temperatura T?",
         "options": {
             "a": "p=2*0.082*T",
@@ -916,12 +905,12 @@
             "c": "p=1*0.831*T",
             "d": "p=2*0.831*T"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 69,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 70,
+        "number": 69,
         "question": "Per quali di questi valori un processo non è MAI spontaneo?",
         "options": {
             "a": "ΔH>0 ΔS>0",
@@ -930,12 +919,12 @@
             "d": "ΔH>0 ΔS<0",
             "e": "ΔH<0 ΔS<0"
         },
-        "correct_answer": "e",
+        "correct_answer": "d",
         "original_number": 70,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 71,
+        "number": 70,
         "question": "Bilanciare la seguente reazione e selezionare nella giusta sequenza i coefficienti stecchiometrici dei\nreagenti solfato di rame(||) +Fe(NO3)3____________] solfato di ferro(|||) +Cu(NO3)2",
         "options": {
             "a": "2,3",
@@ -944,12 +933,12 @@
             "d": "3,2",
             "e": "2,2"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 71,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 72,
+        "number": 71,
         "question": "Coefficienti reagenti C6H6+O2 -> CO2+H2O",
         "options": {
             "a": "2;8",
@@ -958,12 +947,12 @@
             "d": "1;13",
             "e": "1;7"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 72,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 73,
+        "number": 72,
         "question": "La teoria di ___ dice che \"gli acidi in acqua rilasciano ioni H+\"",
         "options": {
             "a": "Arrhenius",
@@ -971,12 +960,12 @@
             "c": "London",
             "d": "Lewis\nE]"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 73,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 74,
+        "number": 73,
         "question": "Da cosa è data la molalità",
         "options": {
             "a": "n di moli del soluto diviso il volume della soluzione",
@@ -989,7 +978,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 75,
+        "number": 74,
         "question": "Durante l'evaporazione dell acqua cosa accade sicuramente?",
         "options": {
             "a": "l'entropia rimane invariata",
@@ -1003,7 +992,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 76,
+        "number": 75,
         "question": "Viene data un'immagine con una molecola con diversi tipi di legame, ogni legame è numerato. Si chiede\ndi trovare il legame più forte",
         "options": {
             "a": "doppio",
@@ -1015,7 +1004,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 77,
+        "number": 76,
         "question": "Cos'è un idruro?",
         "options": {
             "a": "Qualsiasi idracido",
@@ -1023,12 +1012,12 @@
             "c": "Sostanza dove H ha numero di ossidazione -1",
             "d": "Un acido"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 77,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 78,
+        "number": 77,
         "question": "Dati 500mL di azoto alla pressione di 0.75atm, quale sarà il volume alla pressione di 1.50atm,\nassumendo che la temperatura rimanga costante?",
         "options": {
             "a": "125 mL",
@@ -1037,12 +1026,12 @@
             "d": "250 mL",
             "e": "500 mL"
         },
-        "correct_answer": "e",
+        "correct_answer": "d",
         "original_number": 78,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 79,
+        "number": 78,
         "question": "Quale dei seguenti sistemi NON è eterogeneo?",
         "options": {
             "a": "Schiuma",
@@ -1051,12 +1040,12 @@
             "d": "Emulsione",
             "e": "soluzione"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 79,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 80,
+        "number": 79,
         "question": "Una mole di Li2O contiene",
         "options": {
             "a": "14 grammi di litio",
@@ -1070,7 +1059,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 81,
+        "number": 80,
         "question": "Quale tra queste famiglie di composti ha la formula bruta: CnH(2n+2)",
         "options": {
             "a": "Alchini",
@@ -1084,7 +1073,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 82,
+        "number": 81,
         "question": "Cosa si intende per gruppo alchilico?",
         "options": {
             "a": "un alcano privato di un atomo di idrogeno",
@@ -1096,7 +1085,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 83,
+        "number": 82,
         "question": "Qual è il nome del composto \n?",
         "options": {
             "a": "Acido ipoclorico",
@@ -1105,12 +1094,12 @@
             "d": "Acido clorico",
             "e": "Acido cloroso"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 83,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 84,
+        "number": 83,
         "question": "Quale di questi elementi possiede energia di prima ionizzazione più bassa?",
         "options": {
             "a": "Idrogeno",
@@ -1119,12 +1108,12 @@
             "d": "Magnesio",
             "e": "Sodio"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 84,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 85,
+        "number": 84,
         "question": "Un gas occupa 500mL a 0,75 atm, quanto occupa a 1.5 atm a T costante",
         "options": {
             "a": "200 mL",
@@ -1133,12 +1122,12 @@
             "d": "2000 ml",
             "e": "2 dm³"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 85,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 86,
+        "number": 85,
         "question": "Quale dei seguenti ossidi reagisce con l'acqua per formare un idrossido?",
         "options": {
             "a": "SO2",
@@ -1152,7 +1141,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 87,
+        "number": 86,
         "question": "Quale delle seguenti molecole presenta un'isomeria cis e trans?",
         "options": {
             "a": "3-metil-1-esene",
@@ -1161,12 +1150,12 @@
             "d": "2-metil-2-esene",
             "e": "2-metil-3-propil-esene"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 87,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 88,
+        "number": 87,
         "question": "Quale tra queste è la formula di struttura del glicerolo (detto anche glicerina)",
         "options": {
             "a": "C3H8O3",
@@ -1178,7 +1167,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 89,
+        "number": 88,
         "question": "Quale di questi elementi ha maggior energia di prima ionizzazione?",
         "options": {
             "a": "F",
@@ -1192,7 +1181,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 90,
+        "number": 89,
         "question": "Il perclorato di sodio si può ottenere facendo reagire",
         "options": {
             "a": "NaOH + HClO4",
@@ -1206,7 +1195,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 91,
+        "number": 90,
         "question": "Una soluzione di un miscuglio miscuglio ha coefficiente di Van't Hoff uguale a 3. Considerando che\nviene dissociato completamente, quanto vale z?",
         "options": {
             "a": "3",
@@ -1214,12 +1203,12 @@
             "c": "4",
             "d": "Dipende dalla concentrazione"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 91,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 92,
+        "number": 91,
         "question": "Date due mezze reazioni con relative entalpie, come si calcola l'entalpia della reazione totale?",
         "options": {
             "a": "sommando le entalpie",
@@ -1227,12 +1216,12 @@
             "c": "sottraendo le entalpie",
             "d": "moltiplicando le entalpie"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 92,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 93,
+        "number": 92,
         "question": "Da cosa dipende l'abbassamento del vapore di pressione?",
         "options": {
             "a": "molalità",
@@ -1246,7 +1235,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 94,
+        "number": 93,
         "question": "Quanti protoni sono contenuti in una mole di idrogeno molecolare? (Na sta per 6.022*10^(23) )",
         "options": {
             "a": "1 mole",
@@ -1260,7 +1249,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 95,
+        "number": 94,
         "question": "A pressione costante, se si aumenta il volume del 50% come varia la temperatura (inizialmente 100 K)?",
         "options": {
             "a": "100 K",
@@ -1273,7 +1262,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 96,
+        "number": 95,
         "question": "In una reazione isoterma, il prodotto tra volume e pressione",
         "options": {
             "a": "Fu scoperto la prima volta da Gay Lussac",
@@ -1286,7 +1275,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 97,
+        "number": 96,
         "question": "Ho 0.8 moli di soluto disciolte in 1.2 moli di solvente. Qual è la frazione molare del soluto",
         "options": {
             "a": "0.4",
@@ -1298,7 +1287,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 98,
+        "number": 97,
         "question": "Quale tipo di struttura presenza l'ammoniaca ?",
         "options": {
             "a": "trigonale planare",
@@ -1311,7 +1300,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 99,
+        "number": 98,
         "question": "H2S è un",
         "options": {
             "a": "Idracido",
@@ -1323,7 +1312,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 100,
+        "number": 99,
         "question": "Selezionare la soluzione acquosa con pressione osmotica più alta",
         "options": {
             "a": "0,1 M BaCl2",
@@ -1337,7 +1326,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 101,
+        "number": 100,
         "question": "Dove avviene la riduzione in una cella galvanica?",
         "options": {
             "a": "anodo",
@@ -1346,12 +1335,12 @@
             "d": "nel ponte salino",
             "e": "ovunque"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 101,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 102,
+        "number": 101,
         "question": "A 1000K qual è la relazione fra Kc e Kp, se DeltaN = 1?",
         "options": {
             "a": "Kp = 82 Kc",
@@ -1359,12 +1348,12 @@
             "c": "Kp = Kc/82",
             "d": "Kp = Kc"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 102,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 103,
+        "number": 102,
         "question": "Come si chiama questa molecola organica? Immagine di C2H4 (doppio legame tra i due C)",
         "options": {
             "a": "Etilene",
@@ -1372,12 +1361,12 @@
             "c": "Acetilene",
             "d": "Dietano"
         },
-        "correct_answer": "e",
+        "correct_answer": "a",
         "original_number": 103,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 104,
+        "number": 103,
         "question": "1 mole di acqua contiene:",
         "options": {
             "a": "32 g di ossigeno",
@@ -1385,12 +1374,12 @@
             "c": "Na molecole di ossigeno",
             "d": "2*Na atomi di idrogeno"
         },
-        "correct_answer": "e",
+        "correct_answer": "d",
         "original_number": 104,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 105,
+        "number": 104,
         "question": "Quante molecole sono contenute in 14 moli di H2S",
         "options": {
             "a": "14*6.022",
@@ -1399,12 +1388,12 @@
             "d": "14 diviso il numero di avogadro",
             "e": "14 *numero di avogadro"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 105,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 106,
+        "number": 105,
         "question": "Quanto ossigeno gassoso serve per ossidare 46g di sodio?",
         "options": {
             "a": "1 mole",
@@ -1413,12 +1402,12 @@
             "d": "32 grammi",
             "e": "23 grammi"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 106,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 107,
+        "number": 106,
         "question": "Quale composto si ottiene della reazione di acido carbonico con idrossido di magnesio?",
         "options": {
             "a": "MnCO",
@@ -1432,7 +1421,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 108,
+        "number": 107,
         "question": "Qual è la quantità di zolfo atomico necessario alla formazione di 64 g di SO2",
         "options": {
             "a": "1 mole",
@@ -1446,7 +1435,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 109,
+        "number": 108,
         "question": "Per prevedere il grado di polarità di una molecola è necessario conoscere:",
         "options": {
             "a": "L'elettronegatività dei suoi atomi e la sua geometria",
@@ -1460,7 +1449,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 110,
+        "number": 109,
         "question": "La riduzione è un fenomeno nel quale:",
         "options": {
             "a": "Un elemento riduce il suo numero di ossidazione e acquista elettroni",
@@ -1473,7 +1462,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 111,
+        "number": 110,
         "question": "Una soluzione è acida se",
         "options": {
             "a": "[H3O+] > 10^-7",
@@ -1487,7 +1476,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 112,
+        "number": 111,
         "question": "Qual è la configurazione elettronica del Cobalto?",
         "options": {
             "a": "[Ar] 3 d10 4 s1",
@@ -1496,12 +1485,12 @@
             "d": "[Ar] 4 d7 4 s2",
             "e": "[Kr] 3 d7 4 s2"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 112,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 113,
+        "number": 112,
         "question": "A quale gruppo appartiene RCOOR’",
         "options": {
             "a": "Esteri",
@@ -1513,7 +1502,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 114,
+        "number": 113,
         "question": "Quali di queste molecole è apolare?",
         "options": {
             "a": "HCN",
@@ -1522,12 +1511,12 @@
             "d": "HBr",
             "e": "NO"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 114,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 115,
+        "number": 114,
         "question": "Temperatura dell’acqua al suo punto triplo",
         "options": {
             "a": "0.01 °C",
@@ -1540,7 +1529,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 116,
+        "number": 115,
         "question": "Quale di questi composti liquidi può formare un legame a idrogeno?",
         "options": {
             "a": "HF",
@@ -1554,7 +1543,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 117,
+        "number": 116,
         "question": "Nella reazione : A+2B-> C, vengono fatti reagire 1 kg di A e 1 kg di B. Qual è il reagente limitante?\n[non ricordo tutte le risposte possibili]",
         "options": {
             "a": "A",
@@ -1567,7 +1556,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 118,
+        "number": 117,
         "question": "In un contenitore non deformabile c’è un gas, se aumento la temperatura cosa succede",
         "options": {
             "a": "la pressione resta costante",
@@ -1575,12 +1564,12 @@
             "c": "cambia la densità",
             "d": "nessuna delle precedenti è corretta"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 118,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 119,
+        "number": 118,
         "question": "Qual è il volumedi un kg di ghiaccio liquido a 4°C?",
         "options": {
             "a": "bisogna conoscere la densità",
@@ -1589,12 +1578,12 @@
             "d": "1000 cl",
             "e": "non esiste un cubo di ghiaccio liquido a quella temperatura"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 119,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 120,
+        "number": 119,
         "question": "In una reazione si ha ΔH = 2000 kJ e ΔS = 20 kJ/K. Come deve essere la temperatura affinché la\nreazione sia spontanea?",
         "options": {
             "a": "T > 100 K",
@@ -1607,7 +1596,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 121,
+        "number": 120,
         "question": "Quale di questi composti può formare un legame idrogeno allo stato liquido?",
         "options": {
             "a": "CH3OH",
@@ -1621,7 +1610,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 122,
+        "number": 121,
         "question": "PCl5 = PCl2+Cl3 è all'equilibrio. Cosa avviene se la pressione diminuisce?",
         "options": {
             "a": "L'equilibrio si sposta a destra",
@@ -1635,7 +1624,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 123,
+        "number": 122,
         "question": "Quante molecole ci sono in 0.5 moli di CO2",
         "options": {
             "a": "0.5*Na",
@@ -1649,7 +1638,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 124,
+        "number": 123,
         "question": "Quale tra questi fattori non influisce sulla forza di legame:",
         "options": {
             "a": "La Differenza di elettronegatività",
@@ -1663,7 +1652,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 125,
+        "number": 124,
         "question": "Nella molecola della CO2 sono coinvolti in totale:",
         "options": {
             "a": "un legame pigreco e due sigma",
@@ -1671,12 +1660,12 @@
             "c": "due legami pigreco + due sigma",
             "d": "un legame pigreco delocalizzato e due sigma"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 125,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 126,
+        "number": 125,
         "question": "Che tipo di ibridazione è presente nell'atomo centrale di C quando forma il metano?",
         "options": {
             "a": "sp",
@@ -1690,7 +1679,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 127,
+        "number": 126,
         "question": "Quale sostanza è più miscibile in acqua ??",
         "options": {
             "a": "etanolo",
@@ -1704,7 +1693,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 128,
+        "number": 127,
         "question": "La legge di Hess",
         "options": {
             "a": "Dice che lentropia è il massimo disordine",
@@ -1712,12 +1701,12 @@
             "c": "Nessuna",
             "d": "Permette di calcolare i valori dei potenziali elettrici"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 128,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 129,
+        "number": 128,
         "question": "Quale valore tra questi può assumere il numero quantico n di un elettrone",
         "options": {
             "a": "1/2",
@@ -1726,12 +1715,12 @@
             "d": "7",
             "e": "h"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 129,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 130,
+        "number": 129,
         "question": "La costante crioscopica...",
         "options": {
             "a": "Insieme alla molalità influenza l'abbassamento della temperatura di congelamento",
@@ -1740,12 +1729,12 @@
             "d": "Insieme alla molarità influenza l'abbassamento del punto di congelamento",
             "e": "È sempre in kj"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 130,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 131,
+        "number": 130,
         "question": "Quale sostanza contiene un gruppo Metile:",
         "options": {
             "a": "Cicloesano",
@@ -1754,12 +1743,12 @@
             "d": "Acido metanoico",
             "e": "Toluene"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 131,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 132,
+        "number": 131,
         "question": "Il dibromobenzene quante isomerie strutturali ha?",
         "options": {
             "a": "1",
@@ -1773,7 +1762,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 133,
+        "number": 132,
         "question": "Il catalizzatore in una reazione:",
         "options": {
             "a": "diminuisce l'energia di attivazione",
@@ -1785,7 +1774,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 134,
+        "number": 133,
         "question": "1 mole di alluminio corrisponde",
         "options": {
             "a": "27 g di alluminio",
@@ -1798,7 +1787,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 135,
+        "number": 134,
         "question": "Qual è il gruppo funzionale dei chetoni?",
         "options": {
             "a": "-CH3",
@@ -1811,7 +1800,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 136,
+        "number": 135,
         "question": "Indicare la sequenza corretta per la temperatura di ebollizione alla pressione di 1 atmosfera per la serie\ndi composti HX (X = F,Cl,Br,I)",
         "options": {
             "a": "HI < HBr < HF < HCl",
@@ -1825,7 +1814,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 137,
+        "number": 136,
         "question": "Un gas ideale occupa un volume di 4,5 L a 300K. Considerando P costante, a quale T il gas occupa un\nvolume di 9,0 L?",
         "options": {
             "a": "150K",
@@ -1834,12 +1823,12 @@
             "d": "373K",
             "e": "300K"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 137,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 138,
+        "number": 137,
         "question": "Quale delle sequenze indicate riporta correttamente formula del composto, tipo di ibridazione,\ngeometria molecolare e polarità",
         "options": {
             "a": "BeCl2/sp2/lineare/non polare",
@@ -1853,7 +1842,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 139,
+        "number": 138,
         "question": "Bilanciare la seguente reazione e scrivere i coefficienti stechiometrici dei reagenti: Fe(OH)2 + K2CrO4\n+ H2O --> Fe(OH)3 + KCr(OH)4 + KOH",
         "options": {
             "a": "3 1 4",
@@ -1867,7 +1856,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 140,
+        "number": 139,
         "question": "Nella molecola dell'acido nitrico l’azoto presenta :",
         "options": {
             "a": "un legame semplice e due doppi.",
@@ -1876,12 +1865,12 @@
             "d": "tre legami doppi.",
             "e": "tre legami semplici"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 140,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 141,
+        "number": 140,
         "question": "Rispetto a un sale ben definito. una base è un entita che:",
         "options": {
             "a": "accetta un protone",
@@ -1895,19 +1884,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 142,
+        "number": 141,
         "question": "Come si chiama il rapporto tra le moli dissociate e le moli totali?",
         "options": {
             "a": "grado di dissociazione",
             "b": "costante di dissociazione",
             "c": "grado di solubilità"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 142,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 143,
+        "number": 142,
         "question": "Cosa avviene all'anodo di Zn + HgO -> ZnO + Hg",
         "options": {
             "a": "Zn + 2e- -> Zn2+",
@@ -1916,12 +1905,12 @@
             "d": "Hg + 2e- -> Hg2+",
             "e": "Non succede niente, la reazione non produce corrente perchè non è spontanea"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 143,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 144,
+        "number": 143,
         "question": "Qual è la geometria della molecola di CO2",
         "options": {
             "a": "Planare",
@@ -1935,7 +1924,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 145,
+        "number": 144,
         "question": "Quale dei seguenti processi è usato per rimuovere gli ioni dall'acqua tramite una membrana\nsemipermeabile?",
         "options": {
             "a": "osmosi inversa",
@@ -1948,7 +1937,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 146,
+        "number": 145,
         "question": "Qual è il legame più forte?",
         "options": {
             "a": "C-C",
@@ -1957,12 +1946,12 @@
             "d": "C≡C",
             "e": "C-O"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 146,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 147,
+        "number": 146,
         "question": "Quale delle seguenti molecole non è polare?",
         "options": {
             "a": "Br2",
@@ -1974,19 +1963,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 148,
+        "number": 147,
         "question": "Quale di queste affermazioni sul metanolo è corretta?",
         "options": {
             "a": "La sua massa molecolare è 32",
             "b": "Contiene un gruppo carbossilico",
             "c": "È un estere"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 148,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 149,
+        "number": 148,
         "question": "Bilancia la reazione idrogeno + azoto = ammoniaca. Indica i coefficienti stechiometrici dei reagenti.",
         "options": {
             "a": "3-1",
@@ -1994,12 +1983,12 @@
             "c": "4-5",
             "d": "6-7"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 149,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 150,
+        "number": 149,
         "question": "Cosa influenza il coefficiente di van't Hoff?",
         "options": {
             "a": "Solubilità",
@@ -2008,12 +1997,12 @@
             "d": "Massa molare soluto",
             "e": "Temperatura"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 150,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 151,
+        "number": 150,
         "question": "Se ho un contenitore indeformabile con all'interno gas ideale alla pressione di 1 atm a 1 °C. Se la\npressione viene portata a 2 atm quanto vale la temperatura?",
         "options": {
             "a": "275 °C",
@@ -2026,7 +2015,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 152,
+        "number": 151,
         "question": "Cosa succede quando si diluisce una soluzione?",
         "options": {
             "a": "il numero di moli del solvente diminuisce",
@@ -2034,12 +2023,12 @@
             "c": "il numero di moli di particelle di soluto rimane costante",
             "d": "il prodotto tra moli di soluto e di solvente rimane costante"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 152,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 153,
+        "number": 152,
         "question": "Quale delle molecole seguenti è polare",
         "options": {
             "a": "F2",
@@ -2048,12 +2037,12 @@
             "d": "H2",
             "e": "SF6"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 153,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 154,
+        "number": 153,
         "question": "Una soluzione ha pH = 6. La concentrazione di ioni H3O+ vale:",
         "options": {
             "a": "- log6",
@@ -2062,12 +2051,12 @@
             "d": "10^(-6)",
             "e": "6^(10)"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 154,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 155,
+        "number": 154,
         "question": "Quali tra questi fattori non influenza la velocità di una reazione?",
         "options": {
             "a": "Temperatura",
@@ -2076,12 +2065,12 @@
             "d": "Numero di urti",
             "e": "Nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 155,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 156,
+        "number": 155,
         "question": "Per formare 34g di H2O2, qual è la quantità minima di ossigeno necessaria?",
         "options": {
             "a": "32g",
@@ -2090,12 +2079,12 @@
             "d": "2 moli di gas biatomico",
             "e": "16g"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 156,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 157,
+        "number": 156,
         "question": "A cosa si rifersicono le condizioni standard di una cella elettrochimica",
         "options": {
             "a": "1 M, 1 atm, 298 K",
@@ -2108,7 +2097,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 158,
+        "number": 157,
         "question": "Una reazione è endotermica se",
         "options": {
             "a": "DH>0",
@@ -2117,12 +2106,12 @@
             "d": "DS>0",
             "e": "DG=0"
         },
-        "correct_answer": "b",
+        "correct_answer": "a",
         "original_number": 158,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 159,
+        "number": 158,
         "question": "Dato il potenziale standard del Rubidio E°=-3V e del Berillio E°=-2V, calcolare il potenziale standard\ndi reazione",
         "options": {
             "a": "-1",
@@ -2131,12 +2120,12 @@
             "d": "-4",
             "e": "4"
         },
-        "correct_answer": "c",
+        "correct_answer": "b",
         "original_number": 159,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 160,
+        "number": 159,
         "question": "Il numero quantico secondario può essere associato a quale delle seguenti caratteristiche del moto\ndell'elettrone?",
         "options": {
             "a": "L'energia dell'orbitale in assenza di campo magnetico",
@@ -2145,12 +2134,12 @@
             "d": "L'orientamento spaziale dell'orbitale",
             "e": "La forma dell'orbitale"
         },
-        "correct_answer": "a",
+        "correct_answer": "e",
         "original_number": 160,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 161,
+        "number": 160,
         "question": "Perché l'idrogeno ha potenziale di riduzione standard uguale a 0?",
         "options": {
             "a": "Ha la stessa tendenza ad ossidarsi e ridursi",
@@ -2158,12 +2147,12 @@
             "c": "è stato scelto come potenziale standard",
             "d": "è il più forte ossidante"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 161,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 162,
+        "number": 161,
         "question": "Qual è la formula di struttura del fluoro gassoso?",
         "options": {
             "a": "F-F",
@@ -2172,12 +2161,12 @@
             "d": "F",
             "e": "F-F-F"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 162,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 163,
+        "number": 162,
         "question": "Cos'è C6H12?",
         "options": {
             "a": "cicloalcano",
@@ -2191,7 +2180,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 164,
+        "number": 163,
         "question": "Una soluzione acquosa di ammoniaca presenta un pH=12. Se la diluisco con un egual volume di acqua\nil pH:",
         "options": {
             "a": "si dimezza (diventa eguale a 12/2 cioè 6)",
@@ -2205,7 +2194,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 165,
+        "number": 164,
         "question": "Quanti neutroni ci sono nel deuterio?",
         "options": {
             "a": "2",
@@ -2219,7 +2208,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 166,
+        "number": 165,
         "question": "Come si chiamano le forze intermolecolari dipolo istantaneo-dipolo indotto",
         "options": {
             "a": "Forze di London",
@@ -2232,7 +2221,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 167,
+        "number": 166,
         "question": "Qual è il massimo valore del numero quantico n?",
         "options": {
             "a": "6",
@@ -2241,12 +2230,12 @@
             "d": "Infinito",
             "e": "1"
         },
-        "correct_answer": "d",
+        "correct_answer": "b",
         "original_number": 167,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 168,
+        "number": 167,
         "question": "Quale di questi composti contiene legami ionici?",
         "options": {
             "a": "CO",
@@ -2260,19 +2249,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 169,
+        "number": 168,
         "question": "In un contenitore isolato ci sono due bicchieri identici. Uno contiene 100ml di acqua pura e l'altro\ncontiene 100ml di acqua e zucchero. All'equilibrio quale bicchiere avrà il massimo del liquido",
         "options": {
             "a": "Quello con l'acqua pura",
             "b": "Quello con acqua e zucchero",
             "c": "Sono uguali"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 169,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 170,
+        "number": 169,
         "question": "Unità di misura dell'entropia?",
         "options": {
             "a": "1/J",
@@ -2281,12 +2270,12 @@
             "d": "J/K",
             "e": "Non ha unità di misura"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 170,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 171,
+        "number": 170,
         "question": "Il nome del seguente composto: HIO4",
         "options": {
             "a": "Acido periodico",
@@ -2300,7 +2289,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 172,
+        "number": 171,
         "question": "Due bombole sigillate di gas hanno volume V=1. Una è riempita di idrogeno, l'altra di azoto. Cosa si\npuò dire?",
         "options": {
             "a": "hanno lo stesso numero di particelle",
@@ -2312,7 +2301,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 173,
+        "number": 172,
         "question": "Selezionare simbolo convenzionamente usato per l'entropia",
         "options": {
             "a": "S",
@@ -2321,12 +2310,12 @@
             "d": "E",
             "e": "omega"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 173,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 174,
+        "number": 173,
         "question": "Nome del CuO",
         "options": {
             "a": "monossido di rame",
@@ -2334,12 +2323,12 @@
             "c": "ossido rameico",
             "d": "ossido di rame(I)"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 174,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 175,
+        "number": 174,
         "question": "Quale elemento ha raggio atomico minore",
         "options": {
             "a": "Cs",
@@ -2348,12 +2337,12 @@
             "d": "K",
             "e": "N\n[d)"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 175,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 176,
+        "number": 175,
         "question": "L'acqua comincia a bollire quando...",
         "options": {
             "a": "la pressione di vapore supera la pressione esterna",
@@ -2366,7 +2355,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 177,
+        "number": 176,
         "question": "Nomenclatura tradizionale di: NaOH",
         "options": {
             "a": "Sodio ossidato",
@@ -2375,12 +2364,12 @@
             "d": "Idrossido di azoto",
             "e": "Idruro ossigenato di sodio"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 177,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 178,
+        "number": 177,
         "question": "Cosa NON influenza la velocità di reazione?",
         "options": {
             "a": "Presenza di un catalizzatore",
@@ -2388,12 +2377,12 @@
             "c": "Tutti questi fattori influenzano la velocità",
             "d": "Temperatura"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 178,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 179,
+        "number": 178,
         "question": "Seleziona il processo endotermico:",
         "options": {
             "a": "Solidificazione dell’acqua",
@@ -2402,12 +2391,12 @@
             "d": "Combustione del metallo",
             "e": "Fusione dello zinco solido"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 179,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 180,
+        "number": 179,
         "question": "Bilancia la seguente reazione e scegli la corretta sequenza dei coefficienti solo per i prodotti. Acido\nfosforico + Na2O -> Na3PO4 + H2O",
         "options": {
             "a": "3, 3",
@@ -2416,12 +2405,12 @@
             "d": "2, 1",
             "e": "2, 2"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 180,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 181,
+        "number": 180,
         "question": "2 molecole di Idrogeno e 2 molecole di Ossigeno sono in un reattore. Quante molecole ci sono a fine\nreazione di formazione dell'acqua nel reattore?",
         "options": {
             "a": "1",
@@ -2430,12 +2419,12 @@
             "d": "4",
             "e": "0\n[b)"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 181,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 182,
+        "number": 181,
         "question": "Quale tra le seguenti sostanze è la più solubile in acqua?",
         "options": {
             "a": "Pentano",
@@ -2444,12 +2433,12 @@
             "d": "Decanolo",
             "e": "Etino"
         },
-        "correct_answer": "d",
+        "correct_answer": "b",
         "original_number": 182,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 183,
+        "number": 182,
         "question": "La riduzione nella cella voltaica avviene:",
         "options": {
             "a": "all'elettrodo negativo",
@@ -2463,7 +2452,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 184,
+        "number": 183,
         "question": "Quale dei seguenti ioni è isoelettronico con l'Argon?",
         "options": {
             "a": "F-",
@@ -2472,12 +2461,12 @@
             "d": "S2-",
             "e": "Al3+"
         },
-        "correct_answer": "c",
+        "correct_answer": "d",
         "original_number": 184,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 185,
+        "number": 184,
         "question": "Quante molecole di prodotti vengono generate dalla combustione di 2 molecole di metano con\nl'ossigeno?",
         "options": {
             "a": "2",
@@ -2489,7 +2478,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 186,
+        "number": 185,
         "question": "Qual è la corretta notazione della cella della pila di Daniell?",
         "options": {
             "a": "Zn2+ | Zn || Cu | Cu2+",
@@ -2498,12 +2487,12 @@
             "d": "Cu | Cu2+ || Zn | Zn2+",
             "e": "Cu | Cu2+ || Zn2+ | Zn"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 186,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 187,
+        "number": 186,
         "question": "Which molecule has the highest dissociation energy?",
         "options": {
             "a": "Cl2",
@@ -2512,12 +2501,12 @@
             "d": "O2",
             "e": "Br2\n[b)"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 187,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 188,
+        "number": 187,
         "question": "Il DELTA H di una reazione esotermica è",
         "options": {
             "a": ">0",
@@ -2531,7 +2520,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 189,
+        "number": 188,
         "question": "In quale delle seguenti condizioni la reazione non può essere spontanea?",
         "options": {
             "a": "DeltaH < 0 DeltaS < 0",
@@ -2545,7 +2534,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 190,
+        "number": 189,
         "question": "Selezionare la configurazione elettronica dello ione solfuro.",
         "options": {
             "a": "[Ne] 2s2 2p6",
@@ -2554,12 +2543,12 @@
             "d": "1s2 2s2 2p6 3s0 3p4",
             "e": "1s2 2s2 2p6 3p4"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 190,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 191,
+        "number": 190,
         "question": "Quale composto reagisce con HCl e porta alla formazione di clorobutano?",
         "options": {
             "a": "Butanone",
@@ -2568,24 +2557,24 @@
             "d": "Butene",
             "e": "Butanolo"
         },
-        "correct_answer": "a",
+        "correct_answer": "e",
         "original_number": 191,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 192,
+        "number": 191,
         "question": "Con quale strumento si misura il caos di un sistema?",
         "options": {
             "a": "Bilancia",
             "b": "Termometro",
             "c": "Barometro"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 192,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 193,
+        "number": 192,
         "question": "Quale di queste è una molecola",
         "options": {
             "a": "Ghiaccio",
@@ -2594,24 +2583,24 @@
             "d": "NaCl",
             "e": "Ferro fuso"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 193,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 194,
+        "number": 193,
         "question": "Cos'è un gruppo alchilico",
         "options": {
             "a": "Un alcano con un H in meno",
             "b": "Un alchene con un H in meno",
             "c": "Un alchino con un H in meno"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 194,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 195,
+        "number": 194,
         "question": "Qual è il massimo valore che il numero quantico secondario l può assumere nell'attuale tavola periodica",
         "options": {
             "a": "7",
@@ -2625,7 +2614,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 196,
+        "number": 195,
         "question": "Da quale delle seguenti miscele si sviluppa idrogeno?",
         "options": {
             "a": "Cu + H2SO4",
@@ -2639,7 +2628,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 197,
+        "number": 196,
         "question": "Quale delle seguenti terne di elementi è costituita da un metallo seguito da un metallo di transizione e\nda un non metallo ?",
         "options": {
             "a": "P, Fe, O",
@@ -2653,19 +2642,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 198,
+        "number": 197,
         "question": "Cosa rappresenta il simbolo || nella notazione convenzionale di una cella galvanica?",
         "options": {
             "a": "un cambiamento di fase",
             "b": "il collegamento elettrico",
             "c": "ponte salino"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 198,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 199,
+        "number": 198,
         "question": "Qual è il simbolo dell'azoto?",
         "options": {
             "a": "A",
@@ -2674,12 +2663,12 @@
             "d": "C",
             "e": "Az"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 199,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 200,
+        "number": 199,
         "question": "Una reazione esotermica con 5 moli di gas nei reagenti e 4 moli nei prodotti, quale cambiamento induce\nun aumento della concetrazione di prodotti?",
         "options": {
             "a": "Aumento pressione",
@@ -2688,12 +2677,12 @@
             "d": "Aggiunta reagenti",
             "e": "Aggiunta prodotti"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 200,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 201,
+        "number": 200,
         "question": "Indicare la configurazione elettronica dello ione litio:",
         "options": {
             "a": "[He]1s2",
@@ -2707,7 +2696,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 202,
+        "number": 201,
         "question": "Selezionare l'affermazione corretta riguardante il metanolo",
         "options": {
             "a": "contiene un carbonio ibridato sp",
@@ -2716,12 +2705,12 @@
             "d": "contiene un gruppo carbossilico",
             "e": "è un composto aromatico"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 202,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 203,
+        "number": 202,
         "question": "Indicare quale tra questi è il nome di Na3PO4",
         "options": {
             "a": "fosfito di sodio",
@@ -2734,7 +2723,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 204,
+        "number": 203,
         "question": "Numero minimo di atomi di carbonio per avere una isomeria di struttura?",
         "options": {
             "a": "1",
@@ -2747,7 +2736,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 205,
+        "number": 204,
         "question": "Come si chiama il passagio dallo stato solido allo stato vapore?",
         "options": {
             "a": "sublimazione",
@@ -2761,7 +2750,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 206,
+        "number": 205,
         "question": "Selezionare la sostanza meno solubile nel Benzene",
         "options": {
             "a": "Pentano",
@@ -2775,7 +2764,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 207,
+        "number": 206,
         "question": "Quale delle seguenti affermazioni riguardo al diamante è falsa:",
         "options": {
             "a": "è un solido covalente di simmetria tetraedrica",
@@ -2784,12 +2773,12 @@
             "d": "è preparato per sintesi dalla grafite",
             "e": "il carbonio non è ibiridizzato"
         },
-        "correct_answer": "d",
+        "correct_answer": "e",
         "original_number": 207,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 208,
+        "number": 207,
         "question": "Quale principio della termodinamica mette in evidenza l'irreversibilità delle reazioni chimiche?",
         "options": {
             "a": "1 principio della termodinamica",
@@ -2798,12 +2787,12 @@
             "d": "3 principio della termodinamica",
             "e": "principio di Le Chatelier"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 208,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 209,
+        "number": 208,
         "question": "Quale è una propietà dei metalli alcalini?",
         "options": {
             "a": "Non formano ioni isoelettrici con i gas nobili",
@@ -2811,12 +2800,12 @@
             "c": "Non reagiscono con l'acqua",
             "d": "La loro energia di prima ionizazzione diminuisce all'aumentare del peso atomico"
         },
-        "correct_answer": "b",
+        "correct_answer": "d",
         "original_number": 209,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 210,
+        "number": 209,
         "question": "Il numero di massa è",
         "options": {
             "a": "Somma neutroni e protoni in un nucleo",
@@ -2825,12 +2814,12 @@
             "d": "Numero di neutroni",
             "e": "Differenza protoni e neutroni"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 210,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 211,
+        "number": 210,
         "question": "Quanti litri occupano 16 g di ossigeno a 0 °C e 1 atm",
         "options": {
             "a": "22,4",
@@ -2838,12 +2827,12 @@
             "c": "36",
             "d": "24,2"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 211,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 212,
+        "number": 211,
         "question": "Nella seguente reazione qual è l'acido (secondo Bronsted-Lowry) ? NH4+ + H2O → NH3(aq) + H3O+",
         "options": {
             "a": "NH3(aq)",
@@ -2852,12 +2841,12 @@
             "d": "NH4+",
             "e": "H2O"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 212,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 213,
+        "number": 212,
         "question": "A quale categoria appartiene C6H12?",
         "options": {
             "a": "Non c'è una risposta univoca",
@@ -2865,12 +2854,12 @@
             "c": "Aromatici",
             "d": "Cicloalcani\n[ b]"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 213,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 214,
+        "number": 213,
         "question": "Quale tra i seguenti composti presenta solo legami covalenti?",
         "options": {
             "a": "SO3",
@@ -2879,12 +2868,12 @@
             "d": "BaSO4",
             "e": "HCl"
         },
-        "correct_answer": "a",
+        "correct_answer": "e",
         "original_number": 214,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 215,
+        "number": 214,
         "question": "Una mole di azoto gassoso e una mole di ossigeno gassoso hanno la stessa temperatura. Riguardo alle\nvelocità medie delle loro molecole si può dire che:",
         "options": {
             "a": "È maggiore per l'azoto",
@@ -2893,12 +2882,12 @@
             "d": "Sono proporzionali alla radice quadrata dei pesi molecolari",
             "e": "Nessuna delle altre risposte"
         },
-        "correct_answer": "b",
+        "correct_answer": "a",
         "original_number": 215,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 216,
+        "number": 215,
         "question": "Quale delle seguenti molecole è apolare?",
         "options": {
             "a": "HI",
@@ -2906,12 +2895,12 @@
             "c": "HCl",
             "d": "HCN"
         },
-        "correct_answer": "d",
+        "correct_answer": "b",
         "original_number": 216,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 217,
+        "number": 216,
         "question": "Se, alle medesime condizioni, il fluido A ha una pressione di vapore maggiore del fluido B allora:",
         "options": {
             "a": "B è più viscoso di A",
@@ -2920,12 +2909,12 @@
             "d": "A è più volatile di B",
             "e": "A è più viscoso di B"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 217,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 218,
+        "number": 217,
         "question": "A cosa corrispondono tali composti H2SO4 / Na2SO3",
         "options": {
             "a": "acido solforico / solfito di sodio",
@@ -2934,24 +2923,24 @@
             "d": "acido solforoso / solfito di sodio",
             "e": "acido solforoso / solfato di sodio"
         },
-        "correct_answer": "c",
+        "correct_answer": "a",
         "original_number": 218,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 219,
+        "number": 218,
         "question": "Qual è il nome IUPAC di CO?",
         "options": {
             "a": "Anidride carboniosa",
             "b": "Perossido di carbonio",
             "c": "Monossido di carbonio"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 219,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 220,
+        "number": 219,
         "question": "Una reazione è sempre spontanea se:",
         "options": {
             "a": "ΔS < 0",
@@ -2965,7 +2954,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 221,
+        "number": 220,
         "question": "Quale dei seguenti non può assumere la configurazione elettronica 1s2 2s2 2p6?",
         "options": {
             "a": "Metalli di transizione al loro stato fondamentale",
@@ -2977,7 +2966,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 222,
+        "number": 221,
         "question": "Cos è CH3CH2CH2CH2OH?",
         "options": {
             "a": "propanolo",
@@ -2986,12 +2975,12 @@
             "d": "acido butanoico",
             "e": "alcol butanico"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 222,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 223,
+        "number": 222,
         "question": "In un serbatoio ci sono 8 Moli di idrogeno più 6 molli di Ossigen formano acqua, a fine reazione quanto\ni reagenti sono completamente esauriti cosa resta nel serbatoio?",
         "options": {
             "a": "Acqua",
@@ -2999,12 +2988,12 @@
             "c": "Acqua idrogeno e ossigeno",
             "d": "Acqua e ossigeno"
         },
-        "correct_answer": "b",
+        "correct_answer": "d",
         "original_number": 223,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 224,
+        "number": 223,
         "question": "Quali delle seguenti affermazioni è corretta all'equilibrio di una soluzione?",
         "options": {
             "a": "K=0",
@@ -3016,7 +3005,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 225,
+        "number": 224,
         "question": "Data la reazione: 2A(gas) + B(gas) <--> 3C(gas). All'equilibrio si sviluppano 3 moli di A, 2 moli di B e\nuna mole di C e la pressione della reazione è di 2 atm. Calcolare il Kp",
         "options": {
             "a": "3/36",
@@ -3024,24 +3013,24 @@
             "c": "2/15",
             "d": "Non ci sono abbastanza informazioni per dare la risposta"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 225,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 226,
+        "number": 225,
         "question": "Quale di queste strutture cristalline presenta fattore di impacchettamento maggiore?",
         "options": {
             "a": "Reticolo cubico a facce centrate",
             "b": "Reticolo cubico a corpo centrato",
             "c": "Le strutture sono tutte equivalenti"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 226,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 227,
+        "number": 226,
         "question": "Perché il potenziale standard di riduzione dell' idrogeno (Elettrodo standard a idrogeno - SHE) è zero?",
         "options": {
             "a": "E' per convenzione",
@@ -3053,7 +3042,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 228,
+        "number": 227,
         "question": "Quali delle seguenti molecole è un perossido",
         "options": {
             "a": "BaO2",
@@ -3066,7 +3055,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 229,
+        "number": 228,
         "question": "Quale composto non segue la regola dell'ottetto di Lewis (non le ricordo tutte)",
         "options": {
             "a": "PCl5",
@@ -3078,7 +3067,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 230,
+        "number": 229,
         "question": "Cosa succede quando l'acqua bolle?",
         "options": {
             "a": "Varia tensione di vapore",
@@ -3092,7 +3081,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 231,
+        "number": 230,
         "question": "Cosa hanno in comune il bezene e l'etene?",
         "options": {
             "a": "ibridazione sp2",
@@ -3104,7 +3093,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 232,
+        "number": 231,
         "question": "Cosa non può essere un elemento con configurazione elettronica 1 s2 2 s2 2p6",
         "options": {
             "a": "Un metallo di transizione allo stato puro",
@@ -3113,12 +3102,12 @@
             "d": "Un catione",
             "e": "Un anione"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 232,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 233,
+        "number": 232,
         "question": "Selezionare il processo esotermico",
         "options": {
             "a": "Fusione del ghiaccio",
@@ -3127,12 +3116,12 @@
             "d": "Sublimazione del ghiaccio",
             "e": "Nessuno di questi"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 233,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 234,
+        "number": 233,
         "question": "Quale di queste è un ammina terziaria?",
         "options": {
             "a": "Un gruppo funzionale delle ammine legato a 6 H",
@@ -3141,12 +3130,12 @@
             "d": "Un gruppo funzionale delle ammine legato a 3 C",
             "e": "Un gruppo funzionale delle ammine con triplo legame"
         },
-        "correct_answer": "c",
+        "correct_answer": "d",
         "original_number": 234,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 235,
+        "number": 234,
         "question": "A cosa corrisponde una mole di Argon?",
         "options": {
             "a": "40 kg",
@@ -3154,24 +3143,24 @@
             "c": "un numero di avogadro di particelle",
             "d": "6.022 x 10^23 g"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 235,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 236,
+        "number": 235,
         "question": "Formula del Fenolo",
         "options": {
             "a": "C6H5OH",
             "b": "C6H6",
             "c": "CH3OH"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 236,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 237,
+        "number": 236,
         "question": "Quanti litri di acqua bisogna aggiungere a 500 ml di una soluzione 2M per passare a 1M",
         "options": {
             "a": "0,25",
@@ -3180,12 +3169,12 @@
             "d": "2",
             "e": "4"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 237,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 238,
+        "number": 237,
         "question": "Quale di queste non è un'energia?",
         "options": {
             "a": "Calore",
@@ -3194,12 +3183,12 @@
             "d": "Luce",
             "e": "Nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 238,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 239,
+        "number": 238,
         "question": "Selezionare la quantita esattamente contenuta in 1 mole di CO",
         "options": {
             "a": "32g di ossigeno",
@@ -3208,24 +3197,24 @@
             "d": "16g di ossigeno",
             "e": "un numero di avogadro di molecole di ossigeno"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 239,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 240,
+        "number": 239,
         "question": "Come si chiama questo composto? H2-C=O",
         "options": {
             "a": "metanone",
             "b": "metanale",
             "c": "diidrogeno aldeide\n[d)"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 240,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 241,
+        "number": 240,
         "question": "Un catalizzatore è una sostanza che aggiunta a una reazione ne modifica",
         "options": {
             "a": "la variazione di entalpia",
@@ -3234,12 +3223,12 @@
             "d": "la variazione di entropia",
             "e": "l'energia dei reagenti"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 241,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 242,
+        "number": 241,
         "question": "In quale classe di composti ossigenati non è presente il gruppo C=O:",
         "options": {
             "a": "aldeidi",
@@ -3248,12 +3237,12 @@
             "d": "acidi carbossilici",
             "e": "chetoni"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 242,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 243,
+        "number": 242,
         "question": "Quale tra questi non è un ibrido di risonanza",
         "options": {
             "a": "SO2",
@@ -3262,12 +3251,12 @@
             "d": "sono tutti ibridi di risonanza",
             "e": "O3"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 243,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 244,
+        "number": 243,
         "question": "Bilanciare la seguente reazione: S(2) + ossigeno molecolare ---> SO(3)",
         "options": {
             "a": "2:1",
@@ -3276,24 +3265,24 @@
             "d": "3:1",
             "e": "1:3"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 244,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 245,
+        "number": 244,
         "question": "In una reazione di scarica di una batteria in piombo quale elemento si ossida? (veniva data la reazione)",
         "options": {
             "a": "PbO2",
             "b": "Pb",
             "c": "nessuno"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 245,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 246,
+        "number": 245,
         "question": "Una mole di ferro contiene",
         "options": {
             "a": "Na atomi di ferro",
@@ -3302,24 +3291,24 @@
             "d": "56 Kg",
             "e": "Na particelle di ferro"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 246,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 247,
+        "number": 246,
         "question": "Quanto vale la frazione molare dell' acqua in una soluzione con 1,2 moli di etanolo e 0,8 moli di acqua?",
         "options": {
             "a": "0,4",
             "b": "0,8",
             "c": "1\n[ b]\n[ b]"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 247,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 248,
+        "number": 247,
         "question": "Come faccio per abbassare la temperatura di congelamento di un composto saturo di KCl?",
         "options": {
             "a": "aggiungo KCl",
@@ -3327,24 +3316,24 @@
             "c": "riduco la pressione che grava sulla soluzione",
             "d": "aggiungo acqua"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 248,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 249,
+        "number": 248,
         "question": "La P parziale di un gas di un miscuglio dipende da",
         "options": {
             "a": "T",
             "b": "V",
             "c": "Frazione molare"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 249,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 250,
+        "number": 249,
         "question": "L'aggettivo appropriato ad un reazione con entalpia positiva è:",
         "options": {
             "a": "Isocora",
@@ -3352,12 +3341,12 @@
             "c": "Esotermica",
             "d": "Endotermica"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 250,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 251,
+        "number": 250,
         "question": "Cosa indica il punto di massima energia del seguente grafico (grafico coordinata di reazione-energia)",
         "options": {
             "a": "stato di transizione",
@@ -3371,7 +3360,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 252,
+        "number": 251,
         "question": "Quanti elettroni possono occupare contemporaneamente lo stesso orbitale?",
         "options": {
             "a": "2",
@@ -3380,24 +3369,24 @@
             "d": "8",
             "e": "6"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 252,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 253,
+        "number": 252,
         "question": "Di quale categoria di composti è tipico il gruppo -O-O- ?",
         "options": {
             "a": "Perossidi",
             "b": "Eteri",
             "c": "Esteri"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 253,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 254,
+        "number": 253,
         "question": "In un diagramma pressione volume a temperatura costante l'andamento delle curve è",
         "options": {
             "a": "Esponenziale",
@@ -3406,12 +3395,12 @@
             "d": "Quadratico",
             "e": "Lineare"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 254,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 255,
+        "number": 254,
         "question": "Quale di questi è isomero dell'etanolo?",
         "options": {
             "a": "esano",
@@ -3424,7 +3413,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 256,
+        "number": 255,
         "question": "Reazione di elettrolisi dell'acqua.",
         "options": {
             "a": "2H2O -> 2H2 + O2",
@@ -3436,7 +3425,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 257,
+        "number": 256,
         "question": "Quale di questi è il simbolo comunemente usato per l'entropia?",
         "options": {
             "a": "Credo di essere stato molto fortunato ad avere una domanda del genere",
@@ -3445,12 +3434,12 @@
             "d": "(lettera greca strana)",
             "e": "G"
         },
-        "correct_answer": "c",
+        "correct_answer": "b",
         "original_number": 257,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 258,
+        "number": 257,
         "question": "Qual è il processo che provoca il movimento di solvente dalla soluzione meno concentrata a quella piu\nconcentrata?",
         "options": {
             "a": "distillazione",
@@ -3459,12 +3448,12 @@
             "d": "titolazione",
             "e": "osmosi inversa"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 258,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 259,
+        "number": 258,
         "question": "Secondo la struttura di Lewis, quanti elettroni di valenza ha l'azoto nel suo stato fondamentale?",
         "options": {
             "a": "4",
@@ -3473,12 +3462,12 @@
             "d": "0",
             "e": "10"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 259,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 260,
+        "number": 259,
         "question": "La configurazione elettronica [Kr] 4d10 5s0 appartiene a:",
         "options": {
             "a": "Non esiste sulla tavola periodica",
@@ -3487,12 +3476,12 @@
             "d": "Palladio",
             "e": "Cadmio"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 260,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 261,
+        "number": 260,
         "question": "Qual è il coefficiente di van't hoff dello zucchero in soluzione acquosa",
         "options": {
             "a": "∞",
@@ -3506,7 +3495,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 262,
+        "number": 261,
         "question": "Qual è la reazione completa dell’elettrolisi dell’acqua",
         "options": {
             "a": "H2O=H3O+ + OH-",
@@ -3518,7 +3507,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 263,
+        "number": 262,
         "question": "Una barretta di Rame è immersa in una soluzione di ioni Zinco. Tenendo conto dei potenziali di\nriduzione standard, accade che:",
         "options": {
             "a": "Il rame si scioglie",
@@ -3527,12 +3516,12 @@
             "d": "rame e zinco formano una lega di bronzo",
             "e": "non succede nulla"
         },
-        "correct_answer": "b",
+        "correct_answer": "e",
         "original_number": 263,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 264,
+        "number": 263,
         "question": "Un gas viene espanso (a T costante) da V1 (con P1) ad un volume doppio, quanto vale la P?",
         "options": {
             "a": "P2= P1",
@@ -3540,36 +3529,36 @@
             "c": "P2=P1/2",
             "d": "P2=P1/4"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 264,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 265,
+        "number": 264,
         "question": "Qual è la corretta definizione di sale acido?",
         "options": {
             "a": "Idracido con aggiunta di acqua",
             "b": "Sale che deriva dalla non totale dissociazione degli atomi di idrogeno nelle molecole acide",
             "c": "Molecole che contengono solo H, O e non metalli"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 265,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 266,
+        "number": 265,
         "question": "A cosa equivale una mole di fluoro allo stato gassoso?",
         "options": {
             "a": "38.0 Kg",
             "b": "38 g",
             "c": "19 g"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 266,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 267,
+        "number": 266,
         "question": "Quale proprietà è legata al numero quantico secondario l?",
         "options": {
             "a": "La maggior parte dell'energia dell'orbitale",
@@ -3578,12 +3567,12 @@
             "d": "Lo spin",
             "e": "Le dimensioni dell'orbitale\n[c)"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 267,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 268,
+        "number": 267,
         "question": "Formula dell'acido solfidrico",
         "options": {
             "a": "H2SO4",
@@ -3597,7 +3586,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 269,
+        "number": 268,
         "question": "14 moli di CaO contengono:",
         "options": {
             "a": "(14 * 6,022) molecole di Ca e (14 * 6,022) molecole di O",
@@ -3606,12 +3595,12 @@
             "d": "(14/6,022) atomi di Ca e (14/6,022) atomi di O",
             "e": "14/Na molecole di Ca e 14/O molecole di O"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 269,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 270,
+        "number": 269,
         "question": "Qual è la formula del permanganato di potassio",
         "options": {
             "a": "K2MnO4",
@@ -3620,12 +3609,12 @@
             "d": "K2MnO3",
             "e": "KMnO3"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 270,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 271,
+        "number": 270,
         "question": "Quale dei seguenti composti è prodotto dalla reazione tra acido nitrico e idrossido di zinco?",
         "options": {
             "a": "Zn(NO3)2",
@@ -3639,7 +3628,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 272,
+        "number": 271,
         "question": "Una mole di una certa sostanza pesa 50 g; quanti grammi di tale sostanza avrò alla pressione di 1\natmosfera se ho un volume di 2 litri, alla temperatura di 100K?",
         "options": {
             "a": "25/0.0821 g",
@@ -3647,24 +3636,24 @@
             "c": "100/(3.814*373) g",
             "d": "1/0.0821 g"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 272,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 273,
+        "number": 272,
         "question": "Formula del benzene",
         "options": {
             "a": "C6H6",
             "b": "C6H12O6",
             "c": "C6H12"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 273,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 274,
+        "number": 273,
         "question": "Se una soluzione è basica:",
         "options": {
             "a": "[H+] > [OH-]",
@@ -3678,7 +3667,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 275,
+        "number": 274,
         "question": "Coefficiente di van't hoff",
         "options": {
             "a": "i=1-alfa(z+1)",
@@ -3691,7 +3680,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 276,
+        "number": 275,
         "question": "Una quantità definita di gas ha",
         "options": {
             "a": "Massa definita",
@@ -3704,7 +3693,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 277,
+        "number": 276,
         "question": "Come può variare la costante di equilibrio",
         "options": {
             "a": "Modifica concentrazioni",
@@ -3712,12 +3701,12 @@
             "c": "Aggiunta catalizzatore",
             "d": "Nessuna di queste"
         },
-        "correct_answer": "b",
+        "correct_answer": "a",
         "original_number": 277,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 278,
+        "number": 277,
         "question": "Quanti legami covalenti può fare Xe rispettando la regola degli ottetti?",
         "options": {
             "a": "0",
@@ -3731,7 +3720,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 279,
+        "number": 278,
         "question": "Dato un grafico di una reazione esotermica (Asse y -> Energia), come varia il grafico in presenza di un\ncatalizzatore?",
         "options": {
             "a": "Abbassa il punto di massimo",
@@ -3745,7 +3734,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 280,
+        "number": 279,
         "question": "Per aumentare la quantità di CO2 nel recipiente in cui si instaura il seguente equilibrio : MgCO3 (s) <->\nMgO (s) + CO2 (g) si deve :",
         "options": {
             "a": "Aggiungere gas N2",
@@ -3754,12 +3743,12 @@
             "d": "Aggiungere MgO",
             "e": "Aumentare la pressione"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 280,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 281,
+        "number": 280,
         "question": "Come si formano gli idrossidi?",
         "options": {
             "a": "Acqua + non metallo",
@@ -3773,7 +3762,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 282,
+        "number": 281,
         "question": "Esiste una teoria secondo cui un acido è una specie che:",
         "options": {
             "a": "Accetta un elettrone",
@@ -3787,7 +3776,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 283,
+        "number": 282,
         "question": "Nomenclatura IUPAC del chetone con più basso peso molare",
         "options": {
             "a": "Propanone",
@@ -3796,12 +3785,12 @@
             "d": "Acetone",
             "e": "Butanone"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 283,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 284,
+        "number": 283,
         "question": "Quanto vale il volume dell'aria secca con 0,84 moli di ossigeno gassoso",
         "options": {
             "a": "V = 100 L",
@@ -3810,12 +3799,12 @@
             "d": "V < 200 L",
             "e": "nessuna delle risposte"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 284,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 285,
+        "number": 284,
         "question": "Quanti grammi pesano 2 moli di acqua?",
         "options": {
             "a": "2",
@@ -3824,12 +3813,12 @@
             "d": "24",
             "e": "36"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 285,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 286,
+        "number": 285,
         "question": "Gli esteri si formano dalla reazione di un acido carbossilico ed",
         "options": {
             "a": "alcool",
@@ -3843,19 +3832,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 287,
+        "number": 286,
         "question": "Una cella voltaica trasforma",
         "options": {
             "a": "Energia chimica in energia elettrica",
             "b": "Energia elettrica in energia termica",
             "c": "Energia termica in energia elettrica"
         },
-        "correct_answer": "b",
+        "correct_answer": "a",
         "original_number": 287,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 288,
+        "number": 287,
         "question": "Quanti legami covalente singolare deve formare un atomo di ossigeno per raggiungere l'otteto?",
         "options": {
             "a": "5",
@@ -3864,12 +3853,12 @@
             "d": "0",
             "e": "4"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 288,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 289,
+        "number": 288,
         "question": "Per quale dei seguenti composti si può prevedere la formazione di legame idrogeno?",
         "options": {
             "a": "H2S",
@@ -3878,12 +3867,12 @@
             "d": "HCl",
             "e": "HBr"
         },
-        "correct_answer": "d",
+        "correct_answer": "c",
         "original_number": 289,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 290,
+        "number": 289,
         "question": "Quanti metalli sono presenti nel seguente elenco: Cesio, Ittrio, Silicio, Argon",
         "options": {
             "a": "3",
@@ -3892,24 +3881,24 @@
             "d": "2",
             "e": "4"
         },
-        "correct_answer": "e",
+        "correct_answer": "d",
         "original_number": 290,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 291,
+        "number": 290,
         "question": "Il cicloesano è l'isomeria di...",
         "options": {
             "a": "benzene",
             "b": "esano",
             "c": "esene"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 291,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 292,
+        "number": 291,
         "question": "Dato un grafico pressione-temperatura, a volume costante, quando il grafico tocca l asse delle ascisse?",
         "options": {
             "a": "0 K",
@@ -3918,12 +3907,12 @@
             "d": "273 ° C",
             "e": "In nessun punto"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 292,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 293,
+        "number": 292,
         "question": "Quanti sono gli isomeri di C4H10?",
         "options": {
             "a": "1",
@@ -3932,12 +3921,12 @@
             "d": "6",
             "e": "Non esiste questa formula"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 293,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 294,
+        "number": 293,
         "question": "Due sostanze organiche diverse che presentano la stessa formula grezza possiedono :",
         "options": {
             "a": "Lo stesso punto di ebollizione",
@@ -3946,12 +3935,12 @@
             "d": "La stessa viscosità",
             "e": "La stessa composizione percentuale"
         },
-        "correct_answer": "a",
+        "correct_answer": "e",
         "original_number": 294,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 295,
+        "number": 294,
         "question": "Nell'elettrolisi di una soluzione acquosa di KCl, al catodo si ottiene:",
         "options": {
             "a": "Idrogeno molecolare",
@@ -3959,12 +3948,12 @@
             "c": "Potassio metallico",
             "d": "Ossigeno atomico"
         },
-        "correct_answer": "e",
+        "correct_answer": "a",
         "original_number": 295,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 296,
+        "number": 295,
         "question": "Rappresenta lo schema della pila Daniell",
         "options": {
             "a": "Zn|Zn2+||Cu2+|Cu",
@@ -3972,12 +3961,12 @@
             "c": "Cu2+|Zn||Cu|Zn2+",
             "d": "Zn|Cu||Zn2+||Cu2+"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 296,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 297,
+        "number": 296,
         "question": "Quale tra le seguenti scelte ha la forza di legame maggiore in ordine decrescente?",
         "options": {
             "a": "HI- HBr - HCl- HF",
@@ -3985,12 +3974,12 @@
             "c": "HCl- HF- HI- HBr",
             "d": "HI- HF - HCl- HBr"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 297,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 298,
+        "number": 297,
         "question": "A che gruppo corrisponde C6H12",
         "options": {
             "a": "Alchini",
@@ -3999,12 +3988,12 @@
             "d": "Cicloalcani",
             "e": "Due delle risposte sono giuste"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 298,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 299,
+        "number": 298,
         "question": "La molecola dell'acqua ha geometria",
         "options": {
             "a": "Lineare",
@@ -4012,12 +4001,12 @@
             "c": "Tetragonale",
             "d": "Angolare\n[b)"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 299,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 300,
+        "number": 299,
         "question": "La solidificazione dell'acqua è un processo:",
         "options": {
             "a": "esotermico",
@@ -4031,7 +4020,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 301,
+        "number": 300,
         "question": "Quante moli di ossido di magnesio si può ottenere con 1 mole di magnesio e 1 mole di ossigeno",
         "options": {
             "a": "1 mole",
@@ -4045,7 +4034,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 302,
+        "number": 301,
         "question": "Quante sono le risonanze di struttura limite dell acido nitrico?",
         "options": {
             "a": "1",
@@ -4059,7 +4048,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 303,
+        "number": 302,
         "question": "Completare la frase: \" Secondo _____ un acido è una sostanza che in soluzione acquosa aumenta la\nconcentrazione di ioni idrogeno \"",
         "options": {
             "a": "Bronsted Lowry",
@@ -4068,12 +4057,12 @@
             "d": "Copenaghen",
             "e": "Nernst"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 303,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 304,
+        "number": 303,
         "question": "Quale tra i seguenti composti ha carattere basico?",
         "options": {
             "a": "Un'ammina",
@@ -4087,7 +4076,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 305,
+        "number": 304,
         "question": "Una soluzione acquosa non è né acida né basica quando:",
         "options": {
             "a": "La concentrazione degli ioni H+ è 10^-7 mol/l",
@@ -4096,12 +4085,12 @@
             "d": "Il pH è diverso da 7",
             "e": "Il pH è uguale a 10-14"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 305,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 306,
+        "number": 305,
         "question": "Una soluzione acquosa di acido cloridrico ha pH = 4. Se la diluisco con egual volume di acqua, il pH:",
         "options": {
             "a": "rimane inalterato",
@@ -4110,12 +4099,12 @@
             "d": "raddoppia (8)",
             "e": "diminuisce di una unità"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 306,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 307,
+        "number": 306,
         "question": "Una soluzione acquosa di un elettrolita presenta, alla pressione esterna di 1 atmosfera, un punto di\nebollizione:",
         "options": {
             "a": "< 373K",
@@ -4124,24 +4113,24 @@
             "d": "= 273K",
             "e": "< 100K"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 307,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 308,
+        "number": 307,
         "question": "Calcolare la pressione osmotica di una soluzione 1M in cui V=2 L e temperatura T",
         "options": {
             "a": "0,5 x R x R",
             "b": "1 x R x T",
             "c": "2 x R x T"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 308,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 309,
+        "number": 308,
         "question": "Qual è la formula del ciclopentano?",
         "options": {
             "a": "C5H12",
@@ -4150,24 +4139,24 @@
             "d": "C10H5",
             "e": "C5H10"
         },
-        "correct_answer": "d",
+        "correct_answer": "e",
         "original_number": 309,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 310,
+        "number": 309,
         "question": "Cosa rappresenta il numero di moli dissociate fratto il numero di moli iniziali?",
         "options": {
             "a": "Grado di dissociazione",
             "b": "Costante di dissociazione",
             "c": "Coefficiente di van 't Hoff"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 310,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 311,
+        "number": 310,
         "question": "Se si diluisce una soluzione",
         "options": {
             "a": "Le moli di soluto rimangono invariate",
@@ -4176,12 +4165,12 @@
             "d": "Le moli di solvente diminuiscono",
             "e": "Il rapporto tra moli soluto e mol solvente aumenta"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 311,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 312,
+        "number": 311,
         "question": "In che caso una soluzione è spontanea solo ad \"alte\" temperature?",
         "options": {
             "a": "ΔH>0 e ΔS>0",
@@ -4194,7 +4183,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 313,
+        "number": 312,
         "question": "Quanti atomi contiene il reticolo cubico a facce centrate?",
         "options": {
             "a": "1",
@@ -4208,7 +4197,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 314,
+        "number": 313,
         "question": "La solidificazione dell’acqua è da considerarsi un processo",
         "options": {
             "a": "Esotermico",
@@ -4220,7 +4209,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 315,
+        "number": 314,
         "question": "Una reazione con ΔH = -115.12 è:",
         "options": {
             "a": "Esotermica , quindi cede calore",
@@ -4233,7 +4222,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 316,
+        "number": 315,
         "question": "Cosa si ottiene da HNO2+KOH?",
         "options": {
             "a": "KNO2 + H2O",
@@ -4245,7 +4234,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 317,
+        "number": 316,
         "question": "Quale composto è più acido?",
         "options": {
             "a": "H3PO4",
@@ -4258,7 +4247,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 318,
+        "number": 317,
         "question": "Selezionare la corretta definizione di una reazione endotermica",
         "options": {
             "a": "reazione che avviene a bassa pressione",
@@ -4267,12 +4256,12 @@
             "d": "reazione che cede calore",
             "e": "non mi ricordo piu dell'ultima proposta(parlava di energia di attivazione)"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 319,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 319,
+        "number": 318,
         "question": "Selezionare una corretta definizione di energia di seconda ionizzazone per il cloro",
         "options": {
             "a": "l'energia richiesta per formare due ioni Cl^(-) a partire da due atomi di Cl",
@@ -4286,7 +4275,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 320,
+        "number": 319,
         "question": "Come si indica con la nomenclatura IUPAC la sostanza con simbolo CO?",
         "options": {
             "a": "ossido di carbonio",
@@ -4300,7 +4289,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 321,
+        "number": 320,
         "question": "Quanti sono gli atomi in un reticolo cubico a corpo centrale?",
         "options": {
             "a": "1",
@@ -4314,7 +4303,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 322,
+        "number": 321,
         "question": "L'anodo della pila Daniell è formata da:",
         "options": {
             "a": "una lamina di Zinco immersa in una soluzione con ioni di Zinco",
@@ -4327,7 +4316,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 323,
+        "number": 322,
         "question": "Quale di questi è l'acido bromico?",
         "options": {
             "a": "HBr",
@@ -4341,7 +4330,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 324,
+        "number": 323,
         "question": "In una trasformazione isoterma, il prodotto p per V",
         "options": {
             "a": "E' costante nei gas ideali",
@@ -4354,7 +4343,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 325,
+        "number": 324,
         "question": "Da cosa dipende la pressione parziale di un gas in una miscela gassosa di gas ideali?",
         "options": {
             "a": "Volume",
@@ -4368,19 +4357,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 326,
+        "number": 325,
         "question": "Il massimo valore di n è",
         "options": {
             "a": "5",
             "b": "3",
             "c": "7"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 327,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 327,
+        "number": 326,
         "question": "Una mole di fluoro corrisponde a:",
         "options": {
             "a": "numero di Avogadro moli di atomi di fluoro",
@@ -4389,12 +4378,12 @@
             "d": "19 g di fluoro",
             "e": "19 x 10^23 atomi di fluoro"
         },
-        "correct_answer": "b",
+        "correct_answer": "d",
         "original_number": 328,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 328,
+        "number": 327,
         "question": "Quale affermazione è errata sui metalli alcalino terrosi",
         "options": {
             "a": "Reagiscono tutti violentemente con l'acqua",
@@ -4403,12 +4392,12 @@
             "d": "Almeno uno è radioattivo",
             "e": "Hanno due elettroni spaiati"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 329,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 329,
+        "number": 328,
         "question": "Quale delle seguenti affermazioni si riferisce ad una reazione endotermica che avviene a temperatura e\npressione costante?",
         "options": {
             "a": "I prodotti hanno una entalpia superiore a quella dei reagenti e DeltaH positivo",
@@ -4417,12 +4406,12 @@
             "d": "I prodotti hanno una entalpia inferiore a quella dei reagenti e DeltaH superiore",
             "e": "I prodotti hanno una entalpia inferiore a quella dei reagenti e DeltaH inferiore"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 330,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 330,
+        "number": 329,
         "question": "Una reazione all' equilibrio ha Kp= [C]^2 [D] / [A]^2 [B] , la reazione in questione è:",
         "options": {
             "a": "2C + D <--> 2A + B",
@@ -4430,12 +4419,12 @@
             "c": "A + B <--> C + D",
             "d": "C + D <--> A + B"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 331,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 331,
+        "number": 330,
         "question": "Quale composto reagisce con H20 per dare acido nitrico?",
         "options": {
             "a": "N2O5",
@@ -4449,7 +4438,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 332,
+        "number": 331,
         "question": "Qual è la temperatura di congelamento di un elettrolita debole?",
         "options": {
             "a": "273 K",
@@ -4463,7 +4452,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 333,
+        "number": 332,
         "question": "Quale di questo elemento ha la massima energia di prima ionizzazione?",
         "options": {
             "a": "O",
@@ -4477,19 +4466,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 334,
+        "number": 333,
         "question": "In una soluzione a 25°C affinché sia basica...",
         "options": {
             "a": "pH < pOH",
             "b": "pOH > 10^7",
             "c": "nessuna delle precedenti"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 335,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 335,
+        "number": 334,
         "question": "Il principio secondo il quale un sistema isolato conserva la sua energia è",
         "options": {
             "a": "principio 0 della termodinamica",
@@ -4498,12 +4487,12 @@
             "d": "terzo principio della termodinamia",
             "e": "quarto principio della termodinamica"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 336,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 336,
+        "number": 335,
         "question": "A 25° in quali condizioni una soluzione è acida?",
         "options": {
             "a": "[H30+]>10^-7 mol/L",
@@ -4511,12 +4500,12 @@
             "c": "pH>pOH",
             "d": "[H30+]>kw"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 337,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 337,
+        "number": 336,
         "question": "Quale di queste molecole è lineare?",
         "options": {
             "a": "H2S",
@@ -4525,12 +4514,12 @@
             "d": "SO2",
             "e": "CH4"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 338,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 338,
+        "number": 337,
         "question": "Qual è la formula del fosfato monoacido di sodio?",
         "options": {
             "a": "Na2HPO4",
@@ -4543,7 +4532,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 339,
+        "number": 338,
         "question": "CH3-CH2-NH2",
         "options": {
             "a": "È una base forte",
@@ -4552,12 +4541,12 @@
             "d": "È un acido debole",
             "e": "È una base di Arrhenius"
         },
-        "correct_answer": "c",
+        "correct_answer": "b",
         "original_number": 340,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 340,
+        "number": 339,
         "question": "Quale tra questi elementi ha energia di prima ionizzazione più bassa",
         "options": {
             "a": "Fluoro",
@@ -4566,24 +4555,24 @@
             "d": "Magnesio",
             "e": "Ossigeno"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 341,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 341,
+        "number": 340,
         "question": "Che valore assume n nell'elettrone",
         "options": {
             "a": "1/2",
             "b": "+1",
             "c": "0"
         },
-        "correct_answer": "e",
+        "correct_answer": "b",
         "original_number": 342,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 342,
+        "number": 341,
         "question": "Configurazione elettronica dell'azoto",
         "options": {
             "a": "⬆⬇ ⬆⬇ ⬆ ⬆ ⬆",
@@ -4592,12 +4581,12 @@
             "d": "⬆⬇ ⬆⬆ ⬆ ⬆ ⬆",
             "e": "⬆⬇ ⬆⬇ ⬆⬇ ⬆"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 343,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 343,
+        "number": 342,
         "question": "Quale di queste affermazioni è sicuramente corretta?",
         "options": {
             "a": "Sono tutte corrette",
@@ -4606,12 +4595,12 @@
             "d": "La costante di equilibrio dipende dal volume",
             "e": "La costante di equilibrio dipende dalla temperatura"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 344,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 344,
+        "number": 343,
         "question": "Quale ha legami covalenti?",
         "options": {
             "a": "KBr",
@@ -4619,12 +4608,12 @@
             "c": "NaCl",
             "d": "H2O"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 345,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 345,
+        "number": 344,
         "question": "Quali di questi composti contiene un legame ionico",
         "options": {
             "a": "BaCl2",
@@ -4637,7 +4626,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 346,
+        "number": 345,
         "question": "Formula del Bicarbonato di sodio (bicarbonato acido di sodio)",
         "options": {
             "a": "Na(CO)3",
@@ -4646,12 +4635,12 @@
             "d": "NaHCO3",
             "e": "NaH2CO3"
         },
-        "correct_answer": "e",
+        "correct_answer": "d",
         "original_number": 348,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 347,
+        "number": 346,
         "question": "Qual è la formula del benzene?",
         "options": {
             "a": "C6H12",
@@ -4660,12 +4649,12 @@
             "d": "C6H6",
             "e": "C6H4"
         },
-        "correct_answer": "b",
+        "correct_answer": "d",
         "original_number": 349,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 348,
+        "number": 347,
         "question": "Selezionare il sale acido",
         "options": {
             "a": "KH",
@@ -4673,12 +4662,12 @@
             "c": "H2CO3",
             "d": "KHS"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 350,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 349,
+        "number": 348,
         "question": "Quale di questi elementi ha maggiore Affinità Elettronica?",
         "options": {
             "a": "H",
@@ -4687,24 +4676,24 @@
             "d": "Ca",
             "e": "C"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 351,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 350,
+        "number": 349,
         "question": "La pila di Daniel è una pila",
         "options": {
             "a": "Zinco - Carbonio",
             "b": "Zinco - Rame",
             "c": "Alcalina"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 352,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 351,
+        "number": 350,
         "question": "Numero di ossidazione dello zolfo nel solfuro di argento",
         "options": {
             "a": "2",
@@ -4713,12 +4702,12 @@
             "d": "6",
             "e": "5"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 353,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 352,
+        "number": 351,
         "question": "Quali tra queste non è una proprietà dei metalli alcalini:",
         "options": {
             "a": "Formano cationi di 2+ (x)",
@@ -4730,7 +4719,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 353,
+        "number": 352,
         "question": "Una soluzione non può mai essere",
         "options": {
             "a": "polifasica",
@@ -4744,7 +4733,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 354,
+        "number": 353,
         "question": "Poiché una soluzione sia spontanea ad una bassa temperatura ci deve essere la seguente condizione",
         "options": {
             "a": "deltaG>0",
@@ -4758,7 +4747,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 355,
+        "number": 354,
         "question": "Quale delle seguenti sostanze non è tipicamente riducente?",
         "options": {
             "a": "acido nitrico",
@@ -4767,12 +4756,12 @@
             "d": "idrogeno",
             "e": "carbonio"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 357,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 356,
+        "number": 355,
         "question": "In un recipiente vi è un idrocarburo e dell'ossigeno e viene fatto reagire, ottenendo vapore e CO2. Come\nè variata la densità della miscela?",
         "options": {
             "a": "aumentata",
@@ -4781,12 +4770,12 @@
             "d": "non è variata",
             "e": "nessuna precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 358,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 357,
+        "number": 356,
         "question": "In un contenitore chiuso P varia da 1 a 2 atm. Se T valeva 1 grado, dopo vale:",
         "options": {
             "a": "1",
@@ -4800,7 +4789,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 358,
+        "number": 357,
         "question": "Sapendo che il pH di una soluzione è 6 allora la concentrazione del'acido acetico è :",
         "options": {
             "a": "10^(-6)M",
@@ -4813,7 +4802,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 359,
+        "number": 358,
         "question": "Indicare, da sinistra verso destra, il numero di ossidazione che assume lo zolfo nei seguenti composti:\nSolfato di Stronzio, (altro composto che non ricordo in cui il numero di ossidazione dello zolfo è 4),\nSO2, SO3",
         "options": {
             "a": "6,4,4,6",
@@ -4822,24 +4811,24 @@
             "d": "4,6,6,4",
             "e": "6,4,4,4"
         },
-        "correct_answer": "c",
+        "correct_answer": "a",
         "original_number": 361,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 360,
+        "number": 359,
         "question": "Principio di indeterminazione di Heisenberg",
         "options": {
             "a": "Non è possibile conoscere con precisione la posizione di un elettrone",
             "b": "Non è possibile conoscere con precisione contemporaneamente la posizione e la quantità di moto\ndi un elettrone",
             "c": "Non è possibile conoscere con precisione la velocità di un elettrone"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 362,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 361,
+        "number": 360,
         "question": "Quanti sono gli isomeri del dibromobenzene?",
         "options": {
             "a": "0",
@@ -4848,12 +4837,12 @@
             "d": "4",
             "e": "6"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 363,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 362,
+        "number": 361,
         "question": "I raggi X sono",
         "options": {
             "a": "onde elettromagnetiche ad alta frequenza",
@@ -4862,24 +4851,24 @@
             "d": "protoni",
             "e": "particelle alfa"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 364,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 363,
+        "number": 362,
         "question": "Una mole di argon contiene",
         "options": {
             "a": "40 x Na",
             "b": "40 g",
             "c": "un numero di avogadro di atomi di Ar"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 365,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 364,
+        "number": 363,
         "question": "Considera dell'acqua che evapora. Quale di queste affermazioni è sicuramente corretta?",
         "options": {
             "a": "La temperatura è di 100°C",
@@ -4887,12 +4876,12 @@
             "c": "L'entropia aumenta",
             "d": "La tensione di vapore dell'acqua varia"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 366,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 365,
+        "number": 364,
         "question": "Quali sono i coefficienti dei REAGENTI nella seguente reazione: Idrogeno gassoso + Azoto gassoso ->\nAmmoniaca",
         "options": {
             "a": "3, 1",
@@ -4906,7 +4895,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 366,
+        "number": 365,
         "question": "A V=cost. Se aumento T in un gas, quale di queste proprietà cambia?",
         "options": {
             "a": "Pressione",
@@ -4918,7 +4907,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 367,
+        "number": 366,
         "question": "La curva del grafico pressione vs volume per una trasformazione isocora ha un andamento:",
         "options": {
             "a": "Lineare",
@@ -4927,12 +4916,12 @@
             "d": "Logaritmico",
             "e": "Iperbolico"
         },
-        "correct_answer": "d",
+        "correct_answer": "a",
         "original_number": 369,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 368,
+        "number": 367,
         "question": "qual'è il numero minimo di atomi di carbonio per avere una isomeria di struttura?",
         "options": {
             "a": "3",
@@ -4941,12 +4930,12 @@
             "d": "4",
             "e": "5"
         },
-        "correct_answer": "a",
+        "correct_answer": "d",
         "original_number": 370,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 369,
+        "number": 368,
         "question": "Cosa è il nitrato?",
         "options": {
             "a": "NO3-",
@@ -4960,19 +4949,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 370,
+        "number": 369,
         "question": "Qual è la formula chimica dell'acido butanoico?",
         "options": {
             "a": "C4H8O2",
             "b": "C4O2",
             "c": "C4H6O2"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 372,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 371,
+        "number": 370,
         "question": "Indicare la formula dell'acido bromico",
         "options": {
             "a": "HBr",
@@ -4986,7 +4975,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 372,
+        "number": 371,
         "question": "Quale composto ha formula CnH2n+2",
         "options": {
             "a": "Alcano",
@@ -4999,7 +4988,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 373,
+        "number": 372,
         "question": "Quale gruppo contiene solamente idracidi?",
         "options": {
             "a": "HI, HF, HBr, H2S",
@@ -5011,7 +5000,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 374,
+        "number": 373,
         "question": "Nel caso in cui una reazione decorra a volume costante e T costante si può affermare che il calore\nliberato od assorbito è sempre",
         "options": {
             "a": "Uguale alla variazione di Energia interna",
@@ -5025,7 +5014,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 375,
+        "number": 374,
         "question": "Il principio che spiega l irriversibilita dei processi naturali",
         "options": {
             "a": "Principio 0 della termodinamica",
@@ -5038,7 +5027,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 376,
+        "number": 375,
         "question": "Un gas in condizioni normali viene compresso isotermicamente fino a raggiungere una pressione pari a\n3 volte quella atmosferica. Cosa accade al volume del gas?",
         "options": {
             "a": "Diminuisce di 1/3",
@@ -5052,7 +5041,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 377,
+        "number": 376,
         "question": "Quanti legami idrogeno può fare H2S",
         "options": {
             "a": "4",
@@ -5066,7 +5055,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 378,
+        "number": 377,
         "question": "Ho un gas a 100K e il volume aumenta de 50%. A pressione costante quale sarà la temperatura?",
         "options": {
             "a": "Non è possibile rispondere",
@@ -5080,7 +5069,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 379,
+        "number": 378,
         "question": "Calcola il coefficiente di Van't Hoff del acetato di magnesio 2 M?",
         "options": {
             "a": "Non ho abbastanza dati",
@@ -5088,12 +5077,12 @@
             "c": "4",
             "d": "2"
         },
-        "correct_answer": "d",
+        "correct_answer": "b",
         "original_number": 381,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 380,
+        "number": 379,
         "question": "Si hanno due moli di perossido di idrogeno, Na indica il numero di avogadro. Nella molecola sono\npresenti",
         "options": {
             "a": "4/Na atomi di ossigeno e 4/Na di Idrogeno",
@@ -5102,12 +5091,12 @@
             "d": "4*Na atomi di ossigeno e 4*Na atomi di idrogeno",
             "e": "2*Na atomi di ossigeno e 2*Na atomi di idrogeno"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 382,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 381,
+        "number": 380,
         "question": "Quale coppia di sostanze non è miscibile?",
         "options": {
             "a": "CH3-OH - H2O",
@@ -5116,24 +5105,24 @@
             "d": "NaCl - H2O",
             "e": "NH3 - H2O"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 383,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 382,
+        "number": 381,
         "question": "Quale tra queste affermazioni NON è valida per l'etilene?",
         "options": {
             "a": "da esso si possono ottenere i polimeri",
             "b": "è un idrocarburo saturo",
             "c": "da reazioni di addizione"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 384,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 383,
+        "number": 382,
         "question": "Quante vale la massa molare media di una miscela di gas costituita dal 50% in volume di CO\n(MM=28g/mol) e per la restante parte da CO2(MM=44g/mol)",
         "options": {
             "a": "35,1 g/mol",
@@ -5147,7 +5136,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 384,
+        "number": 383,
         "question": "Which are the names of the following compounds? H2SO4, Na2SO3",
         "options": {
             "a": "Sulphuric acid/sodium sulphate",
@@ -5156,12 +5145,12 @@
             "d": "Sulphurous acid/sodium sulphite",
             "e": "None of the above"
         },
-        "correct_answer": "a",
+        "correct_answer": "b",
         "original_number": 386,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 385,
+        "number": 384,
         "question": "La forza elettromotrice di una cella voltaica all'equilibrio chimico vale:",
         "options": {
             "a": "Dipende dalla reazione",
@@ -5170,12 +5159,12 @@
             "d": "Infinito",
             "e": "1"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 387,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 386,
+        "number": 385,
         "question": "Qual è la definizione del sale acido?",
         "options": {
             "a": "Un sale in cui gli idrogeni acidi non sono stati completamente sostituiti",
@@ -5187,19 +5176,19 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 387,
+        "number": 386,
         "question": "Se una mole di Magnesio ed una mole di ossigeno gassoso reagiscono completamente per dare Ossido\ndi magnesio, quanto prodotto si forma?",
         "options": {
             "a": "1 mole",
             "b": "Mezza mole",
             "c": "2 moli"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 389,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 388,
+        "number": 387,
         "question": "Quale soluzione acquosa tra le seguenti, a parità di concentrazione, presenta maggiore valore di pH:",
         "options": {
             "a": "NaCl",
@@ -5208,12 +5197,12 @@
             "d": "Na2CO3",
             "e": "HCl\nPTM\n= 0,5\n- 28\n+ (1-0,5)-44=14+22"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 390,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 389,
+        "number": 388,
         "question": "La curva del grafico pressione vs volume per una trasformazione isoterma ha un andamento:",
         "options": {
             "a": "quadratico",
@@ -5227,7 +5216,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 390,
+        "number": 389,
         "question": "Indicare la geometria molecolare del metano.",
         "options": {
             "a": "Trigonale Planare",
@@ -5236,12 +5225,12 @@
             "d": "Trigonale piramidale",
             "e": "Ottaedrica"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 392,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 391,
+        "number": 390,
         "question": "Quale dei seguenti composti contiene un gruppo Ossidrile ( -OH)",
         "options": {
             "a": "Alcoli",
@@ -5255,7 +5244,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 392,
+        "number": 391,
         "question": "-COOH Quali composti sono caratterizzati da questo gruppo?",
         "options": {
             "a": "Acidi carbossilici",
@@ -5267,7 +5256,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 393,
+        "number": 392,
         "question": "Nome di HClO4",
         "options": {
             "a": "nessuno",
@@ -5276,12 +5265,12 @@
             "d": "Acido cloroso",
             "e": "Acido clorico"
         },
-        "correct_answer": "e",
+        "correct_answer": "a",
         "original_number": 395,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 394,
+        "number": 393,
         "question": "Cosa non si può ottenere ossidando il 2-propanolo",
         "options": {
             "a": "acido propanoico",
@@ -5289,24 +5278,24 @@
             "c": "metanolo",
             "d": "dimetilchetone"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 396,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 395,
+        "number": 394,
         "question": "Quali tra questi ha un gruppo carbossile",
         "options": {
             "a": "Alcoli",
             "b": "Esteri",
             "c": "Eteri"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 397,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 396,
+        "number": 395,
         "question": "Indicare la valenza dell'azoto in ciascuno dei seguenti composti: NO2, Pb(NO2)2, N2O5",
         "options": {
             "a": "4, 3, 3",
@@ -5315,12 +5304,12 @@
             "d": "2, 3, 5",
             "e": "2, 5, 5"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 398,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 397,
+        "number": 396,
         "question": "Nella cella elettrolitica l'anodo rappresenta il polo",
         "options": {
             "a": "positivo",
@@ -5332,7 +5321,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 398,
+        "number": 397,
         "question": "Seleziona cosa non puoi trovare nella Pila Daniell",
         "options": {
             "a": "Ioni Cu+",
@@ -5341,12 +5330,12 @@
             "d": "Reazione spontanea",
             "e": "Ioni SO4(2-)"
         },
-        "correct_answer": "b",
+        "correct_answer": "a",
         "original_number": 400,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 399,
+        "number": 398,
         "question": "La teoria di ... afferma che gli acidi sono delle sostanze che cedono uno ione H+ ad un altra specie\nchimica.",
         "options": {
             "a": "Arrhenius",
@@ -5358,7 +5347,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 400,
+        "number": 399,
         "question": "Un ibrido di risonanza A, ha due formule limite A1 e A2. Sotto che forma è possibile trovarlo in un\ncomposto?",
         "options": {
             "a": "Solo come A",
@@ -5370,7 +5359,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 401,
+        "number": 400,
         "question": "Il rapporto tra l'energia di un fotone e la frequenza della radiazione è uguale:",
         "options": {
             "a": "alla lunghezza d'onda",
@@ -5379,12 +5368,12 @@
             "d": "alla velocità della luce",
             "e": "alla temperatura"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 403,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 402,
+        "number": 401,
         "question": "Quale composto è più reattivo?",
         "options": {
             "a": "Acetilene",
@@ -5393,12 +5382,12 @@
             "d": "Cicloesano",
             "e": "Propano\n[c)"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 404,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 403,
+        "number": 402,
         "question": "Quale tra questi composti non è polare",
         "options": {
             "a": "CO2",
@@ -5412,7 +5401,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 404,
+        "number": 403,
         "question": "Che caratteristiche hanno in comune gli elementi dello stesso gruppo?",
         "options": {
             "a": "Stesso numero di elettroni nello stato più esterno",
@@ -5424,7 +5413,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 405,
+        "number": 404,
         "question": "Seleziona la quantità di nitrato di litio che contiene esattamente 42 g di azoto.",
         "options": {
             "a": "2 unità formula",
@@ -5433,12 +5422,12 @@
             "d": "70 g",
             "e": "una molecola"
         },
-        "correct_answer": "e",
+        "correct_answer": "c",
         "original_number": 407,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 406,
+        "number": 405,
         "question": "Quanti grammi di S ci sono in 2 moli di H2SO4",
         "options": {
             "a": "640 g",
@@ -5446,12 +5435,12 @@
             "c": "0.064 Kg",
             "d": "1 mol"
         },
-        "correct_answer": "a",
+        "correct_answer": "c",
         "original_number": 408,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 407,
+        "number": 406,
         "question": "Quale di queste molecole presenta ha la maggior forza di legame",
         "options": {
             "a": "azoto gassoso",
@@ -5459,12 +5448,12 @@
             "c": "acido nitrico",
             "d": "acqua"
         },
-        "correct_answer": "e",
+        "correct_answer": "a",
         "original_number": 409,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 408,
+        "number": 407,
         "question": "A parità di pressione e temperatura, una mole di gas He occupa un volume pari a quello occupato da :",
         "options": {
             "a": "16 g di ossigeno",
@@ -5473,12 +5462,12 @@
             "d": "14 g di azoto",
             "e": "28 g di azoto"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 410,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 409,
+        "number": 408,
         "question": "Un gas reale mantenuto sempre al di sopra della sua temperatura critica:",
         "options": {
             "a": "Può essere liquefatto per compressione",
@@ -5487,12 +5476,12 @@
             "d": "Può essere liquefatto con cicli successivi di compressione ed espansione",
             "e": "Può essere e non essere liquefatto, a seconda delle condizioni adottate"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 411,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 410,
+        "number": 409,
         "question": "Mettere in ordine crescente i seguenti composti in base al numero di ossidazione O2, H2O2, Na2O,\nF2O, CO2",
         "options": {
             "a": "F2O, Na2O, CO2, O2, H2O2",
@@ -5506,7 +5495,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 411,
+        "number": 410,
         "question": "Il coefficiente di Van't Hoff dipende :",
         "options": {
             "a": "dalla temperatura",
@@ -5519,7 +5508,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 412,
+        "number": 411,
         "question": "Quanti sono gli isomeri del diclorobenzene?",
         "options": {
             "a": "0",
@@ -5533,7 +5522,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 413,
+        "number": 412,
         "question": "Scegliere la giusta formula bruta del benzene",
         "options": {
             "a": "C6H6",
@@ -5545,7 +5534,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 414,
+        "number": 413,
         "question": "Qual è la temperatura del punto triplo del CO2?",
         "options": {
             "a": "-56,6 °C",
@@ -5559,7 +5548,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 415,
+        "number": 414,
         "question": "L’etilene è un…",
         "options": {
             "a": "alchene",
@@ -5573,7 +5562,7 @@
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 416,
+        "number": 415,
         "question": "Per una reazione all’equilibrio, un valore di K di 10^-4 indica che l’equilibrio…",
         "options": {
             "a": "favorisce i reagenti",
@@ -5581,12 +5570,12 @@
             "c": "dipende dalla temperatura",
             "d": "non favorisce nessuno"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 418,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 417,
+        "number": 416,
         "question": "Che tipo di trasformazione è il congelamento dell’acqua?",
         "options": {
             "a": "isoentalpica",
@@ -5594,12 +5583,12 @@
             "c": "esotermica",
             "d": "nessuna delle precedenti"
         },
-        "correct_answer": "b",
+        "correct_answer": "c",
         "original_number": 419,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 418,
+        "number": 417,
         "question": "Cosa rappresenta il 12 nel carbonio-12?",
         "options": {
             "a": "numero atomico",
@@ -5608,12 +5597,12 @@
             "d": "peso atomico",
             "e": "numero di elettroni"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 420,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 419,
+        "number": 418,
         "question": "Quale affermazione riguardante la pila Daniel con setto poroso è corretta?",
         "options": {
             "a": "tutte le altre sono sbagliate",
@@ -5622,12 +5611,12 @@
             "d": "sono presenti degli ioni solfuro in soluzione",
             "e": "gli ioni zinco attraversano il setto poroso"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 421,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 420,
+        "number": 419,
         "question": "Secondo una teoria, si deﬁnisce base ogni specie chimica che…",
         "options": {
             "a": "accetta un elettrone",
@@ -5636,12 +5625,12 @@
             "d": "accetta una protone",
             "e": "dona un protone"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 422,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 421,
+        "number": 420,
         "question": "(Immagine di una cella elementare cubica con agli estremi 8 particelle) Che genere di cella elementare è?",
         "options": {
             "a": "cubica a corpo centrato",
@@ -5650,12 +5639,12 @@
             "d": "esagonale",
             "e": "nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 423,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 422,
+        "number": 421,
         "question": "Quale tra i seguenti elementi ha energia di prima ionizzazione maggiore?",
         "options": {
             "a": "F",
@@ -5664,47 +5653,36 @@
             "d": "Cu",
             "e": "Cs"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 424,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 423,
-        "question": "In quale di questi composti l’ossigeno non raggiunge l’ottetto?",
-        "options": {
-            "a": "b)",
-            "c": "d) in tutti i composti raggiunge l’ottetto\n[ e]"
-        },
-        "correct_answer": "",
-        "original_number": 425,
-        "source_file": "Quiz Chimica.pdf"
-    },
-    {
-        "number": 424,
+        "number": 422,
         "question": "Quando avviene un legame, il processo può essere deﬁnito",
         "options": {
             "a": "sempre spontaneo",
             "b": "mai spontaneo",
             "c": "nessuna di queste"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 426,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 425,
+        "number": 423,
         "question": "Ci sono due contenitori di 100 ml contenenti uno azoto e l’altro ossigeno a condizioni di pressione e temperatura \nstandard. Essi hanno:",
         "options": {
             "a": "stesso numero di molecole",
             "b": "stessa velocità media delle molecole",
             "c": "nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 427,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 426,
+        "number": 424,
         "question": "Quale orbitale ha n=3, l=2, m=1?",
         "options": {
             "a": "orbitale s",
@@ -5713,12 +5691,12 @@
             "d": "nessuno",
             "e": "orbitale ibrido"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 428,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 427,
+        "number": 425,
         "question": "Calcolare la massa molare media di una miscela composta al 10% in volume di O2 e al 90% in volume di H2",
         "options": {
             "a": "5 g/mol",
@@ -5727,12 +5705,12 @@
             "d": "nessuna è corretta",
             "e": "9 g/mol"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 429,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 428,
+        "number": 426,
         "question": "L’abbassamento crioscopico di una certa soluzione acquosa è 1°C. Cosa signiﬁca?",
         "options": {
             "a": "A +1°C compare il primo cristallo di soluzione",
@@ -5741,12 +5719,12 @@
             "d": "A +1°C compare il primo cristallo di ghiaccio puro",
             "e": "A -1°C compare il primo cristallo di ghiaccio puro"
         },
-        "correct_answer": "",
+        "correct_answer": "e",
         "original_number": 430,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 429,
+        "number": 427,
         "question": "Da quale legame è costituita la molecola dell’azoto gassoso?",
         "options": {
             "a": "legame covalente singolo",
@@ -5754,12 +5732,12 @@
             "c": "legame covalente triplo",
             "d": "legame ionico"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 431,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 430,
+        "number": 428,
         "question": "L’abbassamento crioscopico di una soluzione contenente un soluto non volatile è direttamente proporzionale alla…",
         "options": {
             "a": "molalità del soluto",
@@ -5768,12 +5746,12 @@
             "d": "molarità del soluto",
             "e": "molalità del solvente\n\"\n¥¥¥ÉMqqBgygfET→oH\n%É!?¥:\nspontaneo\nche\nnon , dipende\nmmmgqqµµy\nmammasantissima\nGhanima\nnumismatiche\n⇒\nMamma\nMMMMMMdMMzg\nora.am?Yn-\nmamma\n[e)\nED\n(a)"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 432,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 431,
+        "number": 429,
         "question": "Sapendo che la massa molecolare dell’acqua è uguale a 18 uma, in un litro d’acqua sono contenute:",
         "options": {
             "a": "22,4 mol d’acqua",
@@ -5781,12 +5759,12 @@
             "c": "111 mol d’acqua",
             "d": "55,5 mol di rame"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 433,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 432,
+        "number": 430,
         "question": "Quante molecole ha 1.5 moli di NO? (Na = numero di avogadro)",
         "options": {
             "a": "6.022 x 10^23",
@@ -5795,12 +5773,12 @@
             "d": "Na",
             "e": "1.5/Na"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 434,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 433,
+        "number": 431,
         "question": "Seleziona la proprietà che non appartiene ai solidi ionici",
         "options": {
             "a": "fragilità",
@@ -5809,12 +5787,12 @@
             "d": "buona conducibilità elettrica allo stato fuso",
             "e": "buona conducibilità elettrica in soluzioni acquose"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 435,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 434,
+        "number": 432,
         "question": "Si disciolga NH3 in acqua. Qual è la costante di dissociazione ionica dell’ammoniaca?",
         "options": {
             "a": "1,8 x 10^5",
@@ -5823,12 +5801,12 @@
             "d": "-1,8 x 10^(-5)",
             "e": "nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 436,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 435,
+        "number": 433,
         "question": "Quando l’ammoniaca si trasforma in NH4+ si comporta da:",
         "options": {
             "a": "base",
@@ -5837,12 +5815,12 @@
             "d": "anfotero",
             "e": "anione"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 437,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 436,
+        "number": 434,
         "question": "Il diamante e la graﬁte sono ________ del carbonio",
         "options": {
             "a": "isomeri",
@@ -5851,12 +5829,12 @@
             "d": "allotropi",
             "e": "altro"
         },
-        "correct_answer": "",
+        "correct_answer": "d",
         "original_number": 438,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 437,
+        "number": 435,
         "question": "Quale di questi è un’ammina?",
         "options": {
             "a": "CH3CONH2",
@@ -5864,12 +5842,12 @@
             "c": "C6H5NO",
             "d": "CCl4\nqppmttfhkfkteoo.rs\nIL\n= 1000g\n→n\n-\n- FM\n[ c] →una\nmole\ncontiene\nun\nNa\ndi\nparticelle =D 1.5 moti\ncontengono\n1.5\n- Na\nnum?\nno di particelle\nE]"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 439,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 438,
+        "number": 436,
         "question": "Quale contiene legami ionici?",
         "options": {
             "a": "CaO",
@@ -5877,12 +5855,12 @@
             "c": "H2O",
             "d": "Cl2"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 440,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 439,
+        "number": 437,
         "question": "Quale delle seguenti coppie di elementi può formare un legame ionico?",
         "options": {
             "a": "calcio e ﬂuoro",
@@ -5891,12 +5869,12 @@
             "d": "carbonio e ossigeno",
             "e": "cloro e bromo"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 441,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 440,
+        "number": 438,
         "question": "Il modello dell’ibridazione sp3 può essere usato per rappresentare la struttura di:",
         "options": {
             "a": "acetilene C2H2 (gas inﬁammabile)",
@@ -5904,12 +5882,12 @@
             "c": "C graﬁte (solido covalente)",
             "d": "Benzene C6H6 (liquido)"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 442,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 441,
+        "number": 439,
         "question": "Acido acetico ha pH=6. Qual è il pH della soluzione acquosa corrispondente?",
         "options": {
             "a": "non ho elementi per rispondere",
@@ -5918,12 +5896,12 @@
             "d": "10^6 M",
             "e": "10^8 M"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 443,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 442,
+        "number": 440,
         "question": "Dire quale tra cis-2-butene e trans-2-butene ha momento di dipolo non nullo",
         "options": {
             "a": "cis",
@@ -5932,12 +5910,12 @@
             "d": "entrambi",
             "e": "non c’è isomeria"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 444,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 443,
+        "number": 441,
         "question": "Quanti fasi presenta la seguente reazione:     HF (g) + H2O (aq) —> H3O+ (g) + F- (g)",
         "options": {
             "a": "2",
@@ -5946,12 +5924,12 @@
             "d": "5",
             "e": "0"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 445,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 444,
+        "number": 442,
         "question": "La sublimazione del ghiaccio è una processo:",
         "options": {
             "a": "esotermico",
@@ -5960,12 +5938,12 @@
             "d": "isoentalpico",
             "e": "impossibile\nammanettarono \"\ndifferenza\ndi\nelettronegatività\nmaggiore di\n1,9"
         },
-        "correct_answer": "",
+        "correct_answer": "b",
         "original_number": 446,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 445,
+        "number": 443,
         "question": "Per n=6, qual è il valore massimo che può assumere il numero quantico magnetico?",
         "options": {
             "a": "+3",
@@ -5973,12 +5951,12 @@
             "c": "+5",
             "d": "+6"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 447,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 446,
+        "number": 444,
         "question": "Soluzione acquosa con maggior temperatura di inizio ebollizione",
         "options": {
             "a": "HNO3",
@@ -5986,12 +5964,12 @@
             "c": "C8H22O12",
             "d": "CH4"
         },
-        "correct_answer": "",
+        "correct_answer": "a",
         "original_number": 448,
         "source_file": "Quiz Chimica.pdf"
     },
     {
-        "number": 447,
+        "number": 445,
         "question": "Come si convertono 67 atm in millimetri di mercurio?",
         "options": {
             "a": "67/760",
@@ -6000,7 +5978,7 @@
             "d": "67/760",
             "e": "nessuna delle precedenti"
         },
-        "correct_answer": "",
+        "correct_answer": "c",
         "original_number": 449,
         "source_file": "Quiz Chimica.pdf"
     }
