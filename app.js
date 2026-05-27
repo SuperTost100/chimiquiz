@@ -216,6 +216,12 @@
             currentIndex === TOTAL_QUESTIONS - 1 ? "Consegna" : "Prossima domanda";
 
         updateNavGrid();
+
+        if (window.MathJax) {
+            MathJax.typesetPromise([questionText, optionsContainer]).catch(function (err) {
+                console.error("MathJax typeset failed", err);
+            });
+        }
     }
 
     function selectOption(key) {
@@ -341,6 +347,12 @@
 
             reviewList.appendChild(item);
         });
+
+        if (window.MathJax) {
+            MathJax.typesetPromise([reviewList]).catch(function (err) {
+                console.error("MathJax typeset failed", err);
+            });
+        }
     }
 
     function buildReviewOptions(q, userAnswer) {
