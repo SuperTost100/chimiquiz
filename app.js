@@ -85,9 +85,9 @@
             const resp = await fetch("https://api.poliquiz.it/course/2/quizzes");
             const result = await resp.json();
             
-            // Filter questions without a correct answer and map to our format
+            // Filter questions without a correct answer or with only one answer, and map to our format
             allQuizzes = result.data
-                .filter(q => q.right_answer_index !== -1)
+                .filter(q => q.right_answer_index !== -1 && q.answers && q.answers.length > 1)
                 .map((q, index) => {
                     const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
                     const optionsObj = {};
