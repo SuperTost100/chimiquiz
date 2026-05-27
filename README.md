@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://supertost100.github.io/chimiquiz/)
 
-**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica, basato su quesiti reali estratti da PDF accademici. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale.
+**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, integrandosi dinamicamente con le **API pubbliche di Poliquiz** per ottenere i quesiti.
 
 Il simulatore è **completamente gratuito, open-source e accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
 
@@ -48,18 +48,14 @@ La simulazione adotta il formato e le penalità tipiche di molti test universita
 
 ## 📂 Struttura del Progetto
 
-Il progetto si compone di un'applicazione front-end statico estremamente efficiente e di una suite di script Python per l'elaborazione dei dati:
+Il progetto si compone di un'applicazione front-end statica ed efficiente:
 
 ```text
 Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
-├── app.js              # Motore logico (gestione stato, PRNG Mulberry32, Timer, Keyboard Shortcuts)
-├── quizzes.json        # Database di 447 quesiti unici estratti e ripuliti
-├── extract/            # Script di estrazione dati dai PDF originali
-│   ├── extract_quizzes.py  # Script basato su PyMuPDF per il parsing semantico dei PDF
-│   ├── remove_duplicates.py # Script di deduplicazione semantica e normalizzazione
-│   └── *.pdf               # PDF originali dei quiz
+├── app.js              # Motore logico, fetch da API pubblica Poliquiz, Timer, Keyboard Shortcuts
+├── LICENSE             # Licenza Apache 2
 └── README.md           # Questa documentazione
 ```
 
@@ -74,7 +70,7 @@ Se desideri clonare il progetto per scopi di sviluppo, personalizzazione o utili
    git clone https://github.com/SuperTost100/chimiquiz.git
    cd chimiquiz
    ```
-2. Avvia un server web locale rapido (necessario per caricare il file `quizzes.json` tramite `fetch` senza violare le policy CORS dei browser):
+2. Avvia un server web locale:
    - Con **Python**:
      ```bash
      python -m http.server 8000
@@ -87,37 +83,14 @@ Se desideri clonare il progetto per scopi di sviluppo, personalizzazione o utili
 
 ---
 
-## 🐍 Pipeline di Estrazione Dati (facoltativo)
-
-Se desideri rigenerare o comprendere come sono stati estratti i quiz:
-1. Crea un ambiente virtuale ed installa le dipendenze:
-   ```bash
-   cd extract
-   python -m venv venv
-   source venv/bin/activate  # Su Windows: venv\Scripts\activate
-   pip install pymupdf
-   ```
-2. Esegui l'estrazione:
-   ```bash
-   python extract_quizzes.py
-   ```
-   *Questo script analizzerà i file PDF nella cartella `extract/`, riconoscerà i pattern delle domande ed esporterà le risposte inline o da chiavi finali.*
-3. Rimuovi i duplicati e normalizza:
-   ```bash
-   python remove_duplicates.py
-   ```
-   *Ridurrà gli oltre 1300 quiz iniziali a 447 quesiti unici ordinati, sovrascrivendo il file `quizzes.json` principale.*
-
----
-
 ## 🤝 Contribuire
 
-Vuoi proporre nuove domande di chimica, correggere refusi o migliorare la simulazione? Ogni contributo è il benvenuto!
+Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il benvenuto!
 
 1. Esegui il Fork del progetto.
-2. Crea un branch per la tua feature (`git checkout -b feature/nuovi-quiz`).
-3. Apporta le modifiche (ad esempio modificando/aggiungendo quiz in `quizzes.json` o migliorando la logica in `app.js`).
-4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuovi-quiz`).
+2. Crea un branch per la tua feature (`git checkout -b feature/nuova-feature`).
+3. Apporta le modifiche (ad esempio migliorando la logica in `app.js` o lo stile in `index.css`).
+4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuova-feature`).
 5. Apri una **Pull Request** spiegando i cambiamenti apportati.
 
 ---
