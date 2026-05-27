@@ -82,11 +82,33 @@
     // ─── Load Quiz Data ───
     async function loadQuizzes() {
         try {
-            const resp = await fetch("quizzes.json");
-            allQuizzes = await resp.json();
+            const resp = await fetch("https://api.poliquiz.it/course/2/quizzes");
+            const result = await resp.json();
+            
+            // Filter questions without a correct answer and map to our format
+            allQuizzes = result.data
+                .filter(q => q.right_answer_index !== -1)
+                .map((q, index) => {
+                    const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+                    const optionsObj = {};
+                    q.answers.forEach((ans, i) => {
+                        if (i < letters.length) {
+                            optionsObj[letters[i]] = ans;
+                        }
+                    });
+                    
+                    return {
+                        number: index + 1,
+                        question: q.question,
+                        options: optionsObj,
+                        correct_answer: letters[q.right_answer_index],
+                        original_number: q.id,
+                        source_file: "api.poliquiz.it"
+                    };
+                });
         } catch (e) {
-            console.error("Failed to load quizzes.json", e);
-            alert("Errore nel caricamento delle domande. Assicurati che quizzes.json sia presente.");
+            console.error("Failed to load quizzes from API", e);
+            alert("Errore nel caricamento delle domande tramite API.");
         }
     }
 
