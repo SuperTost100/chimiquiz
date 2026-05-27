@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chimiquiz - Simulazione test di Chimica con 15 domande a risposta multipla, timer e valutazione automatica.">
+    <title>Chimiquiz — Simulazione Test di Chimica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- ─── START SCREEN ─── -->
+    <div id="screen-start" class="screen active">
+        <div class="start-container">
+            <div class="logo-glow"></div>
+            <div class="logo">
+                <span class="logo-icon">⚗️</span>
+                <h1>Chimi<span class="accent">quiz</span></h1>
+            </div>
+            <p class="tagline">Simulazione Test di Chimica</p>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📝</div>
+                    <div class="info-label">Domande</div>
+                    <div class="info-value">15</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⏱️</div>
+                    <div class="info-label">Tempo</div>
+                    <div class="info-value">25 min</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🎯</div>
+                    <div class="info-label">Punteggio max</div>
+                    <div class="info-value">9/9</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">✅</div>
+                    <div class="info-label">Sufficienza</div>
+                    <div class="info-value">≥ 6/9</div>
+                </div>
+            </div>
+
+            <div class="rules-box">
+                <h3>Regole del test</h3>
+                <ul>
+                    <li>Ogni risposta corretta vale <strong>+0.60</strong> punti</li>
+                    <li>Ogni risposta errata ha una penalità di <strong>−0.12</strong> punti</li>
+                    <li>Le domande senza risposta valgono <strong>0</strong> punti</li>
+                    <li>Il test si autoconsegna allo scadere del tempo</li>
+                </ul>
+            </div>
+
+            <button id="btn-start" class="btn-primary btn-glow">
+                <span>Inizia il Test</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <a href="https://github.com/SuperTost100/chimiquiz" target="_blank" rel="noopener" class="btn-github">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22l-.01 3.29c0 .31.22.69.83.57A12 12 0 0 0 12 .3"/></svg>
+                <span>Contribuisci su GitHub</span>
+            </a>
+        </div>
+
+        <footer class="site-footer">
+            <p>Realizzato da <a href="https://github.com/SuperTost100" target="_blank" rel="noopener">SuperTost100</a></p>
+            <p>Questo progetto è <a href="https://github.com/SuperTost100/chimiquiz" target="_blank" rel="noopener">open source</a> — contribuisci con nuovi quiz o migliora il sito!</p>
+        </footer>
+    </div>
+
+    <!-- ─── QUIZ SCREEN ─── -->
+    <div id="screen-quiz" class="screen">
+        <header id="quiz-header">
+            <div class="header-left">
+                <a href="#" id="header-logo-link" class="header-logo">⚗️ Chimi<span class="accent">quiz</span></a>
+            </div>
+            <div class="header-center">
+                <div id="timer" class="timer">
+                    <svg class="timer-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span id="timer-display">25:00</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="btn-toggle-nav" class="btn-icon" title="Navigazione domande">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                </button>
+                <button id="btn-submit-test" class="btn-submit-header">Consegna</button>
+            </div>
+        </header>
+
+        <!-- Question Nav Panel -->
+        <div id="question-nav" class="question-nav hidden">
+            <div class="nav-header">
+                <h3>Navigazione</h3>
+                <div class="nav-legend">
+                    <span class="legend-item"><span class="legend-dot answered"></span>Risposta</span>
+                    <span class="legend-item"><span class="legend-dot flagged"></span>Segnata</span>
+                    <span class="legend-item"><span class="legend-dot current"></span>Corrente</span>
+                </div>
+            </div>
+            <div id="nav-grid" class="nav-grid"></div>
+        </div>
+
+        <!-- Question Area -->
+        <main id="quiz-main">
+            <div class="question-card">
+                <div class="question-meta">
+                    <span id="question-counter" class="question-counter">Domanda 1 di 15</span>
+                    <button id="btn-flag" class="btn-flag" title="Segna domanda">
+                        <svg id="flag-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                        <span id="flag-text">Segna</span>
+                    </button>
+                </div>
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+            </div>
+
+            <div class="question-actions">
+                <button id="btn-prev" class="btn-secondary" disabled>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Precedente</span>
+                </button>
+                <button id="btn-next" class="btn-primary">
+                    <span>Prossima domanda</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- ─── RESULTS SCREEN ─── -->
+    <div id="screen-results" class="screen">
+        <div class="results-container">
+            <div class="results-header">
+                <a href="#" id="results-logo-link" class="header-logo">⚗️ Chimi<span class="accent">quiz</span></a>
+            </div>
+
+            <div id="result-verdict" class="result-verdict">
+                <div id="result-emoji" class="result-emoji"></div>
+                <h2 id="result-title" class="result-title"></h2>
+                <p id="result-subtitle" class="result-subtitle"></p>
+            </div>
+
+            <div class="score-display">
+                <div class="score-ring-container">
+                    <svg id="score-ring" class="score-ring" viewBox="0 0 120 120">
+                        <circle class="ring-bg" cx="60" cy="60" r="52" />
+                        <circle id="ring-progress" class="ring-progress" cx="60" cy="60" r="52" />
+                    </svg>
+                    <div class="score-text">
+                        <span id="score-value" class="score-value">0</span>
+                        <span class="score-max">/ 9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card correct">
+                    <div class="stat-num" id="stat-correct">0</div>
+                    <div class="stat-label">Corrette</div>
+                </div>
+                <div class="stat-card wrong">
+                    <div class="stat-num" id="stat-wrong">0</div>
+                    <div class="stat-label">Errate</div>
+                </div>
+                <div class="stat-card skipped">
+                    <div class="stat-num" id="stat-skipped">0</div>
+                    <div class="stat-label">Non date</div>
+                </div>
+            </div>
+
+            <div class="review-section">
+                <h3>Riepilogo domande</h3>
+                <div id="review-list" class="review-list"></div>
+            </div>
+
+            <button id="btn-restart" class="btn-primary btn-glow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                <span>Nuovo Test</span>
+            </button>
+
+            <a href="https://github.com/SuperTost100/chimiquiz" target="_blank" rel="noopener" class="btn-github">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22l-.01 3.29c0 .31.22.69.83.57A12 12 0 0 0 12 .3"/></svg>
+                <span>Contribuisci su GitHub</span>
+            </a>
+        </div>
+
+        <footer class="site-footer">
+            <p>Realizzato da <a href="https://github.com/SuperTost100" target="_blank" rel="noopener">SuperTost100</a></p>
+            <p>Questo progetto è <a href="https://github.com/SuperTost100/chimiquiz" target="_blank" rel="noopener">open source</a> — contribuisci con nuovi quiz o migliora il sito!</p>
+        </footer>
+    </div>
+
+    <!-- Confirm modal -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-icon">⚠️</div>
+            <h3>Consegnare il test?</h3>
+            <p id="modal-message">Hai risposto a <strong id="modal-answered">0</strong> domande su 15.</p>
+            <div class="modal-actions">
+                <button id="btn-modal-cancel" class="btn-secondary">Annulla</button>
+                <button id="btn-modal-confirm" class="btn-primary">Consegna</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Abandon test modal -->
+    <div id="modal-abandon" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-icon">🚪</div>
+            <h3>Abbandonare il test?</h3>
+            <p>I tuoi progressi andranno persi se torni alla schermata iniziale.</p>
+            <div class="modal-actions">
+                <button id="btn-abandon-cancel" class="btn-secondary">Continua il test</button>
+                <button id="btn-abandon-confirm" class="btn-primary">Abbandona</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
