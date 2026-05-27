@@ -670,6 +670,158 @@ body {
     gap: 1rem;
 }
 
+/* Question Disclaimer */
+.question-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    background: rgba(148, 163, 184, 0.05);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+.question-disclaimer svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+    opacity: 0.6;
+}
+.question-disclaimer a {
+    color: var(--accent-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.question-disclaimer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.btn-report {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font);
+    font-size: inherit;
+    color: var(--accent-light);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.btn-report:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Report Instructions Modal */
+.modal-report-box {
+    max-width: 480px;
+    text-align: left;
+}
+
+.report-intro {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.report-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.report-steps li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.step-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    font-family: var(--font-mono);
+}
+
+.report-steps a {
+    color: var(--accent-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.report-steps a:hover {
+    text-decoration: underline;
+}
+
+.report-steps strong {
+    color: var(--text-primary);
+}
+
+.report-copy-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.report-question-preview {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    word-break: break-word;
+    font-style: italic;
+}
+
+.btn-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-copy:hover {
+    border-color: var(--accent);
+    color: var(--accent-light);
+}
+
+.btn-copy.copied {
+    background: var(--green-bg);
+    border-color: var(--green);
+    color: var(--green);
+}
+
 /* ═══════════════════════════════════════════════
    RESULTS SCREEN
    ═══════════════════════════════════════════════ */
