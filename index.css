@@ -152,6 +152,65 @@ body {
     font-weight: 400;
 }
 
+/* Study Counter */
+.study-counter {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 0.85rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: opacity 0.4s, transform 0.4s;
+}
+.study-counter.hidden {
+    display: none;
+}
+.counter-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 80px;
+    background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 70%);
+    filter: blur(30px);
+    pointer-events: none;
+    opacity: 0.5;
+}
+.counter-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    z-index: 1;
+}
+.counter-icon {
+    font-size: 1.3rem;
+}
+.counter-text {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.counter-value {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-light), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.counter-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
 /* Info Cards */
 .info-cards {
     display: grid;
