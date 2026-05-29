@@ -12,6 +12,7 @@
   const POINTS_WRONG = -0.12;
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
+  const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
 
   // ─── State ───
   let allQuizzes = [];
@@ -281,6 +282,15 @@
     showScreen(screenResults);
     questionNav.classList.add("hidden");
     computeResults();
+
+    // Track quiz completion as custom event in GoatCounter
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({
+        path: "test-completato",
+        title: "Test completato",
+        event: true,
+      });
+    }
   }
 
   function computeResults() {
@@ -587,7 +597,29 @@
       }
     }
   });
-
+  // ─── Fetch study counter from GoatCounter ───
+  function fetchStudyCount() {
+    const counterEl = document.getElementById("study-counter");
+    const counterValue = document.getElementById("counter-value");
+    if (!GOATCOUNTER_CODE || GOATCOUNTER_CODE === "[IL_TUO_CODICE]") return;
+    fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/test-completato.json`)
+      .then((resp) => {
+        if (!resp.ok) throw new Error("Counter not available");
+        return resp.json();
+      })
+      .then((data) => {
+        const count = data.count || "0";
+        counterValue.textContent = count;
+        counterEl.classList.remove("hidden");
+        // Animate the counter appearing
+        counterEl.style.animation = "fadeInUp 0.6s ease-out";
+      })
+      .catch(() => {
+        // If counter not available yet (no data or setting not enabled), hide it silently
+        counterEl.classList.add("hidden");
+      });
+  }
   // ─── Init ───
   loadQuizzes();
+  fetchStudyCount();
 })();
