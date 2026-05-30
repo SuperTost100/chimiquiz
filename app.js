@@ -55,7 +55,10 @@
   );
   const btnCopyQuestion = document.getElementById("btn-copy-question");
   const copyBtnText = document.getElementById("copy-btn-text");
-
+  const btnGotoPoliquiz = document.getElementById("btn-goto-poliquiz");
+  const reportChangeSection = document.getElementById("report-change-section");
+  const btnChangeQuestion = document.getElementById("btn-change-question");
+   
   // Modal
   const modalOverlay = document.getElementById("modal-overlay");
   const modalAnswered = document.getElementById("modal-answered");
@@ -158,6 +161,40 @@
     return selected;
   }
 
+     // ─── Replace a single question (after report) ───
+  function replaceCurrentQuestion() {
+    // Build a set of all currently used quiz IDs to avoid duplicates
+    const usedIds = new Set(testQuestions.map((q) => q.original_number));
+     
+    // Seed: the Chimiquiz question number (1-based position)
+    let seed = currentIndex + 1;
+    let idx;
+    let attempts = 0;
+     
+    do {
+      const r = seededRandom(seed);
+      idx = Math.floor(r * allQuizzes.length);
+      if (usedIds.has(allQuizzes[idx].original_number)) {
+        seed = seed + 64;
+        attempts++;
+      } else {
+        break;
+      }
+    } while (attempts < 1000);
+     
+    if (attempts >= 1000) {
+      alert("Non ci sono altre domande disponibili.");
+      return;
+    }
+     
+    // Replace the question and reset the user's answer
+    testQuestions[currentIndex] = JSON.parse(JSON.stringify(allQuizzes[idx]));
+    userAnswers[currentIndex] = null;
+    flagged[currentIndex] = false;
+     
+    renderQuestion();
+  }
+
   // ─── Screen management ───
   function showScreen(screen) {
     [screenStart, screenQuiz, screenResults].forEach((s) =>
@@ -243,7 +280,12 @@
   }
 
   function selectOption(key) {
-    userAnswers[currentIndex] = key;
+    // Toggle: clicking the same option deselects it
+    if (userAnswers[currentIndex] === key) {
+      userAnswers[currentIndex] = null;
+    } else {
+      userAnswers[currentIndex] = key;
+    }
     renderQuestion();
   }
 
@@ -521,6 +563,7 @@
     reportQuestionPreview.textContent = q.question;
     copyBtnText.textContent = "Copia testo domanda";
     btnCopyQuestion.classList.remove("copied");
+    reportChangeSection.classList.add("hidden"); // Reset: hide change section
     modalReport.classList.remove("hidden");
   });
 
@@ -532,7 +575,12 @@
     if (e.target === modalReport) modalReport.classList.add("hidden");
   });
 
-  btnCopyQuestion.addEventListener("click", () => {
+  // Show "Cambia domanda" section after clicking "Vai su Poliquiz"
+  btnGotoPoliquiz.addEventListener("click", () => {
+    reportChangeSection.classList.remove("hidden");
+  });
+   
+   btnCopyQuestion.addEventListener("click", () => {
     const q = testQuestions[currentIndex];
     navigator.clipboard
       .writeText(q.question)
@@ -561,7 +609,13 @@
       });
   });
 
-  // ─── Warn before leaving the page during a test ───
+   // ─── Change question button ───
+  btnChangeQuestion.addEventListener("click", () => {
+    replaceCurrentQuestion();
+    modalReport.classList.add("hidden");
+  });
+   
+   // ─── Warn before leaving the page during a test ───
   window.addEventListener("beforeunload", (e) => {
     if (testActive) {
       e.preventDefault();
