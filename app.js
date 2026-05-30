@@ -13,6 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
+  const APP_VERSION = "1.06";
 
   // ─── State ───
   let allQuizzes = [];
@@ -58,7 +59,7 @@
   const btnGotoPoliquiz = document.getElementById("btn-goto-poliquiz");
   const reportChangeSection = document.getElementById("report-change-section");
   const btnChangeQuestion = document.getElementById("btn-change-question");
-   
+
   // Modal
   const modalOverlay = document.getElementById("modal-overlay");
   const modalAnswered = document.getElementById("modal-answered");
@@ -161,16 +162,16 @@
     return selected;
   }
 
-     // ─── Replace a single question (after report) ───
+  // ─── Replace a single question (after report) ───
   function replaceCurrentQuestion() {
     // Build a set of all currently used quiz IDs to avoid duplicates
     const usedIds = new Set(testQuestions.map((q) => q.original_number));
-     
+
     // Seed: the Chimiquiz question number (1-based position)
     let seed = currentIndex + 1;
     let idx;
     let attempts = 0;
-     
+
     do {
       const r = seededRandom(seed);
       idx = Math.floor(r * allQuizzes.length);
@@ -181,17 +182,17 @@
         break;
       }
     } while (attempts < 1000);
-     
+
     if (attempts >= 1000) {
       alert("Non ci sono altre domande disponibili.");
       return;
     }
-     
+
     // Replace the question and reset the user's answer
     testQuestions[currentIndex] = JSON.parse(JSON.stringify(allQuizzes[idx]));
     userAnswers[currentIndex] = null;
     flagged[currentIndex] = false;
-     
+
     renderQuestion();
   }
 
@@ -333,6 +334,9 @@
         event: true,
       });
     }
+
+    // Check for updates after quiz
+    checkForUpdates();
   }
 
   function computeResults() {
@@ -579,8 +583,8 @@
   btnGotoPoliquiz.addEventListener("click", () => {
     reportChangeSection.classList.remove("hidden");
   });
-   
-   btnCopyQuestion.addEventListener("click", () => {
+
+  btnCopyQuestion.addEventListener("click", () => {
     const q = testQuestions[currentIndex];
     navigator.clipboard
       .writeText(q.question)
@@ -609,13 +613,13 @@
       });
   });
 
-   // ─── Change question button ───
+  // ─── Change question button ───
   btnChangeQuestion.addEventListener("click", () => {
     replaceCurrentQuestion();
     modalReport.classList.add("hidden");
   });
-   
-   // ─── Warn before leaving the page during a test ───
+
+  // ─── Warn before leaving the page during a test ───
   window.addEventListener("beforeunload", (e) => {
     if (testActive) {
       e.preventDefault();
@@ -651,11 +655,14 @@
       }
     }
   });
+
   // ─── Fetch study counter from GoatCounter ───
   function fetchStudyCount() {
     const counterEl = document.getElementById("study-counter");
     const counterValue = document.getElementById("counter-value");
+
     if (!GOATCOUNTER_CODE || GOATCOUNTER_CODE === "[IL_TUO_CODICE]") return;
+
     fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/test-completato.json`)
       .then((resp) => {
         if (!resp.ok) throw new Error("Counter not available");
@@ -673,7 +680,58 @@
         counterEl.classList.add("hidden");
       });
   }
+
+  // ─── Version check ───
+  function checkForUpdates() {
+    // Fetch app.js itself with cache-busting to get the deployed version
+    fetch(`app.js?_=${Date.now()}`)
+      .then((resp) => {
+        if (!resp.ok) throw new Error("File not found");
+        return resp.text();
+      })
+      .then((text) => {
+        const match = text.match(/APP_VERSION\s*=\s*"([^"]+)"/);
+        if (match && match[1] !== APP_VERSION) {
+          showUpdateBanner(match[1]);
+        }
+      })
+      .catch(() => {
+        // Silently ignore
+      });
+  }
+
+  function showUpdateBanner(newVersion) {
+    // Don't show if already visible
+    if (document.getElementById("update-banner")) return;
+
+    const banner = document.createElement("div");
+    banner.id = "update-banner";
+    banner.className = "update-banner";
+    banner.innerHTML = `
+      <div class="update-banner-content">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        <span>Nuova versione <strong>${newVersion}</strong> disponibile!</span>
+        <button id="btn-update" class="btn-update">Aggiorna</button>
+        <button id="btn-dismiss-update" class="btn-dismiss-update" title="Chiudi">&times;</button>
+      </div>
+    `;
+    document.body.appendChild(banner);
+
+    // Animate in
+    requestAnimationFrame(() => banner.classList.add("visible"));
+
+    document.getElementById("btn-update").addEventListener("click", () => {
+      location.reload(true);
+    });
+
+    document.getElementById("btn-dismiss-update").addEventListener("click", () => {
+      banner.classList.remove("visible");
+      setTimeout(() => banner.remove(), 300);
+    });
+  }
+
   // ─── Init ───
   loadQuizzes();
   fetchStudyCount();
+  checkForUpdates();
 })();
