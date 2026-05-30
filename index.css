@@ -163,9 +163,11 @@ body {
     overflow: hidden;
     transition: opacity 0.4s, transform 0.4s;
 }
+
 .study-counter.hidden {
     display: none;
 }
+
 .counter-glow {
     position: absolute;
     top: 50%;
@@ -178,6 +180,7 @@ body {
     pointer-events: none;
     opacity: 0.5;
 }
+
 .counter-content {
     position: relative;
     display: flex;
@@ -186,9 +189,11 @@ body {
     gap: 0.75rem;
     z-index: 1;
 }
+
 .counter-icon {
     font-size: 1.3rem;
 }
+
 .counter-text {
     display: flex;
     align-items: baseline;
@@ -196,6 +201,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .counter-value {
     font-family: var(--font-mono);
     font-size: 1.4rem;
@@ -205,6 +211,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 .counter-label {
     font-size: 0.9rem;
     color: var(--text-secondary);
@@ -879,6 +886,32 @@ body {
     background: var(--green-bg);
     border-color: var(--green);
     color: var(--green);
+}
+
+/* Report Change Question Section */
+.report-change-section {
+    margin-top: 0.25rem;
+}
+
+.report-change-section.hidden {
+    display: none;
+}
+
+.report-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1rem 0;
+}
+
+.report-change-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.btn-change {
+    width: 100%;
+    justify-content: center;
 }
 
 /* ═══════════════════════════════════════════════
