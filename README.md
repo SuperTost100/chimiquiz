@@ -55,7 +55,6 @@ Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
 ├── app.js              # Motore logico, fetch da API pubblica Poliquiz, Timer, Keyboard Shortcuts
-├── LICENSE             # Licenza Apache 2
 └── README.md           # Questa documentazione
 ```
 
