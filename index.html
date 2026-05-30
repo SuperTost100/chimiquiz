@@ -53,7 +53,7 @@
         </div>
         <p class="tagline">Simulazione Test di Chimica</p>
 
-                <div id="study-counter" class="study-counter hidden">
+        <div id="study-counter" class="study-counter hidden">
           <div class="counter-glow"></div>
           <div class="counter-content">
             <span class="counter-icon">📊</span>
@@ -524,6 +524,7 @@
         <div class="modal-actions">
           <button id="btn-report-close" class="btn-secondary">Chiudi</button>
           <a
+            id="btn-goto-poliquiz"
             href="https://www.poliquiz.it/quiz/2"
             target="_blank"
             rel="noopener"
@@ -531,9 +532,18 @@
             >Vai su Poliquiz</a
           >
         </div>
+        <div id="report-change-section" class="report-change-section hidden">
+          <hr class="report-divider" />
+          <p class="report-change-text">Vuoi sostituire questa domanda con un'altra?</p>
+          <button id="btn-change-question" class="btn-secondary btn-change">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+            <span>Cambia domanda</span>
+          </button>
+        </div>
       </div>
     </div>
 
     <script src="app.js"></script>
   </body>
 </html>
+<!-- tu buttati, al massimo cadi - tost -->
