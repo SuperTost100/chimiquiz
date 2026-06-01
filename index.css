@@ -1269,6 +1269,28 @@ body {
     flex-shrink: 0;
 }
 
+.btn-report-review {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.4rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-report-review:hover {
+    border-color: var(--accent);
+    color: var(--accent-light);
+}
+
 /* ═══════════════════════════════════════════════
    MODAL
    ═══════════════════════════════════════════════ */

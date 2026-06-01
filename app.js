@@ -13,7 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.07";
+  const APP_VERSION = "1.08";
 
   // ─── State ───
   let allQuizzes = [];
@@ -24,6 +24,7 @@
   let timeRemaining = TEST_DURATION;
   let timerInterval = null;
   let testActive = false;
+  let reportQuestionIndex = 0; // which question the report modal refers to
 
   // ─── DOM refs ───
   const screenStart = document.getElementById("screen-start");
@@ -415,6 +416,10 @@
                 <div class="review-details">
                     <p class="review-full-question">${q.question}</p>
                     ${buildReviewOptions(q, answer)}
+                    <button class="btn-report-review" data-question-index="${i}">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        Segnala questa domanda
+                    </button>
                 </div>
             `;
 
@@ -423,6 +428,14 @@
         .querySelector(".review-item-header")
         .addEventListener("click", () => {
           item.classList.toggle("open");
+        });
+
+      // Report button in review
+      item
+        .querySelector(".btn-report-review")
+        .addEventListener("click", (e) => {
+          e.stopPropagation();
+          openReportModal(i);
         });
 
       reviewList.appendChild(item);
@@ -562,13 +575,20 @@
   });
 
   // ─── Report modal ───
-  btnReport.addEventListener("click", () => {
-    const q = testQuestions[currentIndex];
+  function openReportModal(questionIndex) {
+    reportQuestionIndex = questionIndex;
+    const q = testQuestions[reportQuestionIndex];
     reportQuestionPreview.textContent = q.question;
     copyBtnText.textContent = "Copia testo domanda";
     btnCopyQuestion.classList.remove("copied");
-    reportChangeSection.classList.add("hidden"); // Reset: hide change section
+    reportChangeSection.classList.add("hidden");
+    // Only allow changing questions during an active test
+    btnGotoPoliquiz.dataset.allowChange = testActive ? "true" : "false";
     modalReport.classList.remove("hidden");
+  }
+
+  btnReport.addEventListener("click", () => {
+    openReportModal(currentIndex);
   });
 
   btnReportClose.addEventListener("click", () => {
@@ -579,13 +599,15 @@
     if (e.target === modalReport) modalReport.classList.add("hidden");
   });
 
-  // Show "Cambia domanda" section after clicking "Vai su Poliquiz"
+  // Show "Cambia domanda" section after clicking "Vai su Poliquiz" (only during active test)
   btnGotoPoliquiz.addEventListener("click", () => {
-    reportChangeSection.classList.remove("hidden");
+    if (btnGotoPoliquiz.dataset.allowChange === "true") {
+      reportChangeSection.classList.remove("hidden");
+    }
   });
 
   btnCopyQuestion.addEventListener("click", () => {
-    const q = testQuestions[currentIndex];
+    const q = testQuestions[reportQuestionIndex];
     navigator.clipboard
       .writeText(q.question)
       .then(() => {
@@ -615,6 +637,7 @@
 
   // ─── Change question button ───
   btnChangeQuestion.addEventListener("click", () => {
+    currentIndex = reportQuestionIndex;
     replaceCurrentQuestion();
     modalReport.classList.add("hidden");
   });
