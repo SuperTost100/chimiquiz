@@ -1443,6 +1443,47 @@ body {
 /* ═══════════════════════════════════════════════
    FOOTER
    ═══════════════════════════════════════════════ */
+/* SEO Content */
+.seo-content {
+    max-width: 600px;
+    margin: 2.5rem auto 0;
+    padding: 1.5rem;
+    text-align: left;
+    border-top: 1px solid var(--border);
+}
+
+.seo-content h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.seo-content p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.seo-content p:last-child {
+    margin-bottom: 0;
+}
+
+.seo-content strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.seo-content a {
+    color: var(--accent-light);
+    text-decoration: none;
+}
+
+.seo-content a:hover {
+    text-decoration: underline;
+}
+
 .site-footer {
     width: 100%;
     text-align: center;
