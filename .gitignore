@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (just in case they use npm later)
+node_modules/
+package-lock.json
+
+# Local env
+.env
+.env.local
