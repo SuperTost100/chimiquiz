@@ -13,7 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.06";
+  const APP_VERSION = "1.07";
 
   // ─── State ───
   let allQuizzes = [];
