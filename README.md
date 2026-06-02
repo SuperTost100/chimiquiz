@@ -17,11 +17,16 @@ Il simulatore è **completamente gratuito, open-source e accessibile a chiunque 
 - **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
 - **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
 - **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
-- **Selezione Casuale Pseudo-Deterministica**: Algoritmo PRNG (Mulberry32) basato su seed dinamico (il timestamp iniziale e, per le domande successive, l'ID della domanda precedente con offset per evitare collisioni). Questo garantisce un'estrazione equa e non ripetitiva per ogni sessione.
+- **Deseleziona Risposta**: Cliccando nuovamente su una risposta già selezionata, questa viene rimossa, lasciando la domanda in bianco.
+- **Smart Shuffle**: Algoritmo intelligente di selezione che evita di riproporre le stesse domande in sessioni consecutive. Memorizza le ultime 256 domande viste e dà priorità a quelle fresche. Dopo circa 17 sessioni il ciclo si rinnova automaticamente.
+- **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
+- **Segnalazione Domande**: Possibilità di segnalare domande errate o inappropriate sia durante il quiz sia nella schermata di revisione finale, con istruzioni passo-passo per la segnalazione su Poliquiz.
+- **Cambia Domanda**: Dopo aver segnalato una domanda durante il test, è possibile sostituirla con una nuova domanda casuale.
 - **Resoconto Dettagliato a Fine Test**:
   - Grafico circolare animato per mostrare il punteggio ottenuto.
   - Statistiche dettagliate: domande corrette, errate e saltate.
   - Accordion interattivo per rivedere ciascuna risposta con la correzione ufficiale passo dopo passo.
+- **Aggiornamento Automatico**: Il sito verifica automaticamente la disponibilità di nuove versioni e mostra un banner non intrusivo con un pulsante per ricaricare.
 - **Interfaccia Utente Curata**: Design moderno dark mode, animazioni fluide e layout flessibile ad alta leggibilità.
 - **Sicurezza Antidispersione**: Avvisi prima dell'abbandono accidentale del test in corso (compreso il supporto al pulsante indietro o chiusura della scheda del browser).
 - **Scorciatoie da Tastiera**:
@@ -55,6 +60,7 @@ Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
 ├── app.js              # Motore logico, fetch da API pubblica Poliquiz, Timer, Keyboard Shortcuts
+├── og-image.png        # Immagine per le anteprime social (Open Graph / Twitter Card)
 └── README.md           # Questa documentazione
 ```
 
@@ -79,6 +85,16 @@ Se desideri clonare il progetto per scopi di sviluppo, personalizzazione o utili
      npx serve
      ```
 3. Apri il browser all'indirizzo `http://localhost:8000` (o la porta specificata dal server).
+
+### 🔧 Comandi Console (per sviluppatori)
+
+Apri la console del browser (Ispeziona → Console) e usa i seguenti comandi:
+
+| Comando | Descrizione |
+|---------|-------------|
+| `chimiquiz.stats()` | Mostra statistiche: domande nel DB, nella cronologia recente e nella blacklist |
+| `chimiquiz.resetBlacklist()` | Resetta la blacklist permanente delle domande segnalate |
+| `chimiquiz.resetRecent()` | Resetta la cronologia recente, rendendo tutte le domande di nuovo "fresche" |
 
 ---
 
