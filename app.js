@@ -13,7 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.08.1";
+  const APP_VERSION = "1.09";
 
   // ─── State ───
   let allQuizzes = [];
@@ -131,20 +131,102 @@
     }
   }
 
-  // ─── Select 15 Random Questions ───
+  // ─── Smart Shuffle: track recently used questions ───
+  const RECENT_MAX = 256; // remember last 256 questions
+  const RECENT_STORAGE_KEY = "chimiquiz_recent_ids";
+  const BLACKLIST_STORAGE_KEY = "chimiquiz_blacklist";
+
+  function getRecentIds() {
+    try {
+      const stored = localStorage.getItem(RECENT_STORAGE_KEY);
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveRecentIds(ids) {
+    const trimmed = ids.slice(-RECENT_MAX);
+    try {
+      localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(trimmed));
+    } catch {
+      // localStorage unavailable, fail silently
+    }
+  }
+
+  function getBlacklist() {
+    try {
+      const stored = localStorage.getItem(BLACKLIST_STORAGE_KEY);
+      return stored ? JSON.parse(stored) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function addToBlacklist(questionId) {
+    const list = getBlacklist();
+    if (!list.includes(questionId)) {
+      list.push(questionId);
+      try {
+        localStorage.setItem(BLACKLIST_STORAGE_KEY, JSON.stringify(list));
+      } catch {
+        // fail silently
+      }
+    }
+  }
+
+  // ─── Console commands for debugging ───
+  window.chimiquiz = {
+    resetBlacklist: function () {
+      localStorage.removeItem(BLACKLIST_STORAGE_KEY);
+      console.log("✅ Blacklist resettata. Le domande segnalate potranno riapparire.");
+    },
+    resetRecent: function () {
+      localStorage.removeItem(RECENT_STORAGE_KEY);
+      console.log("✅ Cronologia recente resettata. Tutte le domande sono di nuovo 'fresche'.");
+    },
+    stats: function () {
+      const recent = getRecentIds();
+      const blacklist = getBlacklist();
+      console.log(`📊 Chimiquiz Stats:`);
+      console.log(`   Domande nel database: ${allQuizzes.length}`);
+      console.log(`   Cronologia recente: ${recent.length}/${RECENT_MAX}`);
+      console.log(`   Blacklist (permanente): ${blacklist.length}`);
+      console.log(`   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`);
+    },
+  };
+
+  // ─── Select 15 Random Questions (Smart Shuffle) ───
   function selectQuestions() {
+    const recentIds = new Set(getRecentIds());
+    const blacklistIds = new Set(getBlacklist());
+
+    // Split pool: exclude blacklisted, then separate fresh vs recent
+    const freshIndices = [];
+    const recentIndices = [];
+    allQuizzes.forEach((q, i) => {
+      if (blacklistIds.has(q.original_number)) return; // skip blacklisted
+      if (recentIds.has(q.original_number)) {
+        recentIndices.push(i);
+      } else {
+        freshIndices.push(i);
+      }
+    });
+
     const selected = [];
     const usedIndices = new Set();
-
-    // First seed: current seconds
     let seed = Math.floor(Date.now() / 1000);
+
+    // Pick from fresh questions first, then fall back to recent ones
+    const orderedPool = [...freshIndices, ...recentIndices];
 
     for (let i = 0; i < TOTAL_QUESTIONS; i++) {
       let idx;
       let attempts = 0;
       do {
         const r = seededRandom(seed);
-        idx = Math.floor(r * allQuizzes.length);
+        const poolIdx = Math.floor(r * orderedPool.length);
+        idx = orderedPool[poolIdx];
         if (usedIndices.has(idx)) {
           seed = seed + 64;
           attempts++;
@@ -155,18 +237,24 @@
 
       usedIndices.add(idx);
       selected.push(JSON.parse(JSON.stringify(allQuizzes[idx]))); // deep copy
-
-      // Next seed: question number of selected question
       seed = allQuizzes[idx].number;
     }
+
+    // Save selected question IDs to recent history
+    const newIds = selected.map((q) => q.original_number);
+    saveRecentIds([...getRecentIds(), ...newIds]);
 
     return selected;
   }
 
   // ─── Replace a single question (after report) ───
   function replaceCurrentQuestion() {
-    // Build a set of all currently used quiz IDs to avoid duplicates
+    const blacklistIds = new Set(getBlacklist());
     const usedIds = new Set(testQuestions.map((q) => q.original_number));
+
+    // Blacklist the old question permanently
+    const oldId = testQuestions[currentIndex].original_number;
+    addToBlacklist(oldId);
 
     // Seed: the Chimiquiz question number (1-based position)
     let seed = currentIndex + 1;
@@ -176,7 +264,8 @@
     do {
       const r = seededRandom(seed);
       idx = Math.floor(r * allQuizzes.length);
-      if (usedIds.has(allQuizzes[idx].original_number)) {
+      const qId = allQuizzes[idx].original_number;
+      if (usedIds.has(qId) || blacklistIds.has(qId) || qId === oldId) {
         seed = seed + 64;
         attempts++;
       } else {
@@ -193,6 +282,11 @@
     testQuestions[currentIndex] = JSON.parse(JSON.stringify(allQuizzes[idx]));
     userAnswers[currentIndex] = null;
     flagged[currentIndex] = false;
+
+    // Also add the new question to recent history
+    const recentIds = getRecentIds();
+    recentIds.push(allQuizzes[idx].original_number);
+    saveRecentIds(recentIds);
 
     renderQuestion();
   }
