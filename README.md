@@ -17,11 +17,9 @@ Il simulatore è **completamente gratuito, open-source e accessibile a chiunque 
 - **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
 - **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
 - **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
-- **Deseleziona Risposta**: Cliccando nuovamente su una risposta già selezionata, questa viene rimossa, lasciando la domanda in bianco.
 - **Smart Shuffle**: Algoritmo intelligente di selezione che evita di riproporre le stesse domande in sessioni consecutive. Memorizza le ultime 256 domande viste e dà priorità a quelle fresche. Dopo circa 17 sessioni il ciclo si rinnova automaticamente.
 - **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
-- **Segnalazione Domande**: Possibilità di segnalare domande errate o inappropriate sia durante il quiz sia nella schermata di revisione finale, con istruzioni passo-passo per la segnalazione su Poliquiz.
-- **Cambia Domanda**: Dopo aver segnalato una domanda durante il test, è possibile sostituirla con una nuova domanda casuale.
+- **Segnalazione Domande**: Possibilità di segnalare domande errate o inappropriate sia durante il quiz sia nella schermata di revisione finale, con istruzioni passo-passo per la segnalazione su Poliquiz e dopo aver segnalato una domanda è possibile sostituirla con una nuova domanda casuale.
 - **Resoconto Dettagliato a Fine Test**:
   - Grafico circolare animato per mostrare il punteggio ottenuto.
   - Statistiche dettagliate: domande corrette, errate e saltate.
