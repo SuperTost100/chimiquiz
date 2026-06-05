@@ -1,0 +1,56 @@
+name: Segnala domanda Queez
+description: Segnala errori nelle domande importate dal banco Queez su Chimiquiz
+title: "[Domanda Queez] "
+labels: ["domanda-queez"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aiutare a migliorare il database! Compila i campi sotto.
+        Puoi anche proporre una correzione aprendo una [Pull Request](https://github.com/SuperTost100/chimiquiz/compare).
+  - type: input
+    id: queez_id
+    attributes:
+      label: ID domanda (queez_id)
+      placeholder: "es. queez-12345"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Testo della domanda
+      description: Incolla il testo completo della domanda
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Opzioni di risposta
+      description: Elenca tutte le opzioni (A, B, C…)
+    validations:
+      required: true
+  - type: input
+    id: marked_correct
+    attributes:
+      label: Risposta segnata come corretta in Chimiquiz
+      placeholder: "es. b"
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Tipo di problema
+      options:
+        - Risposta errata segnata come corretta
+        - Più risposte corrette
+        - Nessuna risposta corretta
+        - Errore di formattazione / LaTeX
+        - Domanda poco chiara
+        - Altro
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Dettagli aggiuntivi
+      description: Spiega il problema e, se possibile, qual è la risposta corretta
+    validations:
+      required: true
