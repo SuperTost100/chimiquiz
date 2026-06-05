@@ -64,11 +64,6 @@ Chimiquiz/
 ├── app.js              # Motore logico, fetch Poliquiz + banco Queez, Timer, AI esterna
 ├── data/
 │   └── queez-chimica.json   # ~1300 domande chimica da banco Queez
-├── scripts/
-│   ├── build_queez_chimica.py              # Da PDF/testo locale
-│   ├── fetch_queez_chimica_firestore.py    # Da Firestore (con refresh token)
-│   ├── export_queez_chimica_browser.js     # Export da console queez.org (consigliato)
-│   └── export_queez_token.js               # Estrae refresh token per lo script Python
 ├── .github/
 │   └── ISSUE_TEMPLATE/
 │       └── domanda-queez.yml                 # Template issue per segnalazioni Queez
