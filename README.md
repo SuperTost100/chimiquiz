@@ -15,7 +15,8 @@ Il simulatore è **completamente gratuito, open-source e accessibile a chiunque 
 ## ✨ Caratteristiche Principali
 
 - **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
-- **Database ampio (v1.1)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica Queez in `data/queez-chimica.json`.
+- **Database ampio (v1.11)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica Queez. Le domande duplicate tra i due database sono rimosse automaticamente tramite la `data/global-blacklist.json`.
+- **Modalità DSA**: Pulsante per incrementare il tempo a disposizione del 30% (da 25 minuti a 32 minuti e 30 secondi).
 - **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
 - **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
 - **Smart Shuffle**: Algoritmo intelligente di selezione che evita di riproporre le stesse domande in sessioni consecutive. Memorizza le ultime 256 domande viste e dà priorità a quelle fresche. Dopo circa 17 sessioni il ciclo si rinnova automaticamente.
@@ -49,7 +50,7 @@ La simulazione adotta il formato e le penalità tipiche di molti test universita
   - Risposta corretta: **+0.60 punti**
   - Risposta errata: **-0.12 punti** (penalità del 20%)
   - Risposta non data / saltata: **0.00 punti**
-- **Soglia di Superamento**: Il test è considerato superato con un voto **maggiore o uguale a 6.0/9.0**.
+- **Soglia di Superamento**: Il test è considerato superato con un punteggio **maggiore o uguale a 6.0/9.0**. _(Nota: i punteggi ≥ 5.5 vengono arrotondati e considerati sufficienti per il superamento)._
 
 ---
 
@@ -63,12 +64,8 @@ Chimiquiz/
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
 ├── app.js              # Motore logico, fetch Poliquiz + banco Queez, Timer, AI esterna
 ├── data/
-│   └── queez-chimica.json   # ~1300 domande chimica da banco Queez
-├── scripts/
-│   ├── build_queez_chimica.py              # Da PDF/testo locale
-│   ├── fetch_queez_chimica_firestore.py    # Da Firestore (con refresh token)
-│   ├── export_queez_chimica_browser.js     # Export da console queez.org (consigliato)
-│   └── export_queez_token.js               # Estrae refresh token per lo script Python
+│   ├── queez-chimica.json   # ~1300 domande chimica da banco Queez
+│   └── global-blacklist.json # Blacklist dei duplicati (rimossi a runtime)
 ├── .github/
 │   └── ISSUE_TEMPLATE/
 │       └── domanda-queez.yml                 # Template issue per segnalazioni Queez
@@ -107,6 +104,7 @@ Apri la console del browser (Ispeziona → Console) e usa i seguenti comandi:
 | `chimiquiz.stats()`          | Mostra statistiche: domande nel DB, nella cronologia recente e nella blacklist |
 | `chimiquiz.resetBlacklist()` | Resetta la blacklist permanente delle domande segnalate                        |
 | `chimiquiz.resetRecent()`    | Resetta la cronologia recente, rendendo tutte le domande di nuovo "fresche"    |
+| `chimiquiz.setDsa(true/false)` | Attiva o disattiva forzatamente la modalità DSA dalla console                  |
 
 ---
 
