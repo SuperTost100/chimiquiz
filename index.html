@@ -616,6 +616,27 @@
               <span>Seleziona <strong>Segnala</strong> dal menu.</span>
             </li>
           </ol>
+          <div class="report-copy-box">
+            <p id="report-question-preview" class="report-question-preview"></p>
+            <button id="btn-copy-question" class="btn-copy">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path
+                  d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                />
+              </svg>
+              <span id="copy-btn-text">Copia testo domanda</span>
+            </button>
+          </div>
         </div>
 
         <div id="report-queez-panel" class="hidden">
@@ -626,17 +647,13 @@
           <ol class="report-steps">
             <li>
               <span class="step-num">1</span>
-              <span>Verifica il testo della domanda qui sotto.</span>
-            </li>
-            <li>
-              <span class="step-num">2</span>
               <span
                 >Clicca <strong>Apri issue su GitHub</strong>: il modulo sarà
                 precompilato con i dati della domanda.</span
               >
             </li>
             <li>
-              <span class="step-num">3</span>
+              <span class="step-num">2</span>
               <span
                 >Descrivi il problema (risposta sbagliata, formattazione, ecc.) e
                 invia. Oppure proponi una correzione con una
@@ -649,28 +666,6 @@
               >
             </li>
           </ol>
-        </div>
-
-        <div class="report-copy-box">
-          <p id="report-question-preview" class="report-question-preview"></p>
-          <button id="btn-copy-question" class="btn-copy">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-              <path
-                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-              />
-            </svg>
-            <span id="copy-btn-text">Copia testo domanda</span>
-          </button>
         </div>
         <div class="modal-actions">
           <button id="btn-report-close" class="btn-secondary">Chiudi</button>
