@@ -13,7 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.1";
+  const APP_VERSION = "1.11";
   const GITHUB_REPO = "SuperTost100/chimiquiz";
   const AI_PROVIDER_KEY = "chimiquiz_ai_provider";
   const QUEEZ_DATA_URL = "data/queez-chimica.json";
@@ -353,9 +353,28 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       return;
     }
 
-    allQuizzes = renumberQuestions(pool);
+    // ─── Deduplicate questions ───
+    const uniquePool = [];
+    const seenTexts = new Set();
+    
+    pool.forEach(q => {
+      // Normalize text: lowercase, remove accents, remove all non-alphanumeric chars
+      const normalized = q.question
+        .toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]/g, "");
+        
+      if (!seenTexts.has(normalized)) {
+        seenTexts.add(normalized);
+        uniquePool.push(q);
+      }
+    });
+
+    const duplicatesRemoved = pool.length - uniquePool.length;
+
+    allQuizzes = renumberQuestions(uniquePool);
     console.log(
-      `[Chimiquiz] Database: ${poliquizCount} Poliquiz + ${queezCount} Queez = ${allQuizzes.length} domande`,
+      `[Chimiquiz] Database: ${poliquizCount} Poliquiz + ${queezCount} Queez = ${pool.length} totali. Rimossi ${duplicatesRemoved} doppioni. Pool finale: ${allQuizzes.length} domande`,
     );
   }
 
