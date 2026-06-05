@@ -132,8 +132,7 @@
         <div class="news-banner" role="status">
           <span class="news-banner-icon" aria-hidden="true">✨</span>
           <p>
-            <strong>Novità v1.1:</strong> oltre <strong>1.300 domande verificate</strong>
-            aggiunte al database — da Poliquiz e Queez!
+            <strong>Novità v1.11:</strong> domande doppie rimosse, modalità DSA (+30% tempo) e arrotondamento punteggio!
           </p>
         </div>
 
@@ -184,35 +183,40 @@
           </ul>
         </div>
 
-        <button id="btn-start" class="btn-primary btn-glow">
-          <span>Inizia il Test</span>
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+        <div class="start-actions">
+          <button id="btn-start" class="btn-primary btn-glow">
+            <span>Inizia il Test</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+          <a
+            href="https://github.com/SuperTost100/chimiquiz"
+            target="_blank"
+            rel="noopener"
+            class="btn-github"
           >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        <a
-          href="https://github.com/SuperTost100/chimiquiz"
-          target="_blank"
-          rel="noopener"
-          class="btn-github"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22l-.01 3.29c0 .31.22.69.83.57A12 12 0 0 0 12 .3"
-            />
-          </svg>
-          <span>Contribuisci su GitHub</span>
-        </a>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18a4.65 4.65 0 0 1 1.24 3.22c0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22l-.01 3.29c0 .31.22.69.83.57A12 12 0 0 0 12 .3"
+              />
+            </svg>
+            <span>Contribuisci su GitHub</span>
+          </a>
+          <button id="btn-dsa" class="btn-dsa" title="Attiva Modalità DSA (+30% tempo)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            <span>Modalità DSA</span>
+          </button>
+        </div>
       </div>
 
       <section class="seo-content">
@@ -286,6 +290,7 @@
           </div>
         </div>
         <div class="header-right">
+          <span id="dsa-badge" class="dsa-badge hidden">DSA +30%</span>
           <button
             id="btn-toggle-nav"
             class="btn-icon"
