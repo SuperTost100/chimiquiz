@@ -13,7 +13,28 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.09";
+  const APP_VERSION = "1.1";
+  const GITHUB_REPO = "SuperTost100/chimiquiz";
+  const AI_PROVIDER_KEY = "chimiquiz_ai_provider";
+  const QUEEZ_DATA_URL = "data/queez-chimica.json";
+
+  const AI_PROVIDERS = {
+    chatgpt: {
+      label: "ChatGPT",
+      buildUrl: (prompt) =>
+        `https://chatgpt.com/?q=${encodeURIComponent(prompt)}`,
+    },
+    claude: {
+      label: "Claude",
+      buildUrl: (prompt) =>
+        `https://claude.ai/new?q=${encodeURIComponent(prompt)}`,
+    },
+    gemini: {
+      label: "Gemini",
+      buildUrl: (prompt) =>
+        `https://gemini.google.com/app?q=${encodeURIComponent(prompt)}`,
+    },
+  };
 
   // ─── State ───
   let allQuizzes = [];
@@ -58,8 +79,12 @@
   const btnCopyQuestion = document.getElementById("btn-copy-question");
   const copyBtnText = document.getElementById("copy-btn-text");
   const btnGotoPoliquiz = document.getElementById("btn-goto-poliquiz");
+  const btnGotoGithubIssue = document.getElementById("btn-goto-github-issue");
   const reportChangeSection = document.getElementById("report-change-section");
   const btnChangeQuestion = document.getElementById("btn-change-question");
+  const reportModalTitle = document.getElementById("report-modal-title");
+  const reportPoliquizPanel = document.getElementById("report-poliquiz-panel");
+  const reportQueezPanel = document.getElementById("report-queez-panel");
 
   // Modal
   const modalOverlay = document.getElementById("modal-overlay");
@@ -85,6 +110,148 @@
   const statWrong = document.getElementById("stat-wrong");
   const statSkipped = document.getElementById("stat-skipped");
   const reviewList = document.getElementById("review-list");
+  const aiProviderSelect = document.getElementById("ai-provider-select");
+  const questionDisclaimer = document.getElementById("question-disclaimer");
+  const questionSourceLink = document.getElementById("question-source-link");
+
+  // ─── AI explain (external providers) ───
+  function getAIProvider() {
+    const stored = localStorage.getItem(AI_PROVIDER_KEY);
+    return AI_PROVIDERS[stored] ? stored : "chatgpt";
+  }
+
+  function setAIProvider(provider) {
+    if (AI_PROVIDERS[provider]) {
+      localStorage.setItem(AI_PROVIDER_KEY, provider);
+    }
+  }
+
+  function initAIProviderSelect() {
+    if (!aiProviderSelect) return;
+    const current = getAIProvider();
+    aiProviderSelect.innerHTML = Object.entries(AI_PROVIDERS)
+      .map(
+        ([key, cfg]) =>
+          `<option value="${key}"${key === current ? " selected" : ""}>${cfg.label}</option>`,
+      )
+      .join("");
+    aiProviderSelect.value = current;
+    aiProviderSelect.addEventListener("change", () => {
+      setAIProvider(aiProviderSelect.value);
+    });
+  }
+
+  function buildAIExplainPrompt(q, userAnswer) {
+    const keys = Object.keys(q.options).sort();
+    const optionsText = keys
+      .map((k) => `${k.toUpperCase()}) ${q.options[k]}`)
+      .join("\n");
+    const correctKey = q.correct_answer.toUpperCase();
+    const correctText = q.options[q.correct_answer];
+
+    let answerLine;
+    if (userAnswer === null) {
+      answerLine = "Non ho risposto a questa domanda.";
+    } else if (userAnswer === q.correct_answer) {
+      answerLine = `La mia risposta (corretta): ${userAnswer.toUpperCase()}) ${q.options[userAnswer]}`;
+    } else {
+      answerLine = `La mia risposta (errata): ${userAnswer.toUpperCase()}) ${q.options[userAnswer]}`;
+    }
+
+    return `Sei un tutor di chimica. Spiega in italiano, in modo chiaro e didattico, la seguente domanda a risposta multipla e perché la risposta corretta è quella giusta.
+
+Domanda:
+${q.question}
+
+Opzioni:
+${optionsText}
+
+Risposta corretta: ${correctKey}) ${correctText}
+${answerLine}
+
+Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono sbagliate.`;
+  }
+
+  function openAIExplain(questionIndex) {
+    const q = testQuestions[questionIndex];
+    const providerKey = aiProviderSelect
+      ? aiProviderSelect.value
+      : getAIProvider();
+    const provider = AI_PROVIDERS[providerKey] || AI_PROVIDERS.chatgpt;
+    const prompt = buildAIExplainPrompt(q, userAnswers[questionIndex]);
+    window.open(provider.buildUrl(prompt), "_blank", "noopener,noreferrer");
+  }
+
+  function isPoliquizQuestion(q) {
+    return q && q.source === "poliquiz";
+  }
+
+  function isQueezQuestion(q) {
+    return q && q.source === "queez";
+  }
+
+  function formatQuestionOptions(q) {
+    return Object.keys(q.options)
+      .sort()
+      .map((key) => `${key.toUpperCase()}) ${q.options[key]}`)
+      .join("\n");
+  }
+
+  function buildQueezGithubIssueUrl(q) {
+    const shortTitle =
+      q.question.length > 72 ? `${q.question.slice(0, 72)}…` : q.question;
+    const title = `[Domanda Queez] ${shortTitle}`;
+    const body = [
+      "## Segnalazione domanda Queez",
+      "",
+      `**ID:** ${q.original_number || q.queez_id || "n/d"}`,
+      `**Versione Chimiquiz:** ${APP_VERSION}`,
+      "",
+      "### Domanda",
+      q.question,
+      "",
+      "### Opzioni",
+      formatQuestionOptions(q),
+      "",
+      "### Risposta segnata come corretta",
+      `${q.correct_answer.toUpperCase()}) ${q.options[q.correct_answer]}`,
+      "",
+      "### Problema",
+      "<!-- Descrivi il problema (risposta errata, formattazione, ecc.) -->",
+      "",
+      "---",
+      "_Segnalazione inviata da Chimiquiz_",
+    ].join("\n");
+
+    const params = new URLSearchParams({
+      title,
+      body,
+      labels: "domanda-queez",
+    });
+    return `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+  }
+
+  function updateQuestionSourceUI() {
+    const q = testQuestions[currentIndex];
+    if (!questionDisclaimer) return;
+
+    questionDisclaimer.classList.remove("hidden");
+    btnReport.classList.remove("hidden");
+
+    if (isPoliquizQuestion(q)) {
+      if (questionSourceLink) {
+        questionSourceLink.textContent = "Poliquiz";
+        questionSourceLink.href = "https://www.poliquiz.it";
+      }
+      btnReport.textContent = "Segnala su Poliquiz";
+    } else {
+      if (questionSourceLink) {
+        questionSourceLink.textContent = "Queez";
+        questionSourceLink.href = "https://queez.org";
+      }
+      btnReport.textContent = "Segnala su GitHub";
+    }
+  }
 
   // ─── Seeded Random ───
   function seededRandom(seed) {
@@ -96,39 +263,101 @@
   }
 
   // ─── Load Quiz Data ───
-  async function loadQuizzes() {
-    try {
-      const resp = await fetch("https://api.poliquiz.it/course/2/quizzes");
-      const result = await resp.json();
+  function mapPoliquizQuestion(q) {
+    const letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
+    const optionsObj = {};
+    q.answers.forEach((ans, i) => {
+      if (i < letters.length) {
+        optionsObj[letters[i]] = ans;
+      }
+    });
 
-      // Filter questions without a correct answer or with only one answer, and map to our format
-      allQuizzes = result.data
-        .filter(
-          (q) =>
-            q.right_answer_index !== -1 && q.answers && q.answers.length > 1,
-        )
-        .map((q, index) => {
-          const letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
-          const optionsObj = {};
-          q.answers.forEach((ans, i) => {
-            if (i < letters.length) {
-              optionsObj[letters[i]] = ans;
-            }
-          });
+    return {
+      question: q.question,
+      options: optionsObj,
+      correct_answer: letters[q.right_answer_index],
+      original_number: q.id,
+      source: "poliquiz",
+      source_file: "api.poliquiz.it",
+    };
+  }
 
-          return {
-            number: index + 1,
-            question: q.question,
-            options: optionsObj,
-            correct_answer: letters[q.right_answer_index],
-            original_number: q.id,
-            source_file: "api.poliquiz.it",
-          };
-        });
-    } catch (e) {
-      console.error("Failed to load quizzes from API", e);
-      alert("Errore nel caricamento delle domande tramite API.");
+  function mapLocalQuestion(q) {
+    return {
+      question: q.question,
+      options: q.options,
+      correct_answer: q.correct_answer,
+      original_number: q.original_number,
+      source: q.source || "queez",
+      source_file: q.source_file || "queez-chimica.json",
+    };
+  }
+
+  function renumberQuestions(pool) {
+    pool.forEach((q, index) => {
+      q.number = index + 1;
+    });
+    return pool;
+  }
+
+  async function loadPoliquizQuizzes() {
+    const resp = await fetch("https://api.poliquiz.it/course/2/quizzes");
+    const result = await resp.json();
+    return result.data
+      .filter(
+        (q) =>
+          q.right_answer_index !== -1 && q.answers && q.answers.length > 1,
+      )
+      .map(mapPoliquizQuestion);
+  }
+
+  async function loadQueezQuizzes() {
+    const resp = await fetch(QUEEZ_DATA_URL);
+    if (!resp.ok) {
+      throw new Error(`HTTP ${resp.status}`);
     }
+    const data = await resp.json();
+    return data
+      .filter(
+        (q) =>
+          q.correct_answer &&
+          q.options &&
+          Object.keys(q.options).length > 1 &&
+          q.options[q.correct_answer],
+      )
+      .map(mapLocalQuestion);
+  }
+
+  async function loadQuizzes() {
+    const pool = [];
+    let poliquizCount = 0;
+    let queezCount = 0;
+
+    try {
+      const poliquiz = await loadPoliquizQuizzes();
+      pool.push(...poliquiz);
+      poliquizCount = poliquiz.length;
+    } catch (e) {
+      console.error("Failed to load Poliquiz quizzes", e);
+    }
+
+    try {
+      const queez = await loadQueezQuizzes();
+      pool.push(...queez);
+      queezCount = queez.length;
+    } catch (e) {
+      console.warn("Failed to load Queez chemistry bank", e);
+    }
+
+    if (pool.length === 0) {
+      alert("Nessuna domanda disponibile. Controlla la connessione e riprova.");
+      return;
+    }
+
+    allQuizzes = renumberQuestions(pool);
+    console.log(
+      `[Chimiquiz] Database: ${poliquizCount} Poliquiz + ${queezCount} Queez = ${allQuizzes.length} domande`,
+    );
   }
 
   // ─── Smart Shuffle: track recently used questions ───
@@ -188,8 +417,10 @@
     stats: function () {
       const recent = getRecentIds();
       const blacklist = getBlacklist();
+      const poliquiz = allQuizzes.filter((q) => q.source === "poliquiz").length;
+      const queez = allQuizzes.filter((q) => q.source === "queez").length;
       console.log(`📊 Chimiquiz Stats:`);
-      console.log(`   Domande nel database: ${allQuizzes.length}`);
+      console.log(`   Domande nel database: ${allQuizzes.length} (${poliquiz} Poliquiz, ${queez} Queez)`);
       console.log(`   Cronologia recente: ${recent.length}/${RECENT_MAX}`);
       console.log(`   Blacklist (permanente): ${blacklist.length}`);
       console.log(`   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`);
@@ -365,6 +596,7 @@
       currentIndex === TOTAL_QUESTIONS - 1 ? "Consegna" : "Prossima domanda";
 
     updateNavGrid();
+    updateQuestionSourceUI();
 
     if (window.MathJax) {
       MathJax.typesetPromise([questionText, optionsContainer]).catch(
@@ -498,6 +730,14 @@
             ? "Errata"
             : "Non data";
 
+      const reportLabel = isPoliquizQuestion(q)
+        ? "Segnala su Poliquiz"
+        : "Segnala su GitHub";
+      const reportBtn = `<button class="btn-report-review" data-question-index="${i}">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        ${reportLabel}
+                    </button>`;
+
       item.innerHTML = `
                 <div class="review-item-header">
                     <div class="review-q-info">
@@ -510,10 +750,13 @@
                 <div class="review-details">
                     <p class="review-full-question">${q.question}</p>
                     ${buildReviewOptions(q, answer)}
-                    <button class="btn-report-review" data-question-index="${i}">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                        Segnala questa domanda
-                    </button>
+                    <div class="review-actions">
+                        <button class="btn-ask-ai-review" data-question-index="${i}">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 1 7 7c0 2.5-1.2 4.7-3 6.1V19a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2.9A7 7 0 0 1 5 10a7 7 0 0 1 7-7z"/><line x1="9" y1="22" x2="15" y2="22"/></svg>
+                            Chiedi all'AI
+                        </button>
+                        ${reportBtn}
+                    </div>
                 </div>
             `;
 
@@ -524,13 +767,20 @@
           item.classList.toggle("open");
         });
 
-      // Report button in review
       item
-        .querySelector(".btn-report-review")
+        .querySelector(".btn-ask-ai-review")
         .addEventListener("click", (e) => {
+          e.stopPropagation();
+          openAIExplain(i);
+        });
+
+      const reportBtnEl = item.querySelector(".btn-report-review");
+      if (reportBtnEl) {
+        reportBtnEl.addEventListener("click", (e) => {
           e.stopPropagation();
           openReportModal(i);
         });
+      }
 
       reviewList.appendChild(item);
     });
@@ -672,12 +922,30 @@
   function openReportModal(questionIndex) {
     reportQuestionIndex = questionIndex;
     const q = testQuestions[reportQuestionIndex];
+    const fromPoliquiz = isPoliquizQuestion(q);
+
     reportQuestionPreview.textContent = q.question;
     copyBtnText.textContent = "Copia testo domanda";
     btnCopyQuestion.classList.remove("copied");
     reportChangeSection.classList.add("hidden");
-    // Only allow changing questions during an active test
-    btnGotoPoliquiz.dataset.allowChange = testActive ? "true" : "false";
+
+    if (fromPoliquiz) {
+      reportModalTitle.textContent = "Segnala su Poliquiz";
+      reportPoliquizPanel.classList.remove("hidden");
+      reportQueezPanel.classList.add("hidden");
+      btnGotoPoliquiz.classList.remove("hidden");
+      btnGotoGithubIssue.classList.add("hidden");
+      btnGotoPoliquiz.dataset.allowChange = testActive ? "true" : "false";
+    } else {
+      reportModalTitle.textContent = "Segnala su GitHub";
+      reportPoliquizPanel.classList.add("hidden");
+      reportQueezPanel.classList.remove("hidden");
+      btnGotoPoliquiz.classList.add("hidden");
+      btnGotoGithubIssue.classList.remove("hidden");
+      btnGotoGithubIssue.href = buildQueezGithubIssueUrl(q);
+      btnGotoGithubIssue.dataset.allowChange = testActive ? "true" : "false";
+    }
+
     modalReport.classList.remove("hidden");
   }
 
@@ -693,9 +961,15 @@
     if (e.target === modalReport) modalReport.classList.add("hidden");
   });
 
-  // Show "Cambia domanda" section after clicking "Vai su Poliquiz" (only during active test)
+  // Show "Cambia domanda" after opening external report (solo durante test attivo)
   btnGotoPoliquiz.addEventListener("click", () => {
     if (btnGotoPoliquiz.dataset.allowChange === "true") {
+      reportChangeSection.classList.remove("hidden");
+    }
+  });
+
+  btnGotoGithubIssue.addEventListener("click", () => {
+    if (btnGotoGithubIssue.dataset.allowChange === "true") {
       reportChangeSection.classList.remove("hidden");
     }
   });
@@ -848,6 +1122,7 @@
   }
 
   // ─── Init ───
+  initAIProviderSelect();
   loadQuizzes();
   fetchStudyCount();
   checkForUpdates();

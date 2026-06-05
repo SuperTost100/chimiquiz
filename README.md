@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://supertost100.github.io/chimiquiz/)
 
-**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, integrandosi dinamicamente con le **API pubbliche di Poliquiz** per ottenere i quesiti.
+**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [Queez](https://queez.org).
 
 Il simulatore è **completamente gratuito, open-source e accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
 
@@ -15,11 +15,15 @@ Il simulatore è **completamente gratuito, open-source e accessibile a chiunque 
 ## ✨ Caratteristiche Principali
 
 - **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
+- **Database ampio (v1.1)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica Queez in `data/queez-chimica.json`.
 - **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
 - **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
 - **Smart Shuffle**: Algoritmo intelligente di selezione che evita di riproporre le stesse domande in sessioni consecutive. Memorizza le ultime 256 domande viste e dà priorità a quelle fresche. Dopo circa 17 sessioni il ciclo si rinnova automaticamente.
 - **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
-- **Segnalazione Domande**: Possibilità di segnalare domande errate o inappropriate sia durante il quiz sia nella schermata di revisione finale, con istruzioni passo-passo per la segnalazione su Poliquiz e dopo aver segnalato una domanda è possibile sostituirla con una nuova domanda casuale.
+- **Segnalazione Domande**:
+  - **Poliquiz**: istruzioni per segnalare su poliquiz.it; in test attivo puoi sostituire la domanda.
+  - **Queez**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
+- **Chiedi all'AI**: Nel riepilogo finale, apri ChatGPT, Claude o Gemini in una nuova scheda con un prompt già compilato per spiegare la risposta corretta.
 - **Resoconto Dettagliato a Fine Test**:
   - Grafico circolare animato per mostrare il punteggio ottenuto.
   - Statistiche dettagliate: domande corrette, errate e saltate.
@@ -57,7 +61,17 @@ Il progetto si compone di un'applicazione front-end statica ed efficiente:
 Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
-├── app.js              # Motore logico, fetch da API pubblica Poliquiz, Timer, Keyboard Shortcuts
+├── app.js              # Motore logico, fetch Poliquiz + banco Queez, Timer, AI esterna
+├── data/
+│   └── queez-chimica.json   # ~1300 domande chimica da banco Queez
+├── scripts/
+│   ├── build_queez_chimica.py              # Da PDF/testo locale
+│   ├── fetch_queez_chimica_firestore.py    # Da Firestore (con refresh token)
+│   ├── export_queez_chimica_browser.js     # Export da console queez.org (consigliato)
+│   └── export_queez_token.js               # Estrae refresh token per lo script Python
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       └── domanda-queez.yml                 # Template issue per segnalazioni Queez
 ├── og-image.png        # Immagine per le anteprime social (Open Graph / Twitter Card)
 └── README.md           # Questa documentazione
 ```
@@ -88,11 +102,11 @@ Se desideri clonare il progetto per scopi di sviluppo, personalizzazione o utili
 
 Apri la console del browser (Ispeziona → Console) e usa i seguenti comandi:
 
-| Comando | Descrizione |
-|---------|-------------|
-| `chimiquiz.stats()` | Mostra statistiche: domande nel DB, nella cronologia recente e nella blacklist |
-| `chimiquiz.resetBlacklist()` | Resetta la blacklist permanente delle domande segnalate |
-| `chimiquiz.resetRecent()` | Resetta la cronologia recente, rendendo tutte le domande di nuovo "fresche" |
+| Comando                      | Descrizione                                                                    |
+| ---------------------------- | ------------------------------------------------------------------------------ |
+| `chimiquiz.stats()`          | Mostra statistiche: domande nel DB, nella cronologia recente e nella blacklist |
+| `chimiquiz.resetBlacklist()` | Resetta la blacklist permanente delle domande segnalate                        |
+| `chimiquiz.resetRecent()`    | Resetta la cronologia recente, rendendo tutte le domande di nuovo "fresche"    |
 
 ---
 
@@ -105,6 +119,11 @@ Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il 
 3. Apporta le modifiche (ad esempio migliorando la logica in `app.js` o lo stile in `index.css`).
 4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuova-feature`).
 5. Apri una **Pull Request** spiegando i cambiamenti apportati.
+
+### Segnalare una domanda Queez errata
+
+- **Issue**: [Nuova segnalazione domanda Queez](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
+- **Pull Request**: correggi `data/queez-chimica.json` e apri una PR
 
 ---
 
