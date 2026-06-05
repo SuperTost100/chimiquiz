@@ -305,8 +305,7 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
     const result = await resp.json();
     return result.data
       .filter(
-        (q) =>
-          q.right_answer_index !== -1 && q.answers && q.answers.length > 1,
+        (q) => q.right_answer_index !== -1 && q.answers && q.answers.length > 1,
       )
       .map(mapPoliquizQuestion);
   }
@@ -408,11 +407,15 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
   window.chimiquiz = {
     resetBlacklist: function () {
       localStorage.removeItem(BLACKLIST_STORAGE_KEY);
-      console.log("✅ Blacklist resettata. Le domande segnalate potranno riapparire.");
+      console.log(
+        "✅ Blacklist resettata. Le domande segnalate potranno riapparire.",
+      );
     },
     resetRecent: function () {
       localStorage.removeItem(RECENT_STORAGE_KEY);
-      console.log("✅ Cronologia recente resettata. Tutte le domande sono di nuovo 'fresche'.");
+      console.log(
+        "✅ Cronologia recente resettata. Tutte le domande sono di nuovo 'fresche'.",
+      );
     },
     stats: function () {
       const recent = getRecentIds();
@@ -420,10 +423,14 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       const poliquiz = allQuizzes.filter((q) => q.source === "poliquiz").length;
       const queez = allQuizzes.filter((q) => q.source === "queez").length;
       console.log(`📊 Chimiquiz Stats:`);
-      console.log(`   Domande nel database: ${allQuizzes.length} (${poliquiz} Poliquiz, ${queez} Queez)`);
+      console.log(
+        `   Domande nel database: ${allQuizzes.length} (${poliquiz} Poliquiz, ${queez} Queez)`,
+      );
       console.log(`   Cronologia recente: ${recent.length}/${RECENT_MAX}`);
       console.log(`   Blacklist (permanente): ${blacklist.length}`);
-      console.log(`   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`);
+      console.log(
+        `   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`,
+      );
     },
   };
 
@@ -924,12 +931,12 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
     const q = testQuestions[reportQuestionIndex];
     const fromPoliquiz = isPoliquizQuestion(q);
 
-    reportQuestionPreview.textContent = q.question;
-    copyBtnText.textContent = "Copia testo domanda";
-    btnCopyQuestion.classList.remove("copied");
     reportChangeSection.classList.add("hidden");
 
     if (fromPoliquiz) {
+      reportQuestionPreview.textContent = q.question;
+      copyBtnText.textContent = "Copia testo domanda";
+      btnCopyQuestion.classList.remove("copied");
       reportModalTitle.textContent = "Segnala su Poliquiz";
       reportPoliquizPanel.classList.remove("hidden");
       reportQueezPanel.classList.add("hidden");
@@ -1054,7 +1061,9 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
 
     if (!GOATCOUNTER_CODE || GOATCOUNTER_CODE === "[IL_TUO_CODICE]") return;
 
-    fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/test-completato.json`)
+    fetch(
+      `https://${GOATCOUNTER_CODE}.goatcounter.com/counter/test-completato.json`,
+    )
       .then((resp) => {
         if (!resp.ok) throw new Error("Counter not available");
         return resp.json();
@@ -1115,10 +1124,12 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       location.reload(true);
     });
 
-    document.getElementById("btn-dismiss-update").addEventListener("click", () => {
-      banner.classList.remove("visible");
-      setTimeout(() => banner.remove(), 300);
-    });
+    document
+      .getElementById("btn-dismiss-update")
+      .addEventListener("click", () => {
+        banner.classList.remove("visible");
+        setTimeout(() => banner.remove(), 300);
+      });
   }
 
   // ─── Init ───
