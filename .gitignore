@@ -1,16 +1,18 @@
-# macOS
 .DS_Store
 
-# IDEs and Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Node (just in case they use npm later)
-node_modules/
-package-lock.json
-
-# Local env
+# Credenziali Queez / Firebase (non committare)
+scripts/queez.credentials.json
 .env
-.env.local
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+extract.null/venv/
+
+# Export temporanei
+queez-chimica-export.json
+
+# Snapshot / tooling locale (non parte del sito)
+queez/
+extract.null/

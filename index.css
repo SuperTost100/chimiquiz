@@ -168,6 +168,43 @@ body {
     display: none;
 }
 
+/* News banner (home) */
+.news-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 1.25rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.12) 0%,
+        rgba(16, 185, 129, 0.08) 100%
+    );
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.1);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.news-banner-icon {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.news-banner p {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
+.news-banner strong {
+    color: var(--text-primary);
+}
+
 .counter-glow {
     position: absolute;
     top: 50%;
@@ -1074,10 +1111,57 @@ body {
     font-weight: 600;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* Review Section */
 .review-section {
     width: 100%;
     margin-bottom: 2rem;
+}
+
+.review-section-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.review-section-header h3 {
+    margin: 0;
+}
+
+.review-ai-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.review-ai-toolbar label {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.ai-provider-select {
+    padding: 0.35rem 0.6rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-family: var(--font);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.ai-provider-select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: var(--ring-accent, 0 0 0 3px rgba(99, 102, 241, 0.15));
 }
 
 .review-section h3 {
@@ -1269,11 +1353,18 @@ body {
     flex-shrink: 0;
 }
 
-.btn-report-review {
+.review-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.btn-report-review,
+.btn-ask-ai-review {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    margin-top: 0.75rem;
     padding: 0.4rem 0.75rem;
     background: transparent;
     border: 1px solid var(--border);
@@ -1286,9 +1377,20 @@ body {
     transition: all 0.2s;
 }
 
+.btn-ask-ai-review {
+    border-color: rgba(99, 102, 241, 0.35);
+    color: var(--accent-light);
+}
+
 .btn-report-review:hover {
     border-color: var(--accent);
     color: var(--accent-light);
+}
+
+.btn-ask-ai-review:hover {
+    border-color: var(--accent);
+    background: rgba(99, 102, 241, 0.08);
+    color: var(--text-primary);
 }
 
 /* ═══════════════════════════════════════════════

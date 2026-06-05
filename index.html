@@ -129,6 +129,14 @@
         </div>
         <p class="tagline">Simulazione Test di Chimica</p>
 
+        <div class="news-banner" role="status">
+          <span class="news-banner-icon" aria-hidden="true">✨</span>
+          <p>
+            <strong>Novità v1.1:</strong> oltre <strong>1.300 domande verificate</strong>
+            aggiunte al database — da Poliquiz e Queez!
+          </p>
+        </div>
+
         <div id="study-counter" class="study-counter hidden">
           <div class="counter-glow"></div>
           <div class="counter-content">
@@ -216,10 +224,10 @@
           e un sistema di valutazione con punteggio da 0 a 9.
         </p>
         <p>
-          Le domande provengono da <a href="https://www.poliquiz.it" target="_blank" rel="noopener">Poliquiz</a>,
-          il database collaborativo dei <strong>quiz usciti agli esami del Politecnico di Torino</strong>.
-          Ogni sessione estrae casualmente 15 domande dal corso di <strong>Chimica</strong>, permettendoti
-          di esercitarti su argomenti diversi ogni volta.
+          Le domande provengono da <a href="https://www.poliquiz.it" target="_blank" rel="noopener">Poliquiz</a>
+          e dal database di <a href="https://queez.org" target="_blank" rel="noopener">Queez</a>.
+          Ogni sessione estrae casualmente 15 domande di <strong>Chimica</strong>, permettendoti
+          di esercitarti su argomenti diversi ogni volta. Nel riepilogo puoi chiedere spiegazioni a ChatGPT, Claude o Gemini.
         </p>
         <p>
           Ideale per chi deve affrontare il <strong>quiz di chimica al Polito</strong>, il pretest
@@ -353,7 +361,7 @@
           </div>
           <h2 id="question-text" class="question-text"></h2>
           <div id="options-container" class="options-container"></div>
-          <div class="question-disclaimer">
+          <div id="question-disclaimer" class="question-disclaimer">
             <svg
               width="14"
               height="14"
@@ -369,13 +377,17 @@
               <line x1="12" y1="8" x2="12.01" y2="8" />
             </svg>
             <span
-              >Domanda fornita da
-              <a href="https://www.poliquiz.it" target="_blank" rel="noopener"
+              >Domanda da
+              <a
+                id="question-source-link"
+                href="https://www.poliquiz.it"
+                target="_blank"
+                rel="noopener"
                 >Poliquiz</a
               >
-              - potrebbe contenere errori.
+              — potrebbe contenere errori.
               <button id="btn-report" class="btn-report">
-                Segnala questa domanda
+                Segnala su Poliquiz
               </button></span
             >
           </div>
@@ -466,7 +478,13 @@
         </div>
 
         <div class="review-section">
-          <h3>Riepilogo domande</h3>
+          <div class="review-section-header">
+            <h3>Riepilogo domande</h3>
+            <div class="review-ai-toolbar">
+              <label for="ai-provider-select">Assistente AI</label>
+              <select id="ai-provider-select" class="ai-provider-select" title="Scegli quale AI aprire con un clic"></select>
+            </div>
+          </div>
           <div id="review-list" class="review-list"></div>
         </div>
 
@@ -561,61 +579,93 @@
     <div id="modal-report" class="modal-overlay hidden">
       <div class="modal modal-report-box">
         <div class="modal-icon">🚩</div>
-        <h3>Come segnalare la domanda</h3>
-        <p class="report-intro">
-          La funzione di segnalazione è disponibile direttamente su Poliquiz.
-          Segui questi passaggi:
-        </p>
-        <ol class="report-steps">
-          <li>
-            <span class="step-num">1</span>
-            <span>Copia il testo della domanda con il pulsante qui sotto.</span>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <span
-              >Vai su
-              <a
-                href="https://poliquiz.it/course/2"
-                target="_blank"
-                rel="noopener"
-                >Poliquiz - Chimica</a
+        <h3 id="report-modal-title">Come segnalare la domanda</h3>
+
+        <div id="report-poliquiz-panel">
+          <p class="report-intro">
+            La funzione di segnalazione è disponibile direttamente su Poliquiz.
+            Segui questi passaggi:
+          </p>
+          <ol class="report-steps">
+            <li>
+              <span class="step-num">1</span>
+              <span>Copia il testo della domanda con il pulsante qui sotto.</span>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <span
+                >Vai su
+                <a
+                  href="https://poliquiz.it/course/2"
+                  target="_blank"
+                  rel="noopener"
+                  >Poliquiz - Chimica</a
+                >
+                e cerca la domanda usando il testo copiato.</span
               >
-              e cerca la domanda usando il testo copiato.</span
-            >
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <span
-              >Clicca sui <strong>tre puntini ⋯</strong> a destra della
-              domanda.</span
-            >
-          </li>
-          <li>
-            <span class="step-num">4</span>
-            <span>Seleziona <strong>Segnala</strong> dal menu.</span>
-          </li>
-        </ol>
-        <div class="report-copy-box">
-          <p id="report-question-preview" class="report-question-preview"></p>
-          <button id="btn-copy-question" class="btn-copy">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
-              <path
-                d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
-              />
-            </svg>
-            <span id="copy-btn-text">Copia testo domanda</span>
-          </button>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <span
+                >Clicca sui <strong>tre puntini ⋯</strong> a destra della
+                domanda.</span
+              >
+            </li>
+            <li>
+              <span class="step-num">4</span>
+              <span>Seleziona <strong>Segnala</strong> dal menu.</span>
+            </li>
+          </ol>
+          <div class="report-copy-box">
+            <p id="report-question-preview" class="report-question-preview"></p>
+            <button id="btn-copy-question" class="btn-copy">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                <path
+                  d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                />
+              </svg>
+              <span id="copy-btn-text">Copia testo domanda</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="report-queez-panel" class="hidden">
+          <p class="report-intro">
+            Le domande Queez su Chimiquiz sono open source. Puoi segnalare errori
+            aprendo un issue (o una pull request) su GitHub:
+          </p>
+          <ol class="report-steps">
+            <li>
+              <span class="step-num">1</span>
+              <span
+                >Clicca <strong>Apri issue su GitHub</strong>: il modulo sarà
+                precompilato con i dati della domanda.</span
+              >
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <span
+                >Descrivi il problema (risposta sbagliata, formattazione, ecc.) e
+                invia. Oppure proponi una correzione con una
+                <a
+                  href="https://github.com/SuperTost100/chimiquiz/pulls"
+                  target="_blank"
+                  rel="noopener"
+                  >Pull Request</a
+                >.</span
+              >
+            </li>
+          </ol>
         </div>
         <div class="modal-actions">
           <button id="btn-report-close" class="btn-secondary">Chiudi</button>
@@ -626,6 +676,14 @@
             rel="noopener"
             class="btn-primary"
             >Vai su Poliquiz</a
+          >
+          <a
+            id="btn-goto-github-issue"
+            href="https://github.com/SuperTost100/chimiquiz/issues/new"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary hidden"
+            >Apri issue su GitHub</a
           >
         </div>
         <div id="report-change-section" class="report-change-section hidden">
