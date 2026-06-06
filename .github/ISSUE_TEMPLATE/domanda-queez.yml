@@ -1,6 +1,6 @@
 name: Segnala domanda Queez
-description: Segnala errori nelle domande importate dal banco Queez. su Chimiquiz
-title: "[Domanda Queez.] "
+description: Segnala errori nelle domande importate dal banco queez. su Chimiquiz
+title: "[Domanda queez.] "
 labels: ["domanda-queez"]
 body:
   - type: markdown

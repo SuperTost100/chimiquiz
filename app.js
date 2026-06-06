@@ -13,7 +13,7 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.12.1";
+  const APP_VERSION = "1.12.2";
   const GITHUB_REPO = "SuperTost100/chimiquiz";
   const AI_PROVIDER_KEY = "chimiquiz_ai_provider";
   const QUEEZ_DATA_URL = "data/queez-chimica.json";
@@ -204,9 +204,9 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
   function buildQueezGithubIssueUrl(q) {
     const shortTitle =
       q.question.length > 72 ? `${q.question.slice(0, 72)}…` : q.question;
-    const title = `[Domanda Queez.] ${shortTitle}`;
+    const title = `[Domanda queez.] ${shortTitle}`;
     const body = [
-      "## Segnalazione domanda Queez.",
+      "## Segnalazione domanda queez.",
       "",
       `**ID:** ${q.original_number || q.queez_id || "n/d"}`,
       `**Versione Chimiquiz:** ${APP_VERSION}`,
@@ -250,7 +250,7 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       btnReport.textContent = "Segnala su Poliquiz";
     } else {
       if (questionSourceLink) {
-        questionSourceLink.textContent = "Queez.";
+        questionSourceLink.textContent = "queez.";
         questionSourceLink.href = "https://queez.org";
       }
       btnReport.textContent = "Segnala su GitHub";
