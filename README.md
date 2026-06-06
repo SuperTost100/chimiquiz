@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://supertost100.github.io/chimiquiz/)
 
-**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [Queez.](https://queez.org)
+**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [queez.](https://queez.org)
 
-**Il database di Queez. non è opensource come tutto il resto del sito e per utilizzarlo dovete avere il loro consenso!**
+**Il database di queez. non è opensource come tutto il resto del sito e per utilizzarlo dovete avere il loro consenso!**
 
 Il simulatore è **completamente gratuito,** (quasi) **completamente open-source ed è accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
 
@@ -17,7 +17,7 @@ Il simulatore è **completamente gratuito,** (quasi) **completamente open-source
 ## ✨ Caratteristiche Principali
 
 - **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
-- **Database ampio (v1.11)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica Queez. Le domande duplicate tra i due database sono rimosse automaticamente tramite la `data/global-blacklist.json`.
+- **Database ampio (v1.11)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica queez. Le domande duplicate tra i due database sono rimosse automaticamente tramite la `data/global-blacklist.json`.
 - **Modalità DSA**: Pulsante per incrementare il tempo a disposizione del 30% (da 25 minuti a 32 minuti e 30 secondi).
 - **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
 - **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
@@ -25,7 +25,7 @@ Il simulatore è **completamente gratuito,** (quasi) **completamente open-source
 - **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
 - **Segnalazione Domande**:
   - **Poliquiz**: istruzioni per segnalare su poliquiz.it; in test attivo puoi sostituire la domanda.
-  - **Queez.**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
+  - **queez.**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
 - **Chiedi all'AI**: Nel riepilogo finale, apri ChatGPT, Claude o Gemini in una nuova scheda con un prompt già compilato per spiegare la risposta corretta.
 - **Resoconto Dettagliato a Fine Test**:
   - Grafico circolare animato per mostrare il punteggio ottenuto.
@@ -64,13 +64,13 @@ Il progetto si compone di un'applicazione front-end statica ed efficiente:
 Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
-├── app.js              # Motore logico, fetch Poliquiz + banco Queez., Timer, AI esterna
+├── app.js              # Motore logico, fetch Poliquiz + banco queez., Timer, AI esterna
 ├── data/
-│   ├── queez-chimica.json   # ~1300 domande chimica da banco Queez.
+│   ├── queez-chimica.json   # ~1300 domande chimica da banco queez.
 │   └── global-blacklist.json # Blacklist dei duplicati (rimossi a runtime)
 ├── .github/
 │   └── ISSUE_TEMPLATE/
-│       └── domanda-queez.yml                 # Template issue per segnalazioni Queez.
+│       └── domanda-queez.yml                 # Template issue per segnalazioni queez.
 ├── og-image.png        # Immagine per le anteprime social (Open Graph / Twitter Card)
 └── README.md           # Questa documentazione
 ```
@@ -120,9 +120,9 @@ Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il 
 4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuova-feature`).
 5. Apri una **Pull Request** spiegando i cambiamenti apportati.
 
-### Segnalare una domanda Queez. errata
+### Segnalare una domanda queez. errata
 
-- **Issue**: [Nuova segnalazione domanda Queez.](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
+- **Issue**: [Nuova segnalazione domanda queez.](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
 - **Pull Request**: correggi `data/queez-chimica.json` e apri una PR
 
 ---
@@ -130,6 +130,6 @@ Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il 
 ## ✍️ Autore e Licenza
 
 - **Sviluppato da**: [SuperTost100](https://github.com/SuperTost100)
-- **Domande Queez.** fornite da [Queez.org](https://queez.org)
+- **Domande queez.** fornite da [queez.org](https://queez.org)
 - **Licenza**: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) — Sentiti libero di utilizzare, modificare e distribuire questo codice in conformità con i termini della licenza Apache 2.0.
 - Il progetto è interamente **Open Source**. Se ti piace, lascia una stella ⭐ su GitHub!
