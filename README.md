@@ -25,7 +25,7 @@ Il simulatore è **completamente gratuito,** (quasi) **completamente open-source
 - **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
 - **Segnalazione Domande**:
   - **Poliquiz**: istruzioni per segnalare su poliquiz.it; in test attivo puoi sostituire la domanda.
-  - **Queez**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
+  - **Queez.**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
 - **Chiedi all'AI**: Nel riepilogo finale, apri ChatGPT, Claude o Gemini in una nuova scheda con un prompt già compilato per spiegare la risposta corretta.
 - **Resoconto Dettagliato a Fine Test**:
   - Grafico circolare animato per mostrare il punteggio ottenuto.
@@ -64,13 +64,13 @@ Il progetto si compone di un'applicazione front-end statica ed efficiente:
 Chimiquiz/
 ├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
 ├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
-├── app.js              # Motore logico, fetch Poliquiz + banco Queez, Timer, AI esterna
+├── app.js              # Motore logico, fetch Poliquiz + banco Queez., Timer, AI esterna
 ├── data/
-│   ├── queez-chimica.json   # ~1300 domande chimica da banco Queez
+│   ├── queez-chimica.json   # ~1300 domande chimica da banco Queez.
 │   └── global-blacklist.json # Blacklist dei duplicati (rimossi a runtime)
 ├── .github/
 │   └── ISSUE_TEMPLATE/
-│       └── domanda-queez.yml                 # Template issue per segnalazioni Queez
+│       └── domanda-queez.yml                 # Template issue per segnalazioni Queez.
 ├── og-image.png        # Immagine per le anteprime social (Open Graph / Twitter Card)
 └── README.md           # Questa documentazione
 ```
@@ -120,9 +120,9 @@ Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il 
 4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuova-feature`).
 5. Apri una **Pull Request** spiegando i cambiamenti apportati.
 
-### Segnalare una domanda Queez errata
+### Segnalare una domanda Queez. errata
 
-- **Issue**: [Nuova segnalazione domanda Queez](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
+- **Issue**: [Nuova segnalazione domanda Queez.](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
 - **Pull Request**: correggi `data/queez-chimica.json` e apri una PR
 
 ---
