@@ -13,10 +13,13 @@
   const MAX_SCORE = 9;
   const PASS_THRESHOLD = 6;
   const GOATCOUNTER_CODE = "tost"; // GoatCounter site code
-  const APP_VERSION = "1.1";
+  const APP_VERSION = "1.11";
   const GITHUB_REPO = "SuperTost100/chimiquiz";
   const AI_PROVIDER_KEY = "chimiquiz_ai_provider";
   const QUEEZ_DATA_URL = "data/queez-chimica.json";
+  const GLOBAL_BLACKLIST_URL = "data/global-blacklist.json";
+  const DSA_MODE_KEY = "chimiquiz_dsa_mode";
+  const DSA_TIME_MULTIPLIER = 1.3; // +30%
 
   const AI_PROVIDERS = {
     chatgpt: {
@@ -45,6 +48,7 @@
   let timeRemaining = TEST_DURATION;
   let timerInterval = null;
   let testActive = false;
+  let dsaMode = false;
   let reportQuestionIndex = 0; // which question the report modal refers to
 
   // ─── DOM refs ───
@@ -327,23 +331,44 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       .map(mapLocalQuestion);
   }
 
+  async function loadGlobalBlacklist() {
+    try {
+      const resp = await fetch(GLOBAL_BLACKLIST_URL);
+      if (!resp.ok) return { poliquiz: [], queez: [] };
+      return await resp.json();
+    } catch {
+      return { poliquiz: [], queez: [] };
+    }
+  }
+
   async function loadQuizzes() {
     const pool = [];
     let poliquizCount = 0;
     let queezCount = 0;
 
+    // Load global duplicate blacklist first
+    const globalBlacklist = await loadGlobalBlacklist();
+    const globalPoliBlacklist = new Set(globalBlacklist.poliquiz || []);
+    const globalQueezBlacklist = new Set(globalBlacklist.queez || []);
+
     try {
       const poliquiz = await loadPoliquizQuizzes();
-      pool.push(...poliquiz);
-      poliquizCount = poliquiz.length;
+      const filtered = poliquiz.filter(q => !globalPoliBlacklist.has(q.original_number));
+      pool.push(...filtered);
+      poliquizCount = filtered.length;
+      if (poliquiz.length !== filtered.length)
+        console.log(`[Chimiquiz] Poliquiz: rimossi ${poliquiz.length - filtered.length} duplicati globali`);
     } catch (e) {
       console.error("Failed to load Poliquiz quizzes", e);
     }
 
     try {
       const queez = await loadQueezQuizzes();
-      pool.push(...queez);
-      queezCount = queez.length;
+      const filtered = queez.filter(q => !globalQueezBlacklist.has(q.original_number));
+      pool.push(...filtered);
+      queezCount = filtered.length;
+      if (queez.length !== filtered.length)
+        console.log(`[Chimiquiz] Queez: rimossi ${queez.length - filtered.length} duplicati globali`);
     } catch (e) {
       console.warn("Failed to load Queez chemistry bank", e);
     }
@@ -355,7 +380,7 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
 
     allQuizzes = renumberQuestions(pool);
     console.log(
-      `[Chimiquiz] Database: ${poliquizCount} Poliquiz + ${queezCount} Queez = ${allQuizzes.length} domande`,
+      `[Chimiquiz] Database: ${poliquizCount} Poliquiz + ${queezCount} Queez = ${allQuizzes.length} domande (doppioni rimossi)`,
     );
   }
 
@@ -403,6 +428,21 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
     }
   }
 
+  // ─── DSA Mode ───
+  function getDsaMode() {
+    try { return localStorage.getItem(DSA_MODE_KEY) === "true"; } catch { return false; }
+  }
+
+  function setDsaMode(enabled) {
+    dsaMode = enabled;
+    try { localStorage.setItem(DSA_MODE_KEY, enabled ? "true" : "false"); } catch {}
+    const btn = document.getElementById("btn-dsa");
+    if (btn) {
+      btn.classList.toggle("active", enabled);
+      btn.title = enabled ? "Modalità DSA attiva (+30% tempo)" : "Attiva Modalità DSA (+30% tempo)";
+    }
+  }
+
   // ─── Console commands for debugging ───
   window.chimiquiz = {
     resetBlacklist: function () {
@@ -428,10 +468,10 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
       );
       console.log(`   Cronologia recente: ${recent.length}/${RECENT_MAX}`);
       console.log(`   Blacklist (permanente): ${blacklist.length}`);
-      console.log(
-        `   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`,
-      );
+      console.log(`   Domande disponibili (no blacklist): ${allQuizzes.length - blacklist.length}`);
+      console.log(`   Modalità DSA: ${dsaMode ? 'attiva' : 'disattiva'}`);
     },
+    setDsa: function(enabled) { setDsaMode(!!enabled); console.log(`DSA mode: ${!!enabled}`); },
   };
 
   // ─── Select 15 Random Questions (Smart Shuffle) ───
@@ -539,7 +579,9 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
 
   // ─── Timer ───
   function startTimer() {
-    timeRemaining = TEST_DURATION;
+    timeRemaining = dsaMode
+      ? Math.round(TEST_DURATION * DSA_TIME_MULTIPLIER)
+      : TEST_DURATION;
     updateTimerDisplay();
     timerInterval = setInterval(() => {
       timeRemaining--;
@@ -691,7 +733,8 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
 
     const score = Math.max(0, correct * POINTS_CORRECT + wrong * POINTS_WRONG);
     const roundedScore = Math.round(score * 100) / 100;
-    const passed = roundedScore >= PASS_THRESHOLD;
+    // Rounding for pass/fail only: >= 5.5 rounds up to passed
+    const passed = roundedScore >= 5.5;
 
     // Update verdict
     resultEmoji.textContent = passed ? "🎉" : "😞";
@@ -846,6 +889,10 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
     renderQuestion();
     startTimer();
     questionNav.classList.add("hidden");
+
+    // Show DSA badge in header if active
+    const dsaBadge = document.getElementById("dsa-badge");
+    if (dsaBadge) dsaBadge.classList.toggle("hidden", !dsaMode);
   }
 
   // ─── Event Listeners ───
@@ -1134,6 +1181,16 @@ Spiega il concetto chimico coinvolto e, se utile, perché le altre opzioni sono 
 
   // ─── Init ───
   initAIProviderSelect();
+  // Restore DSA mode from localStorage
+  dsaMode = getDsaMode();
+  setDsaMode(dsaMode);
+
+  // DSA mode toggle button
+  const btnDsa = document.getElementById("btn-dsa");
+  if (btnDsa) {
+    btnDsa.addEventListener("click", () => setDsaMode(!dsaMode));
+  }
+
   loadQuizzes();
   fetchStudyCount();
   checkForUpdates();

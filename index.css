@@ -46,14 +46,16 @@
     --radius-xl: 24px;
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-    --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
-    --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
     --shadow-glow: 0 0 40px var(--accent-glow);
 }
 
 /* ─── Reset & Base ─── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -92,7 +94,7 @@ body {
     flex-direction: column;
     width: 100%;
     background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99, 102, 241, 0.12) 0%, transparent 60%),
         var(--bg-primary);
 }
 
@@ -179,11 +181,9 @@ body {
     padding: 0.85rem 1rem;
     border-radius: var(--radius-md);
     border: 1px solid rgba(99, 102, 241, 0.35);
-    background: linear-gradient(
-        135deg,
-        rgba(99, 102, 241, 0.12) 0%,
-        rgba(16, 185, 129, 0.08) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(99, 102, 241, 0.12) 0%,
+            rgba(16, 185, 129, 0.08) 100%);
     box-shadow: 0 4px 24px rgba(99, 102, 241, 0.1);
     animation: fadeInUp 0.5s ease-out;
 }
@@ -524,7 +524,7 @@ body {
     padding: 1.25rem;
     z-index: 90;
     overflow-y: auto;
-    box-shadow: -4px 0 24px rgba(0,0,0,0.3);
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.3);
     animation: slideInRight 0.3s ease-out;
 }
 
@@ -564,9 +564,18 @@ body {
     border-radius: 3px;
 }
 
-.legend-dot.answered { background: var(--accent); }
-.legend-dot.flagged { background: var(--amber); }
-.legend-dot.current { background: var(--text-primary); box-shadow: 0 0 0 2px var(--accent); }
+.legend-dot.answered {
+    background: var(--accent);
+}
+
+.legend-dot.flagged {
+    background: var(--amber);
+}
+
+.legend-dot.current {
+    background: var(--text-primary);
+    box-shadow: 0 0 0 2px var(--accent);
+}
 
 .nav-grid {
     display: grid;
@@ -787,17 +796,20 @@ body {
     color: var(--text-muted);
     line-height: 1.5;
 }
+
 .question-disclaimer svg {
     flex-shrink: 0;
     margin-top: 1px;
     opacity: 0.6;
 }
+
 .question-disclaimer a {
     color: var(--accent-light);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
 }
+
 .question-disclaimer a:hover {
     color: var(--accent);
     text-decoration: underline;
@@ -961,7 +973,7 @@ body {
     overflow-y: auto;
     width: 100%;
     background:
-        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(99,102,241,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
         var(--bg-primary);
 }
 
@@ -1003,8 +1015,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.result-title.passed { color: var(--green); }
-.result-title.failed { color: var(--red); }
+.result-title.passed {
+    color: var(--green);
+}
+
+.result-title.failed {
+    color: var(--red);
+}
 
 .result-subtitle {
     color: var(--text-secondary);
@@ -1045,8 +1062,13 @@ body {
     transition: stroke-dashoffset 1.5s ease-out, stroke 0.5s;
 }
 
-.ring-progress.passed { stroke: var(--green); }
-.ring-progress.failed { stroke: var(--red); }
+.ring-progress.passed {
+    stroke: var(--green);
+}
+
+.ring-progress.failed {
+    stroke: var(--red);
+}
 
 .score-text {
     position: absolute;
@@ -1088,9 +1110,17 @@ body {
     text-align: center;
 }
 
-.stat-card.correct { border-left: 3px solid var(--green); }
-.stat-card.wrong { border-left: 3px solid var(--red); }
-.stat-card.skipped { border-left: 3px solid var(--text-muted); }
+.stat-card.correct {
+    border-left: 3px solid var(--green);
+}
+
+.stat-card.wrong {
+    border-left: 3px solid var(--red);
+}
+
+.stat-card.skipped {
+    border-left: 3px solid var(--text-muted);
+}
 
 .stat-num {
     font-size: 2rem;
@@ -1099,9 +1129,17 @@ body {
     margin-bottom: 0.25rem;
 }
 
-.stat-card.correct .stat-num { color: var(--green); }
-.stat-card.wrong .stat-num { color: var(--red); }
-.stat-card.skipped .stat-num { color: var(--text-muted); }
+.stat-card.correct .stat-num {
+    color: var(--green);
+}
+
+.stat-card.wrong .stat-num {
+    color: var(--red);
+}
+
+.stat-card.skipped .stat-num {
+    color: var(--text-muted);
+}
 
 .stat-label {
     font-size: 0.75rem;
@@ -1230,12 +1268,14 @@ body {
     background: var(--green-bg);
     color: var(--green);
 }
+
 .review-item.wrong .review-q-num {
     background: var(--red-bg);
     color: var(--red);
 }
+
 .review-item.skipped .review-q-num {
-    background: rgba(100,116,139,0.15);
+    background: rgba(100, 116, 139, 0.15);
     color: var(--text-muted);
 }
 
@@ -1263,12 +1303,14 @@ body {
     background: var(--green-bg);
     color: var(--green);
 }
+
 .review-item.wrong .review-badge {
     background: var(--red-bg);
     color: var(--red);
 }
+
 .review-item.skipped .review-badge {
-    background: rgba(100,116,139,0.15);
+    background: rgba(100, 116, 139, 0.15);
     color: var(--text-muted);
 }
 
@@ -1400,7 +1442,7 @@ body {
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
@@ -1459,33 +1501,73 @@ body {
    ANIMATIONS
    ═══════════════════════════════════════════════ */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInRight {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes scaleIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 @keyframes pulse-border {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
 }
 
 /* ═══════════════════════════════════════════════
@@ -1531,6 +1613,67 @@ body {
         width: 100%;
         right: 0;
     }
+}
+
+/* ═══════════════════════════════════════════════
+   DSA MODE
+   ═══════════════════════════════════════════════ */
+.start-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+/* btn-github inside start-actions loses its default top margin */
+.start-actions .btn-github {
+    margin-top: 0;
+}
+
+/* DSA button goes on its own centered row */
+.btn-dsa {
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.25rem;
+    background: var(--bg-card);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-family: var(--font);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-dsa:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--text-muted);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.btn-dsa.active {
+    background: rgba(99, 102, 241, 0.12);
+    border-color: var(--accent);
+    color: var(--accent-light);
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.2);
+}
+
+.dsa-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    background: rgba(99, 102, 241, 0.18);
+    color: var(--accent-light);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 20px;
 }
 
 /* ═══════════════════════════════════════════════
