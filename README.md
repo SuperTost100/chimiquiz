@@ -4,9 +4,11 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://supertost100.github.io/chimiquiz/)
 
-**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [Queez](https://queez.org).
+**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [Queez.](https://queez.org)
 
-Il simulatore è **completamente gratuito, open-source e accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
+**Il database di Queez. non è opensource come tutto il resto del sito e per utilizzarlo dovete avere il loro consenso!**
+
+Il simulatore è **completamente gratuito,** (quasi) **completamente open-source ed è accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
 
 👉 **[Accedi a Chimiquiz Online](https://supertost100.github.io/chimiquiz/)**
 
@@ -128,5 +130,6 @@ Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il 
 ## ✍️ Autore e Licenza
 
 - **Sviluppato da**: [SuperTost100](https://github.com/SuperTost100)
+- **Domande Queez.** fornite da [Queez.org](https://queez.org)
 - **Licenza**: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) — Sentiti libero di utilizzare, modificare e distribuire questo codice in conformità con i termini della licenza Apache 2.0.
 - Il progetto è interamente **Open Source**. Se ti piace, lascia una stella ⭐ su GitHub!
