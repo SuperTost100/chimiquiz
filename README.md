@@ -1,135 +1,46 @@
-# 🧪 Chimiquiz
+# Chimiquiz
 
-[![GitHub Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)](https://github.com/SuperTost100/chimiquiz)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Website](https://img.shields.io/badge/Website-Live-green.svg)](https://supertost100.github.io/chimiquiz/)
+Chimiquiz simula il test di Chimica del Politecnico di Torino: 15 domande a risposta multipla, 25 minuti, punteggio su 9. Le domande arrivano da [Poliquiz](https://www.poliquiz.it) e dal banco di chimica di [queez.](https://queez.org), più di 1.300 in tutto.
 
-**Chimiquiz** è un simulatore web moderno ed elegante per esercitarsi con quiz di chimica. Il sito è completamente responsive, offre un design raffinato con effetto vetro (glassmorphism) ed è progettato per simulare le condizioni di un esame reale, con un database di **oltre 1.300 domande** da [Poliquiz](https://www.poliquiz.it) e [queez.](https://queez.org)
+Lo usi gratis dal browser, senza account e senza installare niente: [supertost100.github.io/chimiquiz](https://supertost100.github.io/chimiquiz/).
 
-**Il database di queez. non è opensource come tutto il resto del sito e per utilizzarlo dovete avere il loro consenso!**
+![Domanda 1 di 15 sul numero quantico del momento angolare orbitale, con cinque opzioni, il timer a 24:48 e il pulsante Consegna.](docs/screenshots/quiz.png)
 
-Il simulatore è **completamente gratuito,** (quasi) **completamente open-source ed è accessibile a chiunque direttamente online**, senza alcuna necessità di installazione o configurazione locale:
+## Cosa fa
 
-👉 **[Accedi a Chimiquiz Online](https://supertost100.github.io/chimiquiz/)**
+1. **Estrae 15 domande.** Evita quelle viste nelle ultime sessioni: ricorda le ultime 256 domande, quindi il ciclo si rinnova dopo circa 17 test. Le domande presenti in entrambi i banchi le toglie `data/global-blacklist.json`.
+2. **Cronometra il test.** Il timer parte da 25 minuti e allo scadere il test si consegna da solo. La modalità DSA aggiunge il 30% di tempo (32 minuti e 30 secondi).
+3. **Ti lascia muovere tra le domande.** La griglia mostra quali hai risposto, saltato o segnato con la bandierina. Dalla tastiera: frecce per cambiare domanda, da `1` a `5` per scegliere un'opzione, `F` per la bandierina.
+4. **Corregge come l'esame.** Ogni risposta giusta vale +0,60, ogni errata -0,12, quelle non date 0. La sufficienza è 6/9, ma da 5,5 in su il test risulta superato perché il voto viene arrotondato.
+5. **Ti fa rivedere gli errori.** Il riepilogo mostra ogni domanda con la correzione. Per una spiegazione, apre ChatGPT, Claude o Gemini in una nuova scheda con il prompt già scritto.
 
----
+Se una domanda è sbagliata, "Cambia domanda" la sostituisce e non te la ripropone più. Le domande di Poliquiz si segnalano su poliquiz.it; quelle di queez. con [questo modulo](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) o con una pull request su `data/queez-chimica.json`.
 
-## ✨ Caratteristiche Principali
+## Dati e privacy
 
-- **Simulazione Realistica dell'Esame**: Un timer integrato di 25 minuti con avvisi visivi dinamici a seconda del tempo rimanente.
-- **Database ampio (v1.11)**: Oltre **1.300 domande verificate** — API Poliquiz + banco chimica queez. Le domande duplicate tra i due database sono rimosse automaticamente tramite la `data/global-blacklist.json`.
-- **Modalità DSA**: Pulsante per incrementare il tempo a disposizione del 30% (da 25 minuti a 32 minuti e 30 secondi).
-- **Navigazione Avanzata**: Griglia laterale/menu interattivo per muoversi liberamente tra le 15 domande del test, monitorando visivamente lo stato di ciascun quesito (risposto, non risposto, contrassegnato).
-- **Segnalibri (Flag/Contrassegno)**: Possibilità di contrassegnare le domande dubbie con una bandierina per ritrovarle rapidamente.
-- **Smart Shuffle**: Algoritmo intelligente di selezione che evita di riproporre le stesse domande in sessioni consecutive. Memorizza le ultime 256 domande viste e dà priorità a quelle fresche. Dopo circa 17 sessioni il ciclo si rinnova automaticamente.
-- **Blacklist Permanente**: Le domande segnalate e sostituite con "Cambia domanda" vengono escluse permanentemente per quell'utente, garantendo che non ricompaiano mai.
-- **Segnalazione Domande**:
-  - **Poliquiz**: istruzioni per segnalare su poliquiz.it; in test attivo puoi sostituire la domanda.
-  - **queez.**: apri un [issue su GitHub](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml) precompilato, oppure invia una Pull Request.
-- **Chiedi all'AI**: Nel riepilogo finale, apri ChatGPT, Claude o Gemini in una nuova scheda con un prompt già compilato per spiegare la risposta corretta.
-- **Resoconto Dettagliato a Fine Test**:
-  - Grafico circolare animato per mostrare il punteggio ottenuto.
-  - Statistiche dettagliate: domande corrette, errate e saltate.
-  - Accordion interattivo per rivedere ciascuna risposta con la correzione ufficiale passo dopo passo.
-- **Aggiornamento Automatico**: Il sito verifica automaticamente la disponibilità di nuove versioni e mostra un banner non intrusivo con un pulsante per ricaricare.
-- **Interfaccia Utente Curata**: Design moderno dark mode, animazioni fluide e layout flessibile ad alta leggibilità.
-- **Sicurezza Antidispersione**: Avvisi prima dell'abbandono accidentale del test in corso (compreso il supporto al pulsante indietro o chiusura della scheda del browser).
-- **Scorciatoie da Tastiera**:
-  - `Freccia Destra` / `Freccia Sinistra` per navigare tra le domande.
-  - Tasti da `1` a `5` per selezionare rapidamente le opzioni (A-E).
-  - Tasto `F` per contrassegnare/rimuovere il flag da una domanda.
+Cronologia, domande escluse e modalità DSA restano nel `localStorage` del browser. Il sito scarica le domande da `api.poliquiz.it` e conta i test completati con [GoatCounter](https://www.goatcounter.com), che non usa cookie. Il numero di test completati compare in home.
 
----
+## Avvio in locale
 
-## 📐 Regole del Test
+È un sito statico (`index.html`, `index.css`, `app.js`), senza build. Serve un server qualsiasi, perché il browser non carica i file JSON da `file://`:
 
-La simulazione adotta il formato e le penalità tipiche di molti test universitari italiani:
-
-- **Numero di domande**: 15 quesiti a risposta multipla (5 opzioni).
-- **Tempo massimo**: 25 minuti.
-- **Punteggio Massimo**: 9.0 punti.
-- **Criterio di Valutazione**:
-  - Risposta corretta: **+0.60 punti**
-  - Risposta errata: **-0.12 punti** (penalità del 20%)
-  - Risposta non data / saltata: **0.00 punti**
-- **Soglia di Superamento**: Il test è considerato superato con un punteggio **maggiore o uguale a 6.0/9.0**. _(Nota: i punteggi ≥ 5.5 vengono arrotondati e considerati sufficienti per il superamento)._
-
----
-
-## 📂 Struttura del Progetto
-
-Il progetto si compone di un'applicazione front-end statica ed efficiente:
-
-```text
-Chimiquiz/
-├── index.html          # Struttura della Single Page Application (Home, Quiz, Risultati)
-├── index.css           # Design System (variabili CSS, Glassmorphism, animazioni, layout)
-├── app.js              # Motore logico, fetch Poliquiz + banco queez., Timer, AI esterna
-├── data/
-│   ├── queez-chimica.json   # ~1300 domande chimica da banco queez.
-│   └── global-blacklist.json # Blacklist dei duplicati (rimossi a runtime)
-├── .github/
-│   └── ISSUE_TEMPLATE/
-│       └── domanda-queez.yml                 # Template issue per segnalazioni queez.
-├── og-image.png        # Immagine per le anteprime social (Open Graph / Twitter Card)
-└── README.md           # Questa documentazione
+```bash
+git clone https://github.com/SuperTost100/chimiquiz.git
+cd chimiquiz
+python3 -m http.server 8000     # poi apri http://localhost:8000
 ```
 
----
+Dalla console del browser:
 
-## 🛠️ Sviluppo ed Esecuzione in Locale
+| Comando                        | Cosa fa                                                         |
+| ------------------------------ | --------------------------------------------------------------- |
+| `chimiquiz.stats()`            | Domande caricate, cronologia recente e domande escluse          |
+| `chimiquiz.resetBlacklist()`   | Rimette in gioco le domande che hai escluso                     |
+| `chimiquiz.resetRecent()`      | Svuota la cronologia, così tutte le domande tornano disponibili |
+| `chimiquiz.setDsa(true/false)` | Attiva o disattiva la modalità DSA                              |
 
-Se desideri clonare il progetto per scopi di sviluppo, personalizzazione o utilizzo offline:
+Il sito è pubblicato con GitHub Pages dal branch `main`. Quando esce una versione nuova (`APP_VERSION` in `app.js`), chi ha la pagina aperta vede un banner per ricaricarla.
 
-1. Clona il repository:
-   ```bash
-   git clone https://github.com/SuperTost100/chimiquiz.git
-   cd chimiquiz
-   ```
-2. Avvia un server web locale:
-   - Con **Python**:
-     ```bash
-     python -m http.server 8000
-     ```
-   - Oppure con **Node.js (npx)**:
-     ```bash
-     npx serve
-     ```
-3. Apri il browser all'indirizzo `http://localhost:8000` (o la porta specificata dal server).
+## Licenza
 
-### 🔧 Comandi Console (per sviluppatori)
-
-Apri la console del browser (Ispeziona → Console) e usa i seguenti comandi:
-
-| Comando                      | Descrizione                                                                    |
-| ---------------------------- | ------------------------------------------------------------------------------ |
-| `chimiquiz.stats()`          | Mostra statistiche: domande nel DB, nella cronologia recente e nella blacklist |
-| `chimiquiz.resetBlacklist()` | Resetta la blacklist permanente delle domande segnalate                        |
-| `chimiquiz.resetRecent()`    | Resetta la cronologia recente, rendendo tutte le domande di nuovo "fresche"    |
-| `chimiquiz.setDsa(true/false)` | Attiva o disattiva forzatamente la modalità DSA dalla console                  |
-
----
-
-## 🤝 Contribuire
-
-Vuoi proporre miglioramenti alla simulazione o al codice? Ogni contributo è il benvenuto!
-
-1. Esegui il Fork del progetto.
-2. Crea un branch per la tua feature (`git checkout -b feature/nuova-feature`).
-3. Apporta le modifiche (ad esempio migliorando la logica in `app.js` o lo stile in `index.css`).
-4. Esegui il commit e fai il push del tuo branch (`git push origin feature/nuova-feature`).
-5. Apri una **Pull Request** spiegando i cambiamenti apportati.
-
-### Segnalare una domanda queez. errata
-
-- **Issue**: [Nuova segnalazione domanda queez.](https://github.com/SuperTost100/chimiquiz/issues/new?template=domanda-queez.yml)
-- **Pull Request**: correggi `data/queez-chimica.json` e apri una PR
-
----
-
-## ✍️ Autore e Licenza
-
-- **Sviluppato da**: [SuperTost100](https://github.com/SuperTost100)
-- **Domande queez.** fornite da [queez.org](https://queez.org)
-- **Licenza**: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) — Sentiti libero di utilizzare, modificare e distribuire questo codice in conformità con i termini della licenza Apache 2.0.
-- Il progetto è interamente **Open Source**. Se ti piace, lascia una stella ⭐ su GitHub!
+Il codice è sotto [Apache 2.0](LICENSE). Le domande di queez. in `data/queez-chimica.json` non lo sono: appartengono a [queez.](https://queez.org) e per riusarle serve il loro consenso. Le domande di Poliquiz restano sul loro server e Chimiquiz le legge dalla loro API.
