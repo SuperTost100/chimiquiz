@@ -83,4 +83,4 @@ Cronologia, domande escluse e modalità DSA restano nel `localStorage` del brows
 Il codice è sotto [Apache 2.0](LICENSE). Le domande no.
 
 - **Poliquiz.** Restano sul loro server: Chimiquiz le legge dalla [loro API](https://www.poliquiz.it) a ogni apertura e non ne tiene una copia.
-- **queez.** Le domande in `data/queez-chimica.json` appartengono a [queez.](https://queez.org). Per riusarle serve il loro consenso, anche se il file sta in questo repository.
+- **queez.** Le domande in `data/queez-chimica.json` appartengono a [queez.](https://queez.org), e Chimiquiz le usa con il permesso del suo sviluppatore. Per riusarle altrove serve il loro consenso, anche se il file sta in questo repository.
