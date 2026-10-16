@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    name: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # The site has no build step: GitHub Pages serves the repo root as is.
+      # So the checks run over the files that get published.
+      - name: Check JavaScript syntax
+        run: node --check app.js
+
+      - name: Validate the question bank
+        run: |
+          node - <<'EOF'
+          const fs = require("fs");
+          const fail = (m) => { console.error("FAIL: " + m); process.exitCode = 1; };
+
+          const bank = JSON.parse(fs.readFileSync("data/queez-chimica.json", "utf8"));
+          if (!Array.isArray(bank)) fail("queez-chimica.json is not an array");
+          const ids = new Set();
+          for (const q of bank) {
+            const id = q.original_number;
+            if (!id) fail("question without original_number: " + JSON.stringify(q.question));
+            if (ids.has(id)) fail("duplicate id " + id);
+            ids.add(id);
+            if (!q.question) fail(id + ": empty question");
+            if (!q.options || Object.keys(q.options).length < 2) fail(id + ": fewer than 2 options");
+            else if (!(q.correct_answer in q.options)) fail(id + ": correct_answer not in options");
+          }
+
+          const list = JSON.parse(fs.readFileSync("data/global-blacklist.json", "utf8"));
+          for (const key of ["poliquiz", "queez"]) {
+            if (!Array.isArray(list[key])) fail("global-blacklist.json: " + key + " is not an array");
+          }
+          console.log(bank.length + " queez questions, " + (list.poliquiz.length + list.queez.length) + " blacklisted ids");
+          EOF
+
+      - name: Check local links in index.html
+        run: |
+          node - <<'EOF'
+          const fs = require("fs");
+          const html = fs.readFileSync("index.html", "utf8");
+          const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map((m) => m[1]));
+          let bad = 0;
+          for (const [, attr, url] of html.matchAll(/\b(href|src)="([^"]*)"/g)) {
+            if (/^(https?:|data:|mailto:|\/\/)/.test(url) || url === "") continue;
+            if (url.startsWith("#")) {
+              if (url.length > 1 && !ids.has(url.slice(1))) { console.error("missing anchor " + url); bad++; }
+            } else if (!fs.existsSync(url.split(/[?#]/)[0])) {
+              console.error("missing file " + url); bad++;
+            }
+          }
+          for (const f of ["data/queez-chimica.json", "data/global-blacklist.json"]) {
+            if (!fs.existsSync(f)) { console.error("missing " + f); bad++; }
+          }
+          if (bad) process.exit(1);
+          console.log("local links ok");
+          EOF
