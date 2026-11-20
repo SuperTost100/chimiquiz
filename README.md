@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> <strong>Il progetto non è più attivamente mantenuto.</strong><br>Per i quiz vi invito a passare a <a href="https://queez.org" target="_blank" rel="noopener">queez.</a> che ha moltissimi pretest del PoliTO!<br>Per studiare potete dare un'occhiata al mio nuovo progetto PoliTost: <strong><a href="https://politost.it" target="_blank" rel="noopener">politost.it</a>
+
 <p align="center">
   <img src="docs/icon.svg" width="80" height="80" alt="">
 </p>
